@@ -1,0 +1,44 @@
+name: Copy EasyDutch as Back-up
+
+on:
+  schedule:
+    - cron: "00 07 * * 6"
+  workflow_dispatch:
+
+# https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-only-cancel-in-progress-jobs-or-runs-for-the-current-workflow
+concurrency: 
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    name: Update EasyDutch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repo check
+        run: |
+          if [[ "$GITHUB_REPOSITORY_OWNER" != "Ignotum77" ]]; then
+            echo "This GitHub Action is meant to back-up the EasyDutch list."
+            echo "You shouldn't need to run this GitHub Action in your fork."
+            echo "If you do, please customize the cron expression above, and the URLs below."
+            exit 1
+          fi
+          exit 0
+      - name: Clone EasyDutch as Back-up
+        uses: actions/checkout@v3
+      - name: Copy EasyDutch to AdBlockFilters
+        run: |
+          TMPFILE=$(mktemp -d)
+          git clone --depth=1 --single-branch --branch=gh-pages https://github.com/EasyDutch-uBlockOrigin/EasyDutch.git $TMPFILE
+          cp $TMPFILE/EasyDutch/*.txt EasyDutch/
+          cp $TMPFILE/EasyDutch.txt EasyDutch.txt
+          cp $TMPFILE/EasyDutch.all.txt EasyDutch.all.txt
+      - name: Commit changes (if any)
+        run: |
+          if [[ -n $(git diff) ]]; then
+            git config user.name "Nomes77"
+            git config user.email "<>"
+            git add -u EasyDutch/ EasyDutch.txt EasyDutch.all.txt
+            git commit -m "Updated from @EasyDutch-uBO"
+            git push origin main
+          fi
