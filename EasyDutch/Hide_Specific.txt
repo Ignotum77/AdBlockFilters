@@ -1,7 +1,13 @@
 ! Title: Hide Specific
 ! Description: Filters for hiding elements on specific Dutch websites
-! Last updated: Fri, 13 Feb 2026 21:22:59 +0000
+! Last updated: Fri, 20 Feb 2026 21:38:21 +0000
 !
+! 2026-02-20
+f1maximaal.nl###article-blocks > .raw-html-component
+f1maximaal.nl##.Pnvp__ad:upward(.raw-html-component)
+! 2026-02-14
+ad.cw##.ad-advertisement-link:upward(1)
+fok.nl##[id^="r89"]
 ! 2026-02-13
 regio-voetbal.nl##article [class^="r89-"]
 regio-voetbal.nl##[class^="r89-"]:upward(.component__plugin)
@@ -225,10 +231,10 @@ bnr.nl##.ad
 ! 2026-02-07
 ajaxshowtime.com##.sda
 indeleiderstrui.nl##[id^="idl_ros_"]:upward(.raw-html-component)
-f1maximaal.nl##.Pnvp__ad:upward(.raw-html-component)
 gp33.nl##div[id^="grandprix33_"]
 moviemeter.nl##.fcp-player
 moviemeter.nl##.leaderboard-bar
+moviemeter.nl##.rectangle-halfpage
 moviemeter.nl##.small-leaderboard
 buienalarm.nl##.banner
 pepper.com##div[id^="ad-sidebar"]
@@ -621,8 +627,6 @@ zakenreisnieuws.nl##[id*="web_hpa"]:upward(.block)
 zakenreisnieuws.nl##[id*="web_partners"]:upward(.block)
 zita.be###shopsuiteApplication
 zita.be##[id^="rossel-leaderboard"]:upward(.tdc-row)
-! 2023-07-22 https://github.com/EasyDutch-uBO/EasyDutch/issues/46
-fok.nl##[class$="billboard-atf"]
 ! 2023-07-12
 buttkicken.nl##a[href] > img[src*="wp.com"]:upward(.wp-block-image):not(:has(a[href*="backme.org"]))
 buttkicken.nl##p.has-small-font-size:has-text(Advertentie)
@@ -1161,7 +1165,6 @@ psv.nl##.block-sponsors--psv
 scholieren.com##.blockvertorial
 voetbalcentraal.nl##.blok:has(h3:has-text(Partners))
 bodylifebenelux.nl##.bnrrow
-nltube.com##.bottom-bns-block
 racingnews365.nl##.branded-countdown__content__partner-wrapper
 volleybal.nl##.card-banner
 volleybal.nl##.card-banner-large
@@ -1279,7 +1282,6 @@ feyenoord.nl##.totoOdds
 trucks.nl##.trucks_ros_alpha_rectangle-halfpage
 trucks.nl##.trucks_ros_leaderboard-billboard
 computable.be##.true-logo
-fok.nl##.trueTop
 buzzbie.nl##.TS_Banner_Spot
 intikkertje.nl##.vc_cta3-container
 gloednieuw.nl##.vc_raw_html.td_block_wrap.wpb_wrapper
