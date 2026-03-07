@@ -222,7 +222,6 @@ ipsosinteractive.com cdn.ipsosinteractive.com.cdnga.net * noop
 support.logmeininc.com assets.cdngetgo.com * noop
 * w.cdngslb.com * noop
 * cdninstagram.com * noop
-* static.cdninstagram.com * noop
 www.freepik.com freepik.cdnpk.net * noop
 www.slate.com static.cdnslate.com * noop
 www.speedtest.net b.cdnst.net * noop
@@ -246,8 +245,6 @@ reformatorischeomroep.nl cloudflarestream.com * noop
 yandex.com yandex-images.clstorage.net * noop
 * clyp.it * noop
 * platform.cmmtr.com * noop
-business.twitter.com cdn.cms-twdigitalassets.com * noop
-help.twitter.com cdn.cms-twdigitalassets.com * noop
 www.cnbc.com cnbcfm.com * noop
 * player.cnevids.com * noop
 arstechnica.com player.cnevids.com * noop
@@ -1043,7 +1040,6 @@ www.zdnet.com adtech.redventures.io * noop
 * tags.refinery89.com * noop
 * regiogroei.cloud * noop
 www.pcgamer.com remixd.com * noop
-github.com render.githubusercontent.com * noop
 * www.res-x.com * noop
 hubs.mozilla.com assets-prod.reticulum.io * noop
 reuters.com queso-cdn.prod.reuters.tv * noop
@@ -1052,6 +1048,7 @@ reuters.com reutersmedia.net * noop
 www.vicsdrumshop.com assets.reverbsites.com * noop
 www.researchgate.net rgstatic.net * noop
 www.dreamstime.com cs548.wac.rhocdn.net * noop
+pornhub.com rncdn7.com * noop
 tube8.net rncdn7.com * noop
 * myprivacy.roularta.net * noop
 * roxytube.com * noop
@@ -1267,6 +1264,7 @@ www.schadeauto-zoeker.nl totalparts.nl * noop
 www.schadeautos.nl totalparts.nl * noop
 * vip.townnews.com * noop
 * tradingview.com * noop
+pornhub.com media.trafficjunky.net * noop
 www.lidl.nl trafficmanager.net * noop
 * traincdn.com * noop
 www.independent.com transact.io * noop
@@ -1308,14 +1306,12 @@ www.nike.com static.www.turnto.com * noop
 www.tvgids.nl tvgidsassets.nl * noop
 * tvpage.com * noop
 * tvpagecdn.com * noop
-twitter.com twimg.com * noop
 * abs.twimg.com * noop
 * cdn.syndication.twimg.com * noop
 * ton.twimg.com * noop
 * cvp.twitch.tv * noop
 * player.twitch.tv * noop
 www.twitch.tv twitchcdn.net * noop
-* twitter.com * noop
 * platform.twitter.com * noop
 * https://publish.twitter.com/oembed?url=https://twitter.com/ script noop
 * https://syndication.twitter.com/srv/timeline-list/ sub_frame noop
@@ -1337,7 +1333,6 @@ mail.com uicdn.com * noop
 abc13.com storage.uplynk.com * noop
 * upstream.to * noop
 www.nu.nl flo.uri.sh * noop
-github.io user-images.githubusercontent.com * noop
 niburu.co userapi.com * noop
 wixsite.com usrfiles.com * noop
 * gateway.cname.ustclug.org * noop
@@ -1501,7 +1496,7 @@ store.moncler.com media.yoox.biz * noop
 * youtube-nocookie.com * noop
 * youtube.com * noop
 * youtube.googleapis.com * noop
-www.youporn.com ypncdn.com * noop
+youporn.com ypncdn.com * noop
 * s.ytimg.com * noop
 * cdn.ywxi.net * noop
 zara.com zara.net * noop
