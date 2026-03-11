@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: Dynamic rules for uBlock Origin's medium mode.
-! Last updated: 07-03-2026
+! Last updated: 11-03-2026
 !
 no-csp-reports: * true
 * * 3p-frame block
@@ -84,6 +84,8 @@ www.buienradar.be cdn.buienradar.nl * noop
 * cdn.cloudflare.net * noop
 * cdninstagram.com * noop
 www.speedtest.net b.cdnst.net * noop
+www.bruzz.be player.clevercast.com * noop
+focus-wtv.be player.clevercast.com * noop
 * ajax.cloudflare.com * noop
 * cdnjs.cloudflare.com * noop
 * challenges.cloudflare.com * noop
@@ -97,6 +99,7 @@ artsandculture.google.com embed.culturalspot.org * noop
 www.kpn.com customersaas.com * noop
 www.vkmag.com https://dailybuzz.nl/player/ script noop
 www.vkmag.com https://dailybuzz.nl/buzz/embed/ sub_frame noop
+bvdp-web.github.io dailyverses.net * noop
 * cdn.datatables.net * noop
 * g.doubleclick.net * noop
 * dpgmedia.cloud * noop
@@ -132,6 +135,11 @@ www.msn.com fdv2-t-msedge.net * noop
 www.weerplaza.nl infoplaza.fotoloods.nl * noop
 * freshlive.tv * noop
 * api.funcaptcha.com * noop
+www.y8.com game.api.gamedistribution.com * noop
+www.y8.com html5.api.gamedistribution.com * noop
+www.y8.com html5.gamedistribution.com * noop
+www.y8.com ws.gamedistribution.com * noop
+www.y8.com cdn.gamemonkey.org * noop
 * sdn.inbond.gslb.geekzu.org * noop
 * sdn.geekzu.org * noop
 account.live.com gfx.ms * noop
@@ -146,13 +154,14 @@ developers.google.com google-developers.appspot.com * noop
 www.google.com books.google.be * noop
 * maps.google.be * noop
 * apis.google.com * noop
+* https://docs.google.com/forms/ sub_frame noop
 * gstaticadssl.l.google.com * noop
 * maps-cctld.l.google.com * noop
 * youtube-ui.l.google.com * noop
 * maps.google.com * noop
 * maps-api-ssl.google.com * noop
-* www.google.com * noop
 * https://www.google.com/recaptcha/ script noop
+* https://www.google.com/maps/ sub_frame noop
 * https://www.google.com/recaptcha/ sub_frame noop
 www.google.com books.google.nl * noop
 * googleadservices.com * noop
@@ -180,11 +189,14 @@ login.anwb.nl janraincapture.com * noop
 * code.jquery.com * noop
 * jsdelivr.map.fastly.net * noop
 * cdn.jsdelivr.net * noop
+www.nu.nl https://ssl.p.jwpcdn.com/player/ script noop
+www.nu.nl content.jwplatform.com * noop
 * cdn.kaching.eu.com * noop
 * keycaptcha.com * noop
 * akamai-webcdn.kgstatic.net * noop
 * embed.kijk.nl * noop
 * static.kijk.nl * noop
+www.y8.com kongregate.com * noop
 onedrive.live.com l-msedge.net * noop
 * lib.sinaapp.com * noop
 * sdk.listenlive.co * noop
@@ -225,6 +237,7 @@ office.com login.microsoftonline.com * noop
 office365.com login.microsoftonline.com * noop
 account.activedirectory.windowsazure.com login.microsoftonline.com * noop
 * mixdrop.to * noop
+support.mozilla.org mozgcp.net * noop
 live.com msauth.net * noop
 microsoft.com msauth.net * noop
 microsoftonline.com msauth.net * noop
@@ -244,6 +257,7 @@ azuredatacentermap.azurewebsites.net a-afdentry.net.trafficmanager.net * noop
 * ccm.npo.nl * noop
 * cdn.npoplayer.nl * noop
 npo.nl web-assets.luister.npox.nl * noop
+auth.openai.com oaistatic.com * noop
 * octocaptcha.com * noop
 microsoft.com office.com * noop
 office365.com office.com * noop
@@ -279,6 +293,7 @@ pinterest.com s.pinimg.com * noop
 * widgets.pinterest.com * noop
 * player-cdn.com * noop
 * player.radio * noop
+www.y8.com bridge.playgama.com * noop
 * cdn.plyr.io * noop
 * sdk.privacy-center.org * noop
 * privacy-mgmt.com * noop
@@ -289,6 +304,9 @@ pinterest.com s.pinimg.com * noop
 * lib.baomitu.com.qh-cdn.com * noop
 * iduwdjf.qiniudns.com * noop
 * mat1.gtimg.com.tegsea.tc.qq.com * noop
+www.bruzz.be pool.cdn01.rambla.be * noop
+www.clevercast.com pool.cdn01.rambla.be * noop
+focus-wtv.be pool.cdn01.rambla.be * noop
 * cdn.ravenjs.com * noop
 * recaptcha.net * noop
 www.reddit.com redditstatic.com * noop
@@ -329,6 +347,7 @@ chamilo.etf.edu turnitin.com * noop
 x.com abs.twimg.com * noop
 * player.twitch.tv * noop
 * platform.twitter.com * noop
+* https://syndication.twitter.com/srv/timeline-profile/screen-name/ sub_frame noop
 * unpkg.com * noop
 * upcdn.b0.upaiyun.com * noop
 * gateway.cname.ustclug.org * noop
