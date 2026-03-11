@@ -1,9 +1,9 @@
 [uBlock Origin]
-! Title: My filters list in uBo
-! Description: Personal filter list (My filters)
+! Title: Ignotum's Filter list in uBO
+! Description: Ignotum's Personal Filter list (My filters)
 ! Homepage: https://github.com/Ignotum77/AdBlockFilters/
 ! Expires: 7 days
-! Last updated: 25-02-2026
+! Last updated: 11-03-2026
 !
 !PRIVACY
 !--Anti Facebook
@@ -48,10 +48,10 @@
 !--IDN protection (https://twitter.com/gorhill/status/1422914791077732352)
 ||xn--$doc,frame
 !--Blocked countries
-.cn^$doc,frame,important
-.cn.com^$doc,frame,important
-.ir^$doc,frame,important
-.ru^$doc,frame,important,domain=~sci-hub.ru
+||cn^$doc,frame,important
+||cn.com^$doc,frame,important
+||ir^$doc,frame,important
+||ru^$doc,frame,important,domain=~sci-hub.ru
 !--Other
 |http://*$3p,~image,~css,domain=~radioluisteren.fm|~radiozenders.fm
 facebook.com##+js(href-sanitizer, a[href^="https://l.facebook.com"][href*="?u=http"], ?u)
@@ -140,18 +140,13 @@ quora.com##body > div[id]:has(.modal_signup_dialog)
 news.google.com#?#h2:has-text(Fact check):upward(section)
 translate.goog##+js(aeld, /contextmenu|keyup|keydown/)
 google.*,~mail.google.com,~myaccount.google.com##a[href^="https://accounts.google.com/SignOutOptions"]:upward(2)
-www.youtube.com##ytd-browse[page-subtype="home"] ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 5 !important;)
-www.youtube.com##ytd-browse[page-subtype="home"] ytd-rich-item-renderer:style(--ytd-rich-grid-items-per-row: 5 !important; --ytd-rich-shelf-items-count: 10 !important;)
-www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 6 !important;)
-www.youtube.com##ytd-browse[page-subtype="home"] :is(ytd-rich-grid-row, #contents.ytd-rich-grid-row):style(display: contents !important)
-www.youtube.com##ytd-rich-item-renderer[rendered-from-rich-grid][is-in-first-column]:style(margin-left: calc(var(--ytd-rich-grid-item-margin)/2) !important)
-www.youtube.com##ytd-rich-grid-renderer>#contents:style(margin-left: calc(var(--ytd-rich-grid-gutter-margin)) !important)
-www.youtube.com###content.ytd-rich-section-renderer:style(margin-left: calc(var(--ytd-rich-grid-item-margin)/2) !important; margin-right: calc(var(--ytd-rich-grid-item-margin)*2.5) !important;)
 www.youtube.com#?#ytd-guide-renderer .yt-simple-endpoint[title="Shorts"]:upward(ytd-guide-entry-renderer)
 www.youtube.com#?#ytd-mini-guide-renderer .ytd-mini-guide-entry-renderer[title="Shorts"]:upward(ytd-mini-guide-entry-renderer)
 www.youtube.com###content > .ytd-rich-section-renderer.style-scope:has(a[href^="/shorts/"])
+www.youtube.com##ytd-search #video-title[href^="/shorts/"]:upward(ytd-video-renderer)
 www.youtube.com##ytd-search #contents > grid-shelf-view-model:has(a[href^="/shorts/"])
 www.youtube.com##.ytd-watch-metadata .ytd-info-panel-content-renderer.content:upward(.ytd-watch-metadata)
+music.youtube.com##tp-yt-paper-dialog.ytmusic-popup-container:has-text(Music Premium)
 y.com.sb,yewtu.be###player .vjs-icon-share.vjs-share-control
 y.com.sb,yewtu.be###player .vjs-remaining-time
 y.com.sb,yewtu.be###contents #playlist > .playlist-restricted:style(height: 560px !important;)
@@ -166,6 +161,7 @@ google.*##div[class^="gb_"][data-cbh*="consent.google."]
 google.*#?#div[role="dialog"]:has([class]:has-text(cookies):has([href*="policies.google.com"]))
 www.google.*,www.youtube.com###consent-bump
 www.google.*,www.youtube.com##[id="dialog"][class*="ytd-consent-bump"]
+www.google.*##+js(trusted-click-element, 'div[role="dialog"] [class="QS5gu sy4vM"]')
 consent.youtube.com##+js(trusted-click-element, 'form[action="https://consent.youtube.com/save"]:nth-of-type(2) button', , 270)
 ! youtube.com##+js(trusted-set-cookie, SOCS, CAISNQgREitib3FfaWRlbnRpdHlmcm9udGVuZHVpc2VydmVyXzIwMjYwMjAyLjA2X3AwGgJlbiADGgYIgPWEzAY, , , reload, 1)
 www.youtube.com##.opened
@@ -174,13 +170,16 @@ www.youtube.com##.ytd-consent-bump-v2-renderer
 !--Anti-Adblock
 diffchecker.com##+js(nostif, adStillHere)
 radarbox.com##+js(set, ads_enabled, true)
-startpage.com##.support-banner
+@@||startpage.com^$ghide
+@@||startpage.com^$script,1p
+startpage.com#@#.a-bg-result
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=storage.y8.com
 @@||browserleaks.com/img/*.gif?q$image,1p
 @@||s_a_f_e..0verflow.$image,domain=browserleaks.com
 @@||browserleaks.com$ghide
 @@||browserleaks.com$removeparam
 @@||digilibraries.com/ad-scroll.js$script,1p
+pornhub.com##+js(acis, userABMessage)
 !--Anti Contextmenu, Selection and Copying
 debijbel.nl,theorieexamen.nl##*:style(user-select: text !important; -moz-user-select: text !important;)
 ! *##::selection:style(background-color: Highlight !important; color: HighlightText !important;)
@@ -361,8 +360,8 @@ logos.com##.entry-share
 
 ! Set cookies or click element for cookies
 ! https://github.com/gorhill/uBlock/wiki/Resources-Library
-autobahn.eu,autoblog.nl,babybytes.nl,beaumonde.nl,bicycling.nl,bright.nl,dingenvoorvrouwen.nl,elegance.nl,geenstijl.nl,golfersmagazine.nl,gezondnu.nl,gpfans.com,grazia.nl,happyinshape.nl,marieclaire.nl,menshealth.nl,nautique.nl,noorderland.nl,nouveau.nl,panorama.nl,revu.nl,runners.nl,tipsenweetjes.nl,upcoming.nl,vi.nl,voetbalnieuws.nl,voetbalprimeur.nl,wielerrevue.nl,womenshealthmag.nl,zeilen.nl,ajax1.nl,feanonline.nl,feyenoordpings.nl,fcgfans.nl,nacfans.nl,psvfans.nl,twentefans.nl,utrechtfans.nl,vitesseinside.nl,voetbalverslaafd.nl,vrouwenvoetbalnieuws.nl##+js(trusted-click-element, a.cmpboxbtnyescustom[role="button"], , 1000)
-myprivacy.dpgmedia.nl,myprivacy.dpgmedia.be,myprivacy.dpgmediagroup.net,www.dpgmediagroup.com,ad.nl,autotrack.nl,autoweek.nl,autowereld.nl,bd.nl,bndestem.nl,businesswise.nl,cinenews.be,demorgen.be,deondernemer.nl,destentor.nl,ed.nl,flair.nl,gaspedaal.nl,gelderlander.nl,hln.be,humo.be,joe.nl,libelle.nl,margriet.nl,nu.nl,oudersvannu.nl,parool.nl,pzc.nl,qmusic.nl,story.nl,trouw.nl,tubantia.nl,tweakers.net,veronicasuperguide.nl,volkskrant.nl,vtwonen.be,vtwonen.nl,zozitdat.nl##+js(trusted-click-element, '#pg-shadow-host-dom >>> button#pg-configure-btn, #pg-shadow-host-dom >>> #purpose-row-SOCIAL_MEDIA input[type="checkbox"], #pg-shadow-host-dom >>> button#pg-save-preferences-btn', , 1000)
+autobahn.eu,autoblog.nl,babybytes.nl,beaumonde.nl,bicycling.nl,bright.nl,dingenvoorvrouwen.nl,elegance.nl,geenstijl.nl,golfersmagazine.nl,gezondnu.nl,gpfans.com,grazia.nl,happyinshape.nl,marieclaire.nl,menshealth.nl,nautique.nl,noorderland.nl,nouveau.nl,panorama.nl,revu.nl,runners.nl,tipsenweetjes.nl,upcoming.nl,vi.nl,voetbalnieuws.nl,voetbalprimeur.nl,wielerrevue.nl,womenshealthmag.nl,zeilen.nl,ajax1.nl,feanonline.nl,feyenoordpings.nl,fcgfans.nl,nacfans.nl,psvfans.nl,twentefans.nl,utrechtfans.nl,vitesseinside.nl,voetbalverslaafd.nl,vrouwenvoetbalnieuws.nl##+js(trusted-click-element, a.cmpboxbtnyescustom[role="button"], , 500)
+myprivacy.dpgmedia.nl,myprivacy.dpgmedia.be,myprivacy.dpgmediagroup.net,www.dpgmediagroup.com,ad.nl,autotrack.nl,autoweek.nl,autowereld.nl,bd.nl,bndestem.nl,businesswise.nl,cinenews.be,demorgen.be,deondernemer.nl,destentor.nl,ed.nl,flair.nl,gaspedaal.nl,gelderlander.nl,hln.be,humo.be,joe.nl,libelle.nl,margriet.nl,nu.nl,oudersvannu.nl,parool.nl,pzc.nl,qmusic.nl,story.nl,trouw.nl,tubantia.nl,tweakers.net,veronicasuperguide.nl,volkskrant.nl,vtwonen.be,vtwonen.nl,zozitdat.nl##+js(trusted-click-element, '#pg-shadow-host-dom >>> button#pg-configure-btn, #pg-shadow-host-dom >>> #purpose-row-SOCIAL_MEDIA input[type="checkbox"], #pg-shadow-host-dom >>> button#pg-save-preferences-btn', , 500)
 myprivacy.dpgmedia.nl,myprivacy.dpgmedia.be,myprivacy.dpgmediagroup.net,www.dpgmediagroup.com,ad.nl,autotrack.nl,autoweek.nl,autowereld.nl,bd.nl,bndestem.nl,businesswise.nl,cinenews.be,demorgen.be,deondernemer.nl,destentor.nl,ed.nl,flair.nl,gaspedaal.nl,gelderlander.nl,hln.be,humo.be,joe.nl,libelle.nl,margriet.nl,nu.nl,oudersvannu.nl,parool.nl,pzc.nl,qmusic.nl,story.nl,trouw.nl,tubantia.nl,tweakers.net,veronicasuperguide.nl,volkskrant.nl,vtwonen.be,vtwonen.nl,zozitdat.nl###pg-shadow-host-dom
 myprivacy.dpgmedia.nl,myprivacy.dpgmedia.be,myprivacy.dpgmediagroup.net,www.dpgmediagroup.com,ad.nl,autotrack.nl,autoweek.nl,autowereld.nl,bd.nl,bndestem.nl,businesswise.nl,cinenews.be,demorgen.be,deondernemer.nl,destentor.nl,ed.nl,flair.nl,gaspedaal.nl,gelderlander.nl,hln.be,humo.be,joe.nl,libelle.nl,margriet.nl,nu.nl,oudersvannu.nl,parool.nl,pzc.nl,qmusic.nl,story.nl,trouw.nl,tubantia.nl,tweakers.net,veronicasuperguide.nl,volkskrant.nl,vtwonen.be,vtwonen.nl,zozitdat.nl##body[style="overflow: hidden;"]:style(overflow: auto !important;)
 bingofm.nl,denhaagfm.nl,gld.nl,l1.nl,omropfryslan.nl,omroepwest.nl,omroepzeeland.nl,oost.nl,rijnmond.nl,rtvdrenthe.nl,rtvnoord.nl,rtvutrecht.nl##+js(trusted-click-element, #consent-plugin .action-button[aria-label="Alles accepteren"])
@@ -370,8 +369,11 @@ bingofm.nl,denhaagfm.nl,gld.nl,l1.nl,omropfryslan.nl,omroepwest.nl,omroepzeeland
 100p.nl,autovisie.nl,balkstercourant.nl,bedrock.nl,culy.nl,denoordoostpolder.nl,dumpert.nl,dvhn.nl,familieberichten.nl,flevopost.nl,frieschdagblad.nl,krant.gezinsbode.nl,gooieneemlander.nl,groupdeal.nl,gva.be,haarlemsdagblad.nl,hoogeveenschecourant.nl,ijmuidercourant.nl,jmouders.nl,lc.nl,leidschdagblad.nl,limburger.nl,manners.nl,meppelercourant.nl,metronieuws.nl,nieuweooststellingwerver.nl,nieuwsblad.be,noordhollandsdagblad.nl,nsmbl.nl,radioveronica.nl,reclamefolder.nl,sikkom.nl,slam.nl,speurders.nl,steenwijkercourant.nl,stellingwerf.nl,sublime.nl,telegraaf.nl,uitservice.nl,uittipslimburg.nl,vanplan.nl,want.nl##+js(trusted-click-element, .didomi-popup-open button#didomi-notice-agree-button)
 reddit.com###data-protection-consent-dialog
 reddit.com##+js(trusted-set-cookie, eu_cookie, '{%22opted%22:true%2C%22nonessential%22:false}')
+stackoverflow.com###onetrust-consent-sdk
+stackoverflow.com##+js(trusted-click-element, #onetrust-consent-sdk #onetrust-reject-all-handler)
 www.ing.nl##+js(trusted-set-cookie, COOKIE_PREF, ANL_0|PSN_0|PRTN_0)
 
 ! Set cookies or click element for other preferences
 mijn.ing.nl##+js(trusted-set-cookie, lang, nl-NL)
-
+my.nextdns.io##+js(trusted-set-local-storage-item, theme, dark)
+ocr365.com##+js(trusted-set-cookie, trp_language, nl_NL)
