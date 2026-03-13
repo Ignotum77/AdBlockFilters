@@ -25,7 +25,7 @@ jobs:
           fi
           exit 0
       - name: Clone EasyDutch as Back-up
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Copy EasyDutch to AdBlockFilters
         run: |
           TMPFILE=$(mktemp -d)
