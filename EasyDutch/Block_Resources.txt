@@ -1,7 +1,9 @@
 ! Title: Block Resources
 ! Description: Filters to block specific URLs on Dutch websites
-! Last updated: Mon, 02 Mar 2026 19:07:49 +0000
+! Last updated: Sun, 08 Mar 2026 17:29:07 +0000
 !
+! 2026-03-08
+||cdn.racingnews365.com/*/images/logos/partners/$image,domain=racingnews365.nl
 ! 2026-03-02
 ||keukenkopenduitsland.nl/wp-content/uploads/*.gif$domain=goedkoopstekeukensduitsland.nl
 ! 2026-02-26
@@ -132,7 +134,6 @@ avrotros.nl,bnnvara.nl,npo.nl,npodoc.nl,npokennis.nl,vpro.nl##+js(json-prune-fet
 ! 2023-11-01
 ||feyenoord.nl/*/media/*partnerships/$image
 ||nnieuws.be/sites/default/files/images/ads/
-||racingnews365.nl/*/json/unibet/bet-offers.json$xhr,1p
 ! 2023-10-31
 ||admin.ditjesendatjes.nl/wp-content/uploads/Vignet_Cover$image
 ||admin.ditjesendatjes.nl/wp-content/uploads/*-footer-DenD.png$image
@@ -169,8 +170,6 @@ omroepalmere.nl/wp-content/uploads/*/vacature-noordpool$image,domain=omroepalmer
 ||autonieuws.be/templates/yootheme/cache/*/BEL_March23_B2C_XCEED_800x172_nl-*$image
 ! 2023-07-01
 ||webstick.nl/images/images-ads/
-! 2023-06-29
-||i0.wp.com/www.appletips.nl/wp-content/uploads/hm.jpg$image
 ! 2023-06-09
 ||onlinecorrectie.nl/cnc/$image
 ! 2023-05-26
@@ -263,7 +262,6 @@ omroepalmere.nl/wp-content/uploads/*/vacature-noordpool$image,domain=omroepalmer
 ||itnijs.frl/wp-content/uploads/*/adfertinsje
 ! 2022-07-01
 ||handbalstartpunt.nl/*/banner$image
-||racingnews365.nl/images/logos/odds/unibet/
 ||beveiligingnieuws.nl/banners/$image
 ||beveiligingnieuws.nl/wp-content/uploads/*/*.gif$image
 ||beveiligingnieuws.nl/wp-content/uploads/*webbanner$image
@@ -337,12 +335,6 @@ omroepalmere.nl/wp-content/uploads/*/vacature-noordpool$image,domain=omroepalmer
 ! 2022-01-18
 ||wettelijke-feestdagen.nl/Images/advertentie$image
 ||wettelijke-feestdagen.nl/Images/banner$image
-! 2022-01-14
-||digitaalburg.com/rn02/wp-content/uploads/*/Roel.jpg
-||digitaalburg.com/rn02/wp-content/uploads/*/uitwaard21.jpg
-||digitaalburg.com/rn02/wp-content/uploads/*/Vacature-
-||digitaalburg.com/rn02/wp-content/uploads/*/verti*
-||digitaalburg.com/rn02/wp-content/uploads/*/webbanner-
 ! 2022-01-13
 /^https?:\/\/statics\.(?:ad|bd|bndestem|destentor|ed|gelderlander|hln|tubantia|pzc)\.(?:nl|be)\/js\/advertising-[\w]+\.js$/$script
 ||2link.be/banners/
@@ -381,8 +373,6 @@ omroepalmere.nl/wp-content/uploads/*/vacature-noordpool$image,domain=omroepalmer
 ||dating.*.auroraobjects.eu/files/bans/*$image
 ||debestevpn.nl/wp-content/*-banner.
 ||denachtvlinders.nl/wp-content/uploads/*/bol-*.gif$image
-||despirituelewereld.be/wp-content/uploads/*/DrukZo-Korting-*$image
-||despirituelewereld.be/wp-content/uploads/*/hook-bottom-info-coronavirus*$image
 ||dewereldmorgen.be/wp-content/banners/$image
 ||digitalaudience.io/bakery/pix/$image,3p
 ||dutchcryptotalk.com/wp-content/uploads/*/bitvavo
@@ -446,7 +436,6 @@ omroepalmere.nl/wp-content/uploads/*/vacature-noordpool$image,domain=omroepalmer
 ||psv.nl/upload/*_Soccerlab_Logo.png$image
 ||psv.nl/upload/*SponsorVrouwenGOED-300x75.jpg$image
 ||racexpress.nl/advertising/$image
-||racingnews365.nl/images/logos/partners/*/$image,1p
 ||radioacacia.nl/sponsoren/
 ||radiolelystad.nl/images/stories/Banners/
 ||radiovisie.eu/wp-content/banners/
@@ -465,11 +454,9 @@ omroepalmere.nl/wp-content/uploads/*/vacature-noordpool$image,domain=omroepalmer
 ||stepstone.be/*?event=widgettool.$3p
 ||swpportal.com/upload/squarebanners/
 ||te-les-koop.nl/images/B_
-||tennisplaza.be/wp-content/uploads/*/tennisdirect-*$image,1p
 ||totaalwijzer.nl/widget/$3p
 ||touretappe.nl/images/xtra/
 ||tradeidee.nl/banners/
-||tweedehandschristelijkeboeken.nl/wp-content/uploads/*/gratis-eo-visie.png$image
 ||ucl-voetbal.nl/derden/
 ||uecl-voetbal.nl/derden/
 ||uel-voetbal.nl/derden/
