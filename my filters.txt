@@ -3,7 +3,7 @@
 ! Description: Ignotum's Personal Filter list (My filters)
 ! Homepage: https://github.com/Ignotum77/AdBlockFilters/
 ! Expires: 7 days
-! Last updated: 11-03-2026
+! Last updated: 16-03-2026
 !
 !PRIVACY
 !--Anti Facebook
@@ -143,6 +143,8 @@ google.*,~mail.google.com,~myaccount.google.com##a[href^="https://accounts.googl
 www.youtube.com#?#ytd-guide-renderer .yt-simple-endpoint[title="Shorts"]:upward(ytd-guide-entry-renderer)
 www.youtube.com#?#ytd-mini-guide-renderer .ytd-mini-guide-entry-renderer[title="Shorts"]:upward(ytd-mini-guide-entry-renderer)
 www.youtube.com###content > .ytd-rich-section-renderer.style-scope:has(a[href^="/shorts/"])
+www.youtube.com##ytd-watch-next-secondary-results-renderer ytd-reel-shelf-renderer.ytd-watch-next-secondary-results-renderer
+www.youtube.com##ytd-watch-next-secondary-results-renderer a[href^="/shorts/"]:upward(.ytd-watch-next-secondary-results-renderer)
 www.youtube.com##ytd-search #video-title[href^="/shorts/"]:upward(ytd-video-renderer)
 www.youtube.com##ytd-search #contents > grid-shelf-view-model:has(a[href^="/shorts/"])
 www.youtube.com##.ytd-watch-metadata .ytd-info-panel-content-renderer.content:upward(.ytd-watch-metadata)
@@ -156,30 +158,22 @@ mediawiki.org,wikibooks.org,wikidata.org,wikieducator.org,wikimedia.org,wikinews
 ||ogs.google.*/widget/callout*&origin=*.google.*=callout
 www.youtube.com##.ytd-popup-container > .ytd-mealbar-promo-renderer
 consent.google.com##+js(trusted-click-element, button[jsname="tWT92d"])
+consent.youtube.com##+js(trusted-click-element, 'form[action="https://consent.youtube.com/save"]:nth-of-type(2) button', , 270)
 google.com###cookieBar
 google.*##div[class^="gb_"][data-cbh*="consent.google."]
 google.*#?#div[role="dialog"]:has([class]:has-text(cookies):has([href*="policies.google.com"]))
 www.google.*,www.youtube.com###consent-bump
 www.google.*,www.youtube.com##[id="dialog"][class*="ytd-consent-bump"]
 www.google.*##+js(trusted-click-element, 'div[role="dialog"] [class="QS5gu sy4vM"]')
-consent.youtube.com##+js(trusted-click-element, 'form[action="https://consent.youtube.com/save"]:nth-of-type(2) button', , 270)
-! youtube.com##+js(trusted-set-cookie, SOCS, CAISNQgREitib3FfaWRlbnRpdHlmcm9udGVuZHVpc2VydmVyXzIwMjYwMjAyLjA2X3AwGgJlbiADGgYIgPWEzAY, , , reload, 1)
 www.youtube.com##.opened
 www.youtube.com##.ytd-consent-bump-v2-renderer
-! www.youtube.com##yt-upsell-dialog-renderer.style-scope
 !--Anti-Adblock
 diffchecker.com##+js(nostif, adStillHere)
 radarbox.com##+js(set, ads_enabled, true)
 @@||startpage.com^$ghide
 @@||startpage.com^$script,1p
 startpage.com#@#.a-bg-result
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=storage.y8.com
-@@||browserleaks.com/img/*.gif?q$image,1p
-@@||s_a_f_e..0verflow.$image,domain=browserleaks.com
-@@||browserleaks.com$ghide
-@@||browserleaks.com$removeparam
 @@||digilibraries.com/ad-scroll.js$script,1p
-pornhub.com##+js(acis, userABMessage)
 !--Anti Contextmenu, Selection and Copying
 debijbel.nl,theorieexamen.nl##*:style(user-select: text !important; -moz-user-select: text !important;)
 ! *##::selection:style(background-color: Highlight !important; color: HighlightText !important;)
