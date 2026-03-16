@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: Dynamic rules for uBlock Origin's medium mode.
-! Last updated: 11-03-2026
+! Last updated: 16-03-2026
 !
 no-csp-reports: * true
 * * 3p-frame block
@@ -36,6 +36,7 @@ www.icloud.com cdn.apple-livephotoskit.com * noop
 dataexplorer.azure.com ade.applicationinsights.io * noop
 www.dropbox.com arkoselabs.com * noop
 signup.live.com arkoselabs.com * noop
+www.hardnieuws.nl play.asmedia.nl * noop
 microsoft.com aspnetcdn.com * noop
 * ajax.aspnetcdn.com * noop
 * assetsadobe.com * noop
@@ -154,12 +155,15 @@ developers.google.com google-developers.appspot.com * noop
 www.google.com books.google.be * noop
 * maps.google.be * noop
 * apis.google.com * noop
+www.youtube.com docs.google.com * noop
 * https://docs.google.com/forms/ sub_frame noop
 * gstaticadssl.l.google.com * noop
 * maps-cctld.l.google.com * noop
+www.youtube.com www3.l.google.com * noop
 * youtube-ui.l.google.com * noop
 * maps.google.com * noop
 * maps-api-ssl.google.com * noop
+www.youtube.com www.google.com * noop
 * https://www.google.com/recaptcha/ script noop
 * https://www.google.com/maps/ sub_frame noop
 * https://www.google.com/recaptcha/ sub_frame noop
@@ -171,6 +175,7 @@ www.microcenter.com www.googletagmanager.com * noop
 * googletagservices.com * noop
 google.com googleusercontent.com * noop
 * lh6.googleusercontent.com * noop
+www.youtube.com www-onepick-opensocial.googleusercontent.com * noop
 www.ad.nl widgets.sports.gracenote.com * noop
 * gstatic.com * noop
 * https://www.gstatic.com/recaptcha/ script noop
@@ -237,6 +242,7 @@ office.com login.microsoftonline.com * noop
 office365.com login.microsoftonline.com * noop
 account.activedirectory.windowsazure.com login.microsoftonline.com * noop
 * mixdrop.to * noop
+* mmcdn.nl * noop
 support.mozilla.org mozgcp.net * noop
 live.com msauth.net * noop
 microsoft.com msauth.net * noop
@@ -280,6 +286,7 @@ sharepoint.com office365.com * noop
 windowsazure.com office365.com * noop
 login.microsoftonline.com wpc.omegacdn.net * noop
 microsoft.com onestore.ms * noop
+www.radioreflex.be ecdn.onlineradiobox.com * noop
 * cdn.optimizely.com * noop
 * dualstack.osff.map.fastly.net * noop
 * pagecdn.io * noop
@@ -359,6 +366,7 @@ microsoft.com wpc.v0cdn.net * noop
 * player.vimeo.com * noop
 * vimeocdn.com * noop
 sporza.be player.vrt.be * noop
+chatgpt.com web-sandbox.oaiusercontent.com * noop
 www.mozilla.ai cdn.prod.website-files.com * noop
 wetransfer.com prod-cdn.wetransfer.net * noop
 whatsapp.com whatsapp.net * noop
