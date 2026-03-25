@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: Dynamic rules for uBlock Origin's medium mode.
-! Last updated: 16-03-2026
+! Last updated: 25-03-2026
 !
 no-csp-reports: * true
 * * 3p-frame block
@@ -14,9 +14,12 @@ www.msn.com prd.aadg.trafficmanager.net * noop
 www.skype.com prd.aadg.trafficmanager.net * noop
 account.activedirectory.windowsazure.com prd.aadg.trafficmanager.net * noop
 * addthis.com * noop
+adguard-dns.io adguardcdn.com * noop
 * entitlement.auth.adobe.com * noop
 * sp.auth.adobe.com * noop
 * assets.adobedtm.com * noop
+www.telegraaf.nl player.agnoplay.com * noop
+xhamster.com ahacdn.me * noop
 * vo.aicdn.com * noop
 * ajax.googleapis.com * noop
 * akadns.net * noop
@@ -91,9 +94,11 @@ focus-wtv.be player.clevercast.com * noop
 * cdnjs.cloudflare.com * noop
 * challenges.cloudflare.com * noop
 * cloudfront.net * noop
+www.consumentenbond.nl consumentenbond-res.cloudinary.com * noop
 * quantcast.mgr.consensu.org * noop
 * consentmanager.net * noop
 google.com content.googleapis.com * noop
+www.gls-info.nl consent.cookiebot.com * noop
 * cdn.cookielaw.org * noop
 * code.createjs.com * noop
 artsandculture.google.com embed.culturalspot.org * noop
@@ -149,6 +154,7 @@ www.msn.com mem.gfx.ms * noop
 office.com mem.gfx.ms * noop
 * gitcdn.github.io * noop
 github.com githubassets.com * noop
+www.gls-info.nl spotlight.glsnxt.com * noop
 livejapan.com rimage.gnst.jp * noop
 * google-analytics.com * noop
 developers.google.com google-developers.appspot.com * noop
@@ -189,11 +195,13 @@ www.marktplaats.nl hzcdn.io * noop
 www.weerplaza.nl assets.infoplaza.io * noop
 www.ing.nl cdn.ing.com * noop
 * instagram.com * noop
+www.etf.edu e.issuu.com * noop
 login.anwb.nl janraincapture.com * noop
 * apps.bdimg.jomodns.com * noop
 * code.jquery.com * noop
 * jsdelivr.map.fastly.net * noop
 * cdn.jsdelivr.net * noop
+www.hartvannederland.nl jwpcdn.com * noop
 www.nu.nl https://ssl.p.jwpcdn.com/player/ script noop
 www.nu.nl content.jwplatform.com * noop
 * cdn.kaching.eu.com * noop
@@ -285,6 +293,7 @@ office.com office365.com * noop
 sharepoint.com office365.com * noop
 windowsazure.com office365.com * noop
 login.microsoftonline.com wpc.omegacdn.net * noop
+www.ad.nl omny.fm * noop
 microsoft.com onestore.ms * noop
 www.radioreflex.be ecdn.onlineradiobox.com * noop
 * cdn.optimizely.com * noop
@@ -294,6 +303,7 @@ www.radioreflex.be ecdn.onlineradiobox.com * noop
 * c.paypal.com * noop
 * www.paypal.com * noop
 * paypalobjects.com * noop
+pornhub.com phncdn.com * noop
 www.kpn.com pingvp.com * noop
 pinterest.com s.pinimg.com * noop
 * assets.pinterest.com * noop
@@ -302,6 +312,7 @@ pinterest.com s.pinimg.com * noop
 * player.radio * noop
 www.y8.com bridge.playgama.com * noop
 * cdn.plyr.io * noop
+www.postnl.be postnl.nl * noop
 * sdk.privacy-center.org * noop
 * privacy-mgmt.com * noop
 * cmp-consent-tool.privacymanager.io * noop
@@ -318,6 +329,7 @@ focus-wtv.be pool.cdn01.rambla.be * noop
 * recaptcha.net * noop
 www.reddit.com redditstatic.com * noop
 * tags.refinery89.com * noop
+pornhub.com phncdn.com.sds.rncdn7.com * noop
 * rsc.cdn77.org * noop
 * mathjax.rstudio.com * noop
 * embed.rtl.nl * noop
@@ -327,6 +339,8 @@ www.microsoft.com c.s-microsoft.com * noop
 office.com c.s-microsoft.com * noop
 microsoft.com s-msft.com * noop
 nos.nl cdn.scaliainfra.nl * noop
+www.scholieren.com media.scholieren.net * noop
+www.softonic.nl assets.sftcdn.net * noop
 * developer.n.shifen.com * noop
 microsoft365.com sigmacdn.net * noop
 office.com wpc.sigmacdn.net * noop
@@ -346,6 +360,7 @@ outlook.office.com res.public.onecdn.static.microsoft * noop
 * playerservices.live.streamtheworld.com * noop
 * t-msedge.net * noop
 library.etf.edu teamup.com * noop
+www.tiktok.com tiktokcdn-eu.com * noop
 www.eset.com tm-azurefd.net * noop
 translate.google.com translate.goog * noop
 * consent.trustarc.com * noop
@@ -361,6 +376,7 @@ x.com abs.twimg.com * noop
 * ajax.proxy.ustclug.org * noop
 install.appcenter.ms v0cdn.net * noop
 microsoft.com wpc.v0cdn.net * noop
+www.gls-info.nl cname.vercel-dns.com * noop
 * embed.viaplay.com * noop
 * embed.videodelivery.net * noop
 * player.vimeo.com * noop
@@ -379,6 +395,7 @@ login.microsoftonline.com account.activedirectory.windowsazure.com * noop
 * s2.wp.com * noop
 * www.googleapis.com * noop
 * x.com * noop
+xhamster.com xhcdn.com * noop
 * yandex.st * noop
 * yastatic.net * noop
 * youtu.be * noop
