@@ -3,7 +3,7 @@
 ! Description: Ignotum's Personal Filter list (My filters)
 ! Homepage: https://github.com/Ignotum77/AdBlockFilters/
 ! Expires: 7 days
-! Last updated: 25-03-2026
+! Last updated: 27-03-2026
 !
 !PRIVACY
 !--Anti Facebook
@@ -32,19 +32,13 @@
 !--Gmail tracking
 /cleardot.gif$image,xhr,redirect=1x1.gif
 !--Block Outsider Intrusion into LAN
-/^\w+:\/\/10\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-/^\w+:\/\/127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-/^\w+:\/\/169\.254\.(?:[1-9]\d?|1\d{2}|2(?:[0-4]\d|5[0-4]))\.(?:[1-9]?\d|1\d{2}|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-/^\w+:\/\/172\.(?:1[6-9]|2\d|3[01])(?:\.(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))){2}[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-/^\w+:\/\/192\.168(?:\.(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))){2}[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-/^\w+:\/\/\[f(?:[cd][0-9a-f]|e[89a-f])[0-9a-f]:[0-9a-f:]+\][:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-/^\w+:\/\/\[::ffff:(?:7f[0-9a-f]{2}|a[0-9a-f]{2}|ac1[0-9a-f]|c0a8|a9fe):[0-9a-f]{1,4}\][:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-||[::]^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-||[::1]^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-||local^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-||localhost^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+*$strict3p,ipaddress=lan,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||0.0.0.0^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||[::]^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||internal^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||local^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 @@||127.0.0.1^*/intel/$xhr,domain=www.intel.*
+@@||login.microsoftonline.com/*/oauth2/$xhr,domain=azure.com|m365.cloud.microsoft|make.powerautomate.com|microsoft.com|outlook.office.com
 !--IDN protection (https://twitter.com/gorhill/status/1422914791077732352)
 ||xn--$doc,frame
 !--Blocked countries
@@ -52,14 +46,6 @@
 ||cn.com^$doc,frame,important
 ||ir^$doc,frame,important
 ||ru^$doc,frame,important,domain=~sci-hub.ru
-!--Other
-! |http://*$3p,~image,~css,domain=~radioluisteren.fm|~radiozenders.fm
-facebook.com##+js(href-sanitizer, a[href^="https://l.facebook.com"][href*="?u=http"], ?u)
-github.com##+js(href-sanitizer, a[href^="https://adguardteam.github.io/AnonymousRedirect/redirect.html?url=", ?url)
-instagram.com##+js(href-sanitizer, a[href^="https://l.instagram.com/?u="], ?u)
-microsoft.com##+js(href-sanitizer, a[href*=".safelinks.protection.outlook.com/?url="], ?url)
-mozilla.org##+js(href-sanitizer, a[href*="outgoing.prod."][title], [title])
-youtube.com##+js(href-sanitizer, a[href^="https://www.youtube.com/redirect?"], ?q)
 
 !ANNOYANCES
 !--Annoyances (uBlock and me)
@@ -146,10 +132,13 @@ www.youtube.com#?#ytd-guide-renderer .yt-simple-endpoint[title="Shorts"]:upward(
 www.youtube.com#?#ytd-mini-guide-renderer .ytd-mini-guide-entry-renderer[title="Shorts"]:upward(ytd-mini-guide-entry-renderer)
 www.youtube.com###content > .ytd-rich-section-renderer.style-scope:has(a[href^="/shorts/"])
 www.youtube.com##ytd-watch-next-secondary-results-renderer ytd-reel-shelf-renderer.ytd-watch-next-secondary-results-renderer
-www.youtube.com##ytd-watch-next-secondary-results-renderer a[href^="/shorts/"]:upward(.ytd-watch-next-secondary-results-renderer)
+! www.youtube.com##ytd-watch-next-secondary-results-renderer a[href^="/shorts/"]:upward(.ytd-watch-next-secondary-results-renderer)
 www.youtube.com##ytd-search #video-title[href^="/shorts/"]:upward(ytd-video-renderer)
 www.youtube.com##ytd-search #contents > grid-shelf-view-model:has(a[href^="/shorts/"])
 www.youtube.com##.ytd-watch-metadata .ytd-info-panel-content-renderer.content:upward(.ytd-watch-metadata)
+www.youtube.com##.ytd-watch-metadata #dismissible:has-text(/Music|Muziek/)
+www.youtube.com##.ytd-watch-metadata ytd-reel-shelf-renderer
+www.youtube.com##.ytd-watch-metadata #video-summary
 www.youtube.com###comment .translate-button:style(font-size:1rem !important; line-height: 1rem !important;)
 www.youtube.com,music.youtube.com##.ytp-overlays-container .ytp-cards-teaser
 music.youtube.com##tp-yt-paper-dialog.ytmusic-popup-container:has-text(Music Premium)
