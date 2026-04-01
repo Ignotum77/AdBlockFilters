@@ -3,7 +3,7 @@
 ! Description: Ignotum's Personal Filter list (My filters)
 ! Homepage: https://github.com/Ignotum77/AdBlockFilters/
 ! Expires: 7 days
-! Last updated: 27-03-2026
+! Last updated: 01-04-2026
 !
 !PRIVACY
 !--Anti Facebook
@@ -128,11 +128,13 @@ quora.com##body > div[id]:has(.modal_signup_dialog)
 news.google.com#?#h2:has-text(Fact check):upward(section)
 translate.goog##+js(aeld, /contextmenu|keyup|keydown/)
 google.*,~mail.google.com,~myaccount.google.com##a[href^="https://accounts.google.com/SignOutOptions"]:upward(2)
-www.youtube.com#?#ytd-guide-renderer .yt-simple-endpoint[title="Shorts"]:upward(ytd-guide-entry-renderer)
-www.youtube.com#?#ytd-mini-guide-renderer .ytd-mini-guide-entry-renderer[title="Shorts"]:upward(ytd-mini-guide-entry-renderer)
+www.youtube.com##yt-notification-action-renderer.ytd-popup-container > #toast:has-text(Last van onderbrekingen)
+www.youtube.com##ytd-guide-renderer .yt-simple-endpoint[title="Shorts"]:upward(ytd-guide-entry-renderer)
+www.youtube.com##ytd-mini-guide-renderer .ytd-mini-guide-entry-renderer[title="Shorts"]:upward(ytd-mini-guide-entry-renderer)
 www.youtube.com###content > .ytd-rich-section-renderer.style-scope:has(a[href^="/shorts/"])
 www.youtube.com##ytd-watch-next-secondary-results-renderer ytd-reel-shelf-renderer.ytd-watch-next-secondary-results-renderer
-! www.youtube.com##ytd-watch-next-secondary-results-renderer a[href^="/shorts/"]:upward(.ytd-watch-next-secondary-results-renderer)
+www.youtube.com##ytd-watch-next-secondary-results-renderer a[href^="/shorts/"]:upward(yt-lockup-view-model)
+www.youtube.com##ytd-watch-next-secondary-results-renderer yt-thumbnail-badge-view-model:has-text(Shorts):upward(yt-lockup-view-model)
 www.youtube.com##ytd-search #video-title[href^="/shorts/"]:upward(ytd-video-renderer)
 www.youtube.com##ytd-search #contents > grid-shelf-view-model:has(a[href^="/shorts/"])
 www.youtube.com##.ytd-watch-metadata .ytd-info-panel-content-renderer.content:upward(.ytd-watch-metadata)
@@ -166,6 +168,7 @@ radarbox.com##+js(set, ads_enabled, true)
 @@||startpage.com^$ghide
 @@||startpage.com^$script,1p
 startpage.com#@#.a-bg-result
+startpage.com##.ex-cl
 @@||digilibraries.com/ad-scroll.js$script,1p
 !--Anti Contextmenu, Selection and Copying
 debijbel.nl,theorieexamen.nl##*:style(user-select: text !important; -moz-user-select: text !important;)
@@ -352,17 +355,27 @@ myprivacy.dpgmedia.nl,myprivacy.dpgmedia.be,myprivacy.dpgmediagroup.net,www.dpgm
 myprivacy.dpgmedia.nl,myprivacy.dpgmedia.be,myprivacy.dpgmediagroup.net,www.dpgmediagroup.com,ad.nl,autotrack.nl,autoweek.nl,autowereld.nl,bd.nl,bndestem.nl,businesswise.nl,cinenews.be,demorgen.be,deondernemer.nl,destentor.nl,ed.nl,flair.nl,gaspedaal.nl,gelderlander.nl,hln.be,humo.be,joe.nl,libelle.nl,margriet.nl,nu.nl,oudersvannu.nl,parool.nl,pzc.nl,qmusic.nl,story.nl,trouw.nl,tubantia.nl,tweakers.net,veronicasuperguide.nl,volkskrant.nl,vtwonen.be,vtwonen.nl,zozitdat.nl###pg-shadow-host-dom
 myprivacy.dpgmedia.nl,myprivacy.dpgmedia.be,myprivacy.dpgmediagroup.net,www.dpgmediagroup.com,ad.nl,autotrack.nl,autoweek.nl,autowereld.nl,bd.nl,bndestem.nl,businesswise.nl,cinenews.be,demorgen.be,deondernemer.nl,destentor.nl,ed.nl,flair.nl,gaspedaal.nl,gelderlander.nl,hln.be,humo.be,joe.nl,libelle.nl,margriet.nl,nu.nl,oudersvannu.nl,parool.nl,pzc.nl,qmusic.nl,story.nl,trouw.nl,tubantia.nl,tweakers.net,veronicasuperguide.nl,volkskrant.nl,vtwonen.be,vtwonen.nl,zozitdat.nl##body[style="overflow: hidden;"]:style(overflow: auto !important;)
 bingofm.nl,denhaagfm.nl,gld.nl,l1.nl,omropfryslan.nl,omroepwest.nl,omroepzeeland.nl,oost.nl,rijnmond.nl,rtvdrenthe.nl,rtvnoord.nl,rtvutrecht.nl##+js(trusted-click-element, #consent-plugin .action-button[aria-label="Alles accepteren"])
-100p.nl,autovisie.nl,balkstercourant.nl,bedrock.nl,culy.nl,denoordoostpolder.nl,dumpert.nl,dvhn.nl,familieberichten.nl,flevopost.nl,frieschdagblad.nl,krant.gezinsbode.nl,gooieneemlander.nl,groupdeal.nl,gva.be,haarlemsdagblad.nl,hoogeveenschecourant.nl,ijmuidercourant.nl,inmemoriam.be,jmouders.nl,lc.nl,leidschdagblad.nl,limburger.nl,manners.nl,meppelercourant.nl,metronieuws.nl,nieuweooststellingwerver.nl,nieuwsblad.be,noordhollandsdagblad.nl,nsmbl.nl,radioveronica.nl,reclamefolder.nl,sikkom.nl,slam.nl,speurders.nl,steenwijkercourant.nl,stellingwerf.nl,sublime.nl,telegraaf.nl,uitservice.nl,uittipslimburg.nl,vanplan.nl,want.nl##body.didomi-popup-open:style(overflow: unset !important;)
-100p.nl,autovisie.nl,balkstercourant.nl,bedrock.nl,culy.nl,denoordoostpolder.nl,dumpert.nl,dvhn.nl,familieberichten.nl,flevopost.nl,frieschdagblad.nl,krant.gezinsbode.nl,gooieneemlander.nl,groupdeal.nl,gva.be,haarlemsdagblad.nl,hoogeveenschecourant.nl,ijmuidercourant.nl,inmemoriam.be,jmouders.nl,lc.nl,leidschdagblad.nl,limburger.nl,manners.nl,meppelercourant.nl,metronieuws.nl,nieuweooststellingwerver.nl,nieuwsblad.be,noordhollandsdagblad.nl,nsmbl.nl,radioveronica.nl,reclamefolder.nl,sikkom.nl,slam.nl,speurders.nl,steenwijkercourant.nl,stellingwerf.nl,sublime.nl,telegraaf.nl,uitservice.nl,uittipslimburg.nl,vanplan.nl,want.nl##+js(trusted-click-element, .didomi-popup-open button#didomi-notice-agree-button)
+100p.nl,autovisie.nl,balkstercourant.nl,bedrock.nl,culy.nl,denoordoostpolder.nl,dumpert.nl,dvhn.nl,familieberichten.nl,flevopost.nl,frieschdagblad.nl,krant.gezinsbode.nl,gooieneemlander.nl,groupdeal.nl,gva.be,haarlemsdagblad.nl,hoogeveenschecourant.nl,ijmuidercourant.nl,inmemoriam.be,jmouders.nl,lc.nl,leidschdagblad.nl,limburger.nl,manners.nl,meppelercourant.nl,metronieuws.nl,nieuweooststellingwerver.nl,nieuwsblad.be,noordhollandsdagblad.nl,nsmbl.nl,radioveronica.nl,reclamefolder.nl,sikkom.nl,slam.nl,speurders.nl,standaard.be,steenwijkercourant.nl,stellingwerf.nl,sublime.nl,telegraaf.nl,uitservice.nl,uittipslimburg.nl,vanplan.nl,want.nl##body.didomi-popup-open:style(overflow: unset !important;)
+100p.nl,autovisie.nl,balkstercourant.nl,bedrock.nl,culy.nl,denoordoostpolder.nl,dumpert.nl,dvhn.nl,familieberichten.nl,flevopost.nl,frieschdagblad.nl,krant.gezinsbode.nl,gooieneemlander.nl,groupdeal.nl,gva.be,haarlemsdagblad.nl,hoogeveenschecourant.nl,ijmuidercourant.nl,inmemoriam.be,jmouders.nl,lc.nl,leidschdagblad.nl,limburger.nl,manners.nl,meppelercourant.nl,metronieuws.nl,nieuweooststellingwerver.nl,nieuwsblad.be,noordhollandsdagblad.nl,nsmbl.nl,radioveronica.nl,reclamefolder.nl,sikkom.nl,slam.nl,speurders.nl,standaard.be,steenwijkercourant.nl,stellingwerf.nl,sublime.nl,telegraaf.nl,uitservice.nl,uittipslimburg.nl,vanplan.nl,want.nl##+js(trusted-click-element, .didomi-popup-open button#didomi-notice-agree-button)
 bol.com##+js(trusted-set-cookie, bolConsentChoices, source#OFC|version#6|int-tran#false|ext-tran#false|int-beh#false|ext-beh#false, , , domain, www.bol.com, reload, 1)
 buienradar.nl##+js(trusted-click-element, label[for="ok"], , 500)
 buienradar.nl##+js(trusted-click-element, button.payok__submit, , 750)
+coolblue.nl##+js(trusted-click-element, dialog button[name="decline_cookie"])
+licentie2go.com###cookie-notice
+mediamarkt.nl###mms-consent-portal-container
+mediamarkt.nl##body:style(overflow: auto !important; overscroll-behavior: auto !important; touch-action: auto !important;)
+pcpartpicker.com##.cc-type-opt-in.cc-banner.cc-window
 reddit.com###data-protection-consent-dialog
 reddit.com##+js(trusted-set-cookie, eu_cookie, '{%22opted%22:true%2C%22nonessential%22:false}')
 rd.nl##+js(trusted-click-element, #emgCookieConsentOverlay button.minimal)
-stackoverflow.com###onetrust-consent-sdk
-stackoverflow.com##+js(trusted-click-element, #onetrust-consent-sdk #onetrust-reject-all-handler)
+radiowereld.nl##+js(trusted-click-element, #cmplz-cookiebanner-container button.cmplz-accept)
+radiowereld.nl###cmplz-cookiebanner-container
+soundcloud.com,stackoverflow.com##+js(trusted-click-element, #onetrust-banner-sdk #onetrust-reject-all-handler)
+soundcloud.com,stackoverflow.com###onetrust-consent-sdk
+www.deepl.com##div[data-testid="dl-cookieBanner"]
 www.ing.nl##+js(trusted-set-cookie, COOKIE_PREF, ANL_0|PSN_0|PRTN_0)
+www.kortingscop.nl###kcnl_consent_box
+
 
 ! Set cookies or click element for other preferences
 mijn.ing.nl##+js(trusted-set-cookie, lang, nl-NL)
