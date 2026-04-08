@@ -1,0 +1,18 @@
+[uBlock Origin]
+! Title: Dynamic rules for uBlock Origin's medium mode for mobile.
+! Last updated: 08-04-2026
+!
+no-csp-reports: * true
+no-large-media: * true
+no-large-media: behind-the-scene true
+no-large-media: anwb.nl false
+no-large-media: 9292.nl false
+no-large-media: www.ns.nl false
+no-large-media: www.nsinternational.nl false
+no-large-media: www.buienradar.nl false
+no-large-media: www.natuurmonumenten.nl false
+no-large-media: www.staatsbosbeheer.nl false
+no-large-media: youtube.com false
+* behind-the-scene * block
+* * 3p-frame block
+* * 3p-script block
