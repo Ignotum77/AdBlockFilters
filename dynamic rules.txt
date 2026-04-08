@@ -96,6 +96,7 @@ azuredatacentermap.azurewebsites.net www.bing.com * noop
 www.bbc.com admin.brightcove.com * noop
 www.buienradar.be cdn.buienradar.nl * noop
 * captcha-delivery.com * noop
+anwb.nl anwb1.cdn-expoints.nl * noop
 * cdn.cloudflare.net * noop
 * cdninstagram.com * noop
 www.freepik.com static.cdnpk.net * noop
