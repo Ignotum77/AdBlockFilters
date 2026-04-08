@@ -1,12 +1,13 @@
 [uBlock Origin]
 ! Title: Dynamic rules for uBlock Origin's medium mode.
-! Last updated: 01-04-2026
+! Last updated: 08-04-2026
 !
 no-csp-reports: * true
 * * 3p-frame block
 * * 3p-script block
 file-scheme * 1p-script block
 file-scheme * inline-script block
+heelhollandkijkt.nl * 3p-frame noop
 aws.amazon.com aws.a2z.com * noop
 account.live.com prd.aadg.trafficmanager.net * noop
 microsoft.com prd.aadg.trafficmanager.net * noop
@@ -16,6 +17,7 @@ account.activedirectory.windowsazure.com prd.aadg.trafficmanager.net * noop
 www.sdok.nl sdok.activehosted.com * noop
 * addthis.com * noop
 adguard-dns.io adguardcdn.com * noop
+adguard.com adguardcdn.com * noop
 * entitlement.auth.adobe.com * noop
 * sp.auth.adobe.com * noop
 * assets.adobedtm.com * noop
@@ -39,6 +41,8 @@ anwb.nl anwb.cloud * noop
 * js.appboycdn.com * noop
 www.icloud.com cdn.apple-livephotoskit.com * noop
 dataexplorer.azure.com ade.applicationinsights.io * noop
+wigle.net js.arcgis.com * noop
+openlibrary.org archive.org * noop
 www.dropbox.com arkoselabs.com * noop
 signup.live.com arkoselabs.com * noop
 www.hardnieuws.nl play.asmedia.nl * noop
@@ -51,6 +55,9 @@ radiopros.be mediacp.audiostreamen.nl * noop
 * verify.authorize.net * noop
 aws.amazon.com a0.awsstatic.com * noop
 www.shutterstock.com awswaf.com * noop
+whatsmyname.app captcha.awswaf.com * noop
+whatsmyname.app captcha-sdk.awswaf.com * noop
+whatsmyname.app token.awswaf.com * noop
 * cloudapp.azure.com * noop
 portal.azure.com azure.net * noop
 microsoft.com azure.net * noop
@@ -113,6 +120,17 @@ www.vkmag.com https://dailybuzz.nl/buzz/embed/ sub_frame noop
 bvdp-web.github.io dailyverses.net * noop
 * cdn.datatables.net * noop
 developers.google.com developers-dot-devsite-v2-prod.appspot.com * noop
+www.linkedin.com dfp-greenid-prod-multi.trafficmanager.net * noop
+discourse.mozilla.org discourse-cdn.com * noop
+www.bruzz.be https://disqus.com/embed/ sub_frame noop
+technical.city https://disqus.com/embed/ sub_frame noop
+www.bruzz.be https://brusselnieuws.disqus.com/embed.js script noop
+www.bruzz.be https://brusselnieuws.disqus.com/count.js script noop
+www.bruzz.be https://brusselnieuws.disqus.com/count-data.js script noop
+technical.city https://technical-city.disqus.com/embed.js script noop
+www.bruzz.be disqus.map.fastlylb.net * noop
+technical.city disqus.map.fastlylb.net * noop
+www.bruzz.be c.disquscdn.com * noop
 * g.doubleclick.net * noop
 * dpgmedia.cloud * noop
 * dpgmedia.net * noop
@@ -123,6 +141,9 @@ www.dropbox.com dropbox-dns.com * noop
 www.dropbox.com dropboxcaptcha.com * noop
 www.dropbox.com dropboxstatic.com * noop
 www.dropbox.com dropboxusercontent.com * noop
+research.ebsco.com discover-shared-viewer-ui.live.ebsco-assets.com * noop
+login.ebsco.com iam-shared-prompted-ui.live.ebsco-assets.com * noop
+research.ebsco.com researcher-shared-search-ui.live.ebsco-assets.com * noop
 * ecdns.net * noop
 * edgecastcdn.net * noop
 * edgekey.net * noop
@@ -142,6 +163,7 @@ instagram.com https://www.fbsbx.com/captcha/recaptcha/ sub_frame noop
 live.com fdv2-t-msedge.net * noop
 microsoft.com fdv2-t-msedge.net * noop
 www.msn.com fdv2-t-msedge.net * noop
+* kit.fontawesome.com * noop
 * use.fontawesome.com * noop
 * fonts.googleapis.com * noop
 www.weerplaza.nl infoplaza.fotoloods.nl * noop
@@ -211,6 +233,7 @@ login.anwb.nl janraincapture.com * noop
 * cdn.jsdelivr.net * noop
 www.hartvannederland.nl https://ssl.p.jwpcdn.com/player/ script noop
 www.nu.nl https://ssl.p.jwpcdn.com/player/ script noop
+www.omroepflevoland.nl https://ssl.p.jwpcdn.com/player/ script noop
 www.nu.nl content.jwplatform.com * noop
 * cdn.kaching.eu.com * noop
 * keycaptcha.com * noop
@@ -220,6 +243,7 @@ www.nu.nl content.jwplatform.com * noop
 www.y8.com kongregate.com * noop
 onedrive.live.com l-msedge.net * noop
 * lib.sinaapp.com * noop
+www.linkedin.com static.licdn.com * noop
 * sdk.listenlive.co * noop
 amazon.com player.live-video.net * noop
 microsoft.com live.com * noop
@@ -238,6 +262,7 @@ www.logos.com logoscdn.com * noop
 * cdn.bootcss.com.maoyundns.com * noop
 * cdn.bootcdn.net.maoyundns.com * noop
 * maps.googleapis.com * noop
+mapy.com api.mapy.cz * noop
 www.2dehands.be marktplaats.nl * noop
 * cdn.materialdesignicons.com * noop
 * cdn.mathjax.org * noop
@@ -278,6 +303,7 @@ account.activedirectory.windowsazure.com shellprod.msocdn.com * noop
 * akamai-webcdn.kgstatic.net.edgesuite.net * noop
 azuredatacentermap.azurewebsites.net a-afdentry.net.trafficmanager.net * noop
 * nextday.media * noop
+www.nieuweoogst.nl cdn.nieuweoogst.nu * noop
 * ccm.npo.nl * noop
 * cdn.npoplayer.nl * noop
 npo.nl web-assets.luister.npox.nl * noop
@@ -308,6 +334,7 @@ microsoft.com onestore.ms * noop
 www.radioreflex.be ecdn.onlineradiobox.com * noop
 * cdn.optimizely.com * noop
 * dualstack.osff.map.fastly.net * noop
+www.magicearth.com cdn.paddle.com * noop
 * pagecdn.io * noop
 * payments-amazon.com * noop
 * c.paypal.com * noop
@@ -337,6 +364,7 @@ www.bruzz.be pool.cdn01.rambla.be * noop
 www.clevercast.com pool.cdn01.rambla.be * noop
 focus-wtv.be pool.cdn01.rambla.be * noop
 * cdn.ravenjs.com * noop
+radiolelystad.nl players.rcast.net * noop
 * recaptcha.net * noop
 www.reddit.com redditstatic.com * noop
 * tags.refinery89.com * noop
@@ -353,6 +381,8 @@ office.com c.s-microsoft.com * noop
 microsoft.com s-msft.com * noop
 nos.nl cdn.scaliainfra.nl * noop
 www.scholieren.com media.scholieren.net * noop
+sci-net.ru sci-net.xyz * noop
+voetbalvandaag.be widgets.scoreaxis.com * noop
 www.softonic.nl assets.sftcdn.net * noop
 * developer.n.shifen.com * noop
 microsoft365.com sigmacdn.net * noop
@@ -362,6 +392,7 @@ outlook.live.com sni1gl.wpc.sigmacdn.net * noop
 * https://www.skoften.net/video/embed/ sub_frame noop
 www.skype.com skypeassets.com * noop
 soundcloud.com sndcdn.com * noop
+www.proquest.com cdn.socket.io * noop
 www.kpn.com speedtestcustom.com * noop
 open.spotify.com open.spotifycdn.com * noop
 www.amazon.com ssl-images-amazon.com * noop
@@ -374,16 +405,23 @@ outlook.office.com res.public.onecdn.static.microsoft * noop
 * storage.googleapis.com * noop
 * playerservices.live.streamtheworld.com * noop
 * t-msedge.net * noop
+asnlookup.com cdn.tailwindcss.com * noop
 library.etf.edu teamup.com * noop
 libkey.io libkey-app.thirdiron.com * noop
+www.scholieren.com https://www.tiktok.com/embed.js script noop
+www.scholieren.com https://www.tiktok.com/embed/ sub_frame noop
 www.tiktok.com tiktokcdn-eu.com * noop
 www.eset.com tm-azurefd.net * noop
-bookish-fishstick-wr6gqqp776vjc57w9.github.dev tm-azurefd.net * noop
+github.dev tm-azurefd.net * noop
+www.intel.com tm-azurefd.net * noop
 translate.google.com translate.goog * noop
 * consent.trustarc.com * noop
 * consent.truste.com * noop
+www.scholieren.com ttwstatic.com * noop
+www.tiktok.com ttwstatic.com * noop
 radiopros.be https://tunein.com/embed/player/ sub_frame noop
 chamilo.etf.edu turnitin.com * noop
+www.tvgids.nl tvgidsassets.nl * noop
 x.com abs.twimg.com * noop
 * player.twitch.tv * noop
 * platform.twitter.com * noop
@@ -396,14 +434,18 @@ install.appcenter.ms v0cdn.net * noop
 microsoft.com wpc.v0cdn.net * noop
 www.gls-info.nl cname.vercel-dns.com * noop
 soundcloud.com cname.vercel-dns.com * noop
+versus.com assets.versus.io * noop
+www.vesselfinder.com static.vesselfinder.net * noop
 * embed.viaplay.com * noop
 * embed.videodelivery.net * noop
 * player.vimeo.com * noop
 * vimeocdn.com * noop
 sporza.be player.vrt.be * noop
-bookish-fishstick-wr6gqqp776vjc57w9.github.dev vscode-cdn.net * noop
-bookish-fishstick-wr6gqqp776vjc57w9.github.dev vscode-unpkg.net * noop
+github.dev vscode-cdn.net * noop
+github.dev vscode-unpkg.net * noop
 chatgpt.com web-sandbox.oaiusercontent.com * noop
+www.semschietsport.nl cdn.webshopapp.com * noop
+www.aluvia.io cdn.prod.website-files.com * noop
 www.frontlinedigitalservices.com cdn.prod.website-files.com * noop
 www.mozilla.ai cdn.prod.website-files.com * noop
 wetransfer.com prod-cdn.wetransfer.net * noop
