@@ -409,7 +409,7 @@ onedrive.live.com res.public.onecdn.static.microsoft * noop
 outlook.office.com res.public.onecdn.static.microsoft * noop
 * cdn.staticfile.org * noop
 * storage.googleapis.com * noop
-www.indiexl.nl https://server-23.stream-server.nl:2000/dist/widgets.js script noop
+* stream-server.nl * noop
 * playerservices.live.streamtheworld.com * noop
 * t-msedge.net * noop
 www.tripadvisor.be static.tacdn.com * noop
