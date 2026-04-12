@@ -234,12 +234,7 @@ login.anwb.nl janraincapture.com * noop
 * code.jquery.com * noop
 * jsdelivr.map.fastly.net * noop
 * cdn.jsdelivr.net * noop
-www.538.nl https://ssl.p.jwpcdn.com/player/ script noop
-www.autoblog.nl https://ssl.p.jwpcdn.com/player/ script noop
-www.hartvannederland.nl https://ssl.p.jwpcdn.com/player/ script noop
-www.nu.nl https://ssl.p.jwpcdn.com/player/ script noop
-www.omroepflevoland.nl https://ssl.p.jwpcdn.com/player/ script noop
-www.nu.nl content.jwplatform.com * noop
+* https://ssl.p.jwpcdn.com/player/ script noop
 * cdn.kaching.eu.com * noop
 * keycaptcha.com * noop
 * akamai-webcdn.kgstatic.net * noop
@@ -336,7 +331,6 @@ windowsazure.com office365.com * noop
 login.microsoftonline.com wpc.omegacdn.net * noop
 www.538.nl omny.fm * noop
 www.ad.nl omny.fm * noop
-www.538.nl https://omny.fm/shows/ sub_frame noop
 microsoft.com onestore.ms * noop
 www.radioreflex.be ecdn.onlineradiobox.com * noop
 * cdn.optimizely.com * noop
