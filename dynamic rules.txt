@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: Dynamic rules for uBlock Origin's medium mode.
-! Last updated: 08-04-2026
+! Last updated: 12-04-2026
 !
 no-csp-reports: * true
 * * 3p-frame block
@@ -38,6 +38,7 @@ www.kpn.com reload.alphacomm.network * noop
 * amazon-adsystem.com * noop
 * amazonaws.com * noop
 anwb.nl anwb.cloud * noop
+apkpure.com apkpures.xyz * noop
 * js.appboycdn.com * noop
 www.icloud.com cdn.apple-livephotoskit.com * noop
 dataexplorer.azure.com ade.applicationinsights.io * noop
@@ -125,8 +126,8 @@ www.linkedin.com dfp-greenid-prod-multi.trafficmanager.net * noop
 discourse.mozilla.org discourse-cdn.com * noop
 www.bruzz.be https://disqus.com/embed/ sub_frame noop
 technical.city https://disqus.com/embed/ sub_frame noop
-www.bruzz.be https://brusselnieuws.disqus.com/embed.js script noop
 www.bruzz.be https://brusselnieuws.disqus.com/count.js script noop
+www.bruzz.be https://brusselnieuws.disqus.com/embed.js script noop
 www.bruzz.be https://brusselnieuws.disqus.com/count-data.js script noop
 technical.city https://technical-city.disqus.com/embed.js script noop
 www.bruzz.be disqus.map.fastlylb.net * noop
@@ -150,6 +151,7 @@ research.ebsco.com researcher-shared-search-ui.live.ebsco-assets.com * noop
 * edgekey.net * noop
 * edgesuite.net * noop
 englishlive.ef.com ef-cdn.com * noop
+www.eindexamens.nu eindexamens.net * noop
 * cdn.embed.ly * noop
 www.eset.com esetstatic.com * noop
 * facebook.com * noop
@@ -232,6 +234,8 @@ login.anwb.nl janraincapture.com * noop
 * code.jquery.com * noop
 * jsdelivr.map.fastly.net * noop
 * cdn.jsdelivr.net * noop
+www.538.nl https://ssl.p.jwpcdn.com/player/ script noop
+www.autoblog.nl https://ssl.p.jwpcdn.com/player/ script noop
 www.hartvannederland.nl https://ssl.p.jwpcdn.com/player/ script noop
 www.nu.nl https://ssl.p.jwpcdn.com/player/ script noop
 www.omroepflevoland.nl https://ssl.p.jwpcdn.com/player/ script noop
@@ -330,7 +334,9 @@ office.com office365.com * noop
 sharepoint.com office365.com * noop
 windowsazure.com office365.com * noop
 login.microsoftonline.com wpc.omegacdn.net * noop
+www.538.nl omny.fm * noop
 www.ad.nl omny.fm * noop
+www.538.nl https://omny.fm/shows/ sub_frame noop
 microsoft.com onestore.ms * noop
 www.radioreflex.be ecdn.onlineradiobox.com * noop
 * cdn.optimizely.com * noop
@@ -361,6 +367,8 @@ www.postnl.be postnl.nl * noop
 * lib.baomitu.com.qh-cdn.com * noop
 * iduwdjf.qiniudns.com * noop
 * mat1.gtimg.com.tegsea.tc.qq.com * noop
+www.bruzz.be https://player.cdn01.rambla.be script noop
+www.bruzz.be https://player.cdn01.rambla.be sub_frame noop
 www.bruzz.be pool.cdn01.rambla.be * noop
 www.clevercast.com pool.cdn01.rambla.be * noop
 focus-wtv.be pool.cdn01.rambla.be * noop
@@ -369,6 +377,7 @@ radiolelystad.nl players.rcast.net * noop
 * recaptcha.net * noop
 www.reddit.com redditstatic.com * noop
 * tags.refinery89.com * noop
+* regiogroei.cloud * noop
 pornhub.com phncdn.com.sds.rncdn7.com * noop
 www.youporn.com phncdn.com.sds.rncdn7.com * noop
 www.youporn.com ypncdn.com.sds.rncdn7.com * noop
@@ -381,9 +390,11 @@ www.microsoft.com c.s-microsoft.com * noop
 office.com c.s-microsoft.com * noop
 microsoft.com s-msft.com * noop
 nos.nl cdn.scaliainfra.nl * noop
+forum.scholieren.com media.scholieren.net * noop
 www.scholieren.com media.scholieren.net * noop
 sci-net.ru sci-net.xyz * noop
 voetbalvandaag.be widgets.scoreaxis.com * noop
+www.scribd.com scribdassets.com * noop
 www.softonic.nl assets.sftcdn.net * noop
 * developer.n.shifen.com * noop
 microsoft365.com sigmacdn.net * noop
@@ -404,8 +415,11 @@ onedrive.live.com res.public.onecdn.static.microsoft * noop
 outlook.office.com res.public.onecdn.static.microsoft * noop
 * cdn.staticfile.org * noop
 * storage.googleapis.com * noop
+www.indiexl.nl https://server-23.stream-server.nl:2000/dist/widgets.js script noop
 * playerservices.live.streamtheworld.com * noop
 * t-msedge.net * noop
+www.tripadvisor.be static.tacdn.com * noop
+www.tripadvisor.nl static.tacdn.com * noop
 asnlookup.com cdn.tailwindcss.com * noop
 library.etf.edu teamup.com * noop
 libkey.io libkey-app.thirdiron.com * noop
@@ -417,6 +431,7 @@ github.dev tm-azurefd.net * noop
 www.intel.com tm-azurefd.net * noop
 translate.google.com translate.goog * noop
 * consent.trustarc.com * noop
+* consent-pref.trustarc.com * noop
 * consent.truste.com * noop
 www.scholieren.com ttwstatic.com * noop
 www.tiktok.com ttwstatic.com * noop
@@ -449,6 +464,7 @@ www.semschietsport.nl cdn.webshopapp.com * noop
 www.aluvia.io cdn.prod.website-files.com * noop
 www.frontlinedigitalservices.com cdn.prod.website-files.com * noop
 www.mozilla.ai cdn.prod.website-files.com * noop
+www.pijpermedia.nl cdn.prod.website-files.com * noop
 wetransfer.com prod-cdn.wetransfer.net * noop
 whatsapp.com whatsapp.net * noop
 azurewebsites.net vip.azurewebsites.windows.net * noop
