@@ -1,7 +1,28 @@
 ! Title: Block Resources
 ! Description: Filters to block specific URLs on Dutch websites
-! Last updated: Sun, 05 Apr 2026 14:08:32 +0000
+! Last updated: Fri, 17 Apr 2026 19:11:48 +0000
 !
+! 2026-04-17
+||maarkelsnieuws.nl/banners/$image
+||maarkelsnieuws.nl/wp-content/uploads/*.gif$image
+||oud.startlinken.nl/images/banner$image,1p
+||oud.startlinken.nl/javascript*Banner$script,1p
+! 2026-04-12
+||profielactueel.nl/media/*.gif
+||racexpress.nl/img/sponsors/
+||racexpress.nl/img_sponsors/
+||simone.nl/wp-content/uploads/*onderdelen
+||simone.nl/wp-content/uploads/*502x190px
+||simone.nl/wp-content/uploads/*banner
+||swpportal.com/upload/squarebanners/$3p
+||ucl-voetbal.nl/go/
+||uecl-voetbal.nl/go/
+||uel-voetbal.nl/go/
+! 2026-04-11
+||verkeerplaza.nl/js/ads
+||elfvoetbal.nl/photos/dynamic/
+||112achterhoek-nieuws.nl/images/blocks/*_
+||persinfo.org/nl/ads$xhr
 ! 2026-04-05
 ||weerenradar.nl/*/ad/$image
 ||bestereistijd.be/inc/promo-*.php
@@ -166,8 +187,6 @@ avrotros.nl,bnnvara.nl,npo.nl,npodoc.nl,npokennis.nl,vpro.nl##+js(json-prune-fet
 ||alphens.nl/upload/*/*banner$image
 ||cvandaag.nl/api/advertise-deliver/deliver?adtypes=banners$xhr
 ||hockey.be/wp-content/uploads/Banners/$image
-||startlinken.nl/oud/images/banner-$image,1p
-||startlinken.nl/oud/javascript/BannerRotation*$script,1p
 ||uitslagen.nl/banner/img$image
 ! 2023-10-23
 ||b-cdn.net/w_/*-banner-$image,domain=dtvnieuws.nl|omroephorstaandemaas.nl|omroepvenlo.nl|roulettefm.nl|rtvstichtsevecht.nl
@@ -237,7 +256,6 @@ omroepalmere.nl/wp-content/uploads/*/vacature-noordpool$image,domain=omroepalmer
 ||oisterwijknieuws.nl/wp-content/uploads/*/ondernemers-oisterwijk.png$image
 ||oisterwijknieuws.nl/wp-content/uploads/*/steenwitgoed-270x324-*.jpg$image
 ||persberichten.com/Actueel_Images*/*.gif$image
-||persinfo.org/assets/front/images/website/multimmo*.mp4
 ||reliwiki.nl/img/banner$image
 ||rickfm.nl/cwm/fm/userfiles/banner/foto/thumb$image
 ||rickfm.nl/views/rickfm/images/*.gif$image
@@ -280,7 +298,6 @@ omroepalmere.nl/wp-content/uploads/*/vacature-noordpool$image,domain=omroepalmer
 ||beveiligingnieuws.nl/wp-content/uploads/*webbanner$image
 ||ciaotutti.nl/wp-content/uploads/*/italmania$image
 ||radio.nl/i/banners/
-/wp-content/uploads/*.gif$image,domain=cocamsterdam.nl|cocdeventer.nl|cochaaglanden.nl
 ||omroepeemsdelta.nl/wp-content/uploads/*/mw-bedrijfskleding-1.png
 ||omroepeemsdelta.nl/wp-content/uploads/*/deltaglasvezel*.jpeg
 ||curacao.nu/wp-content/uploads/*/*WebAD$image
@@ -294,8 +311,6 @@ omroepalmere.nl/wp-content/uploads/*/vacature-noordpool$image,domain=omroepalmer
 ||motokicx.com/wp-content/uploads/*RAD
 ||noordkopcentraal.nl/wp-content/uploads/*/Vrienden-van
 ! 2022-06-29
-||racexpress.nl/img/sponsors/
-||simone.nl/wp-content/uploads/*besteonderdelen.nl
 ||rss.app/api/widget/$domain=hollywoodhuizen.nl
 ||sponsorlink.nl/js/snippet.js$script,domain=handbalstartpunt.nl
 ||h2owaternetwerk.nl/images/banners/$image
@@ -337,8 +352,6 @@ omroepalmere.nl/wp-content/uploads/*/vacature-noordpool$image,domain=omroepalmer
 ||farmaline.be/assets/banners/
 ! 2022-04-02
 ||vlootschouw.nl/wp-content/uploads/*/bottom-banner*
-! 2022-03-11
-||maarkelsnieuws.nl/banners/$image
 ! 2022-02-14
 ||123inkt.nl/images/oren/*$image
 ! 2022-02-08
@@ -360,7 +373,6 @@ omroepalmere.nl/wp-content/uploads/*/vacature-noordpool$image,domain=omroepalmer
 ||belgiancycling.be^*/Logo%27s%20partners/
 ||bitvavo.com/assets/static/widget/$subdocument,domain=cryptosjop.nl
 ||blablacar.nl/widget-driver/$3p
-||bloovi.be/frontend/files/banners/
 ||bnpparibasmarkets.nl/widget/$3p
 ||bol.com/nl/upload/banners/
 ||bol.com/nl/upload/partnerprogramma/$image
@@ -379,7 +391,6 @@ omroepalmere.nl/wp-content/uploads/*/vacature-noordpool$image,domain=omroepalmer
 ||dewereldmorgen.be/wp-content/banners/$image
 ||digitalaudience.io/bakery/pix/$image,3p
 ||dutchcryptotalk.com/wp-content/uploads/*/bitvavo
-||duurzaam-actueel.nl^*banner
 ||edelmetaal-info.nl/cdfund-336x280.html
 ||ekvrouwen.nl/*/uploads/*/bookmaker-cta-$image
 ||elektormagazine.nl/assets/upload/banners/
@@ -423,42 +434,21 @@ omroepalmere.nl/wp-content/uploads/*/vacature-noordpool$image,domain=omroepalmer
 ||peoplesphere.be/img/logo/financemanagement.png$image
 ||powerconnect.be^*/poweractie.jpg$3p
 ||prm03.wlresources.com/$script,3p
-||profielactueel.nl/content/modules/catalog/4/*.gif$image
 ||promootjesite.nl/images/affliateBanner/
 ||promootjesite.nl/images/banners/
-||psv.nl/upload/*_image*.gif$image
-||psv.nl/upload/*_Soccerlab_Logo.png$image
-||psv.nl/upload/*SponsorVrouwenGOED-300x75.jpg$image
-||racexpress.nl/advertising/$image
-||radioacacia.nl/sponsoren/
 ||radiovisie.eu/wp-content/banners/
 ||recreatief.nl/kerstarrangementen.gif
-||resellers.viboshop.nl/promoimages/
 ||risallah.com/multimedia/images/banners/$image
 ||sedproductions.nl/banners/$image,3p
-||simone.nl/wp-content/uploads/*-onderdelenexpert.nl-
-||sociaaldigitaal.nl/img/Banner-$3p
 ||solarmagazine.nl/u/edwin/$image
-||speurdeals.nl/uploads/banners$image
-||spike-source.com/wp-admin/admin-ajax.php?action=select&p=onder-filmpje$subdocument
-||spike-source.com/wp-admin/admin-ajax.php?action=select&p=rechts-menu-onder$subdocument
 ||srherald.com/wp-content/banners/
-||static.qmusic.*/acties/qnl-nu-ad/index.html$subdocument,domain=nu.nl
 ||stepstone.be/*?event=widgettool.$3p
-||swpportal.com/upload/squarebanners/
 ||te-les-koop.nl/images/B_
 ||totaalwijzer.nl/widget/$3p
-||touretappe.nl/images/xtra/
-||tradeidee.nl/banners/
-||ucl-voetbal.nl/derden/
-||uecl-voetbal.nl/derden/
-||uel-voetbal.nl/derden/
 ||vbro.be/wp-content/uploads/*/autoonderdelen24_$image
-||verkeerplaza.nl/js/banner.js
 ||vlietnieuws.nl/wp-content/plugins/custom-banners/*$script,1p
 ||voetbaluitslagen.com/wp-content/uploads/*/bet*$image
 ||waarzo.nl/imagestore/banners/
 ||wanttoknow.nl^*Banner
 ||wereldstopcontacten.nl/wp-content/uploads/*/image-aff-*.jpg$image
 ||xingo.nl/bannermanagement/
-||xsnews.nl/aff/$image,domain=nzbindex.nl
