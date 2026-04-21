@@ -402,6 +402,7 @@ sci-net.ru sci-net.xyz * noop
 voetbalvandaag.be widgets.scoreaxis.com * noop
 www.scribd.com scribdassets.com * noop
 softonic.com assets.sftcdn.net * noop
+softonic.nl assets.sftcdn.net * noop
 * developer.n.shifen.com * noop
 microsoft365.com sigmacdn.net * noop
 office.com wpc.sigmacdn.net * noop
