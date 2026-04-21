@@ -457,9 +457,7 @@ x.com abs.twimg.com * noop
 * ajax.proxy.ustclug.org * noop
 install.appcenter.ms v0cdn.net * noop
 microsoft.com wpc.v0cdn.net * noop
-www.bijbelsberaadmv.nl cname.vercel-dns.com * noop
-www.gls-info.nl cname.vercel-dns.com * noop
-soundcloud.com cname.vercel-dns.com * noop
+* cname.vercel-dns.com * noop
 versus.com assets.versus.io * noop
 www.vesselfinder.com static.vesselfinder.net * noop
 * embed.viaplay.com * noop
