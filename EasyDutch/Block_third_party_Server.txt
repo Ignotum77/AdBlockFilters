@@ -1,7 +1,10 @@
 ! Title: Block Third-Party Server
 ! Description: Filters for blocking only general third-party servers on Dutch websites
-! Last updated: Sun, 08 Mar 2026 17:29:07 +0000
+! Last updated: Tue, 21 Apr 2026 10:18:01 +0000
 !
+! 2026-04-18
+! retailtrends.nl,vastgoedjournaal.nl
+||cdn.prdn.nl^$3p
 ! 2026-03-08
 ||partner-nl-be.hema.com^$3p
 ! 2026-03-02
@@ -64,13 +67,10 @@
 ! 2021-09-03
 ! parool.nl
 ||advertising-cdn.dpgmedia.cloud^$3p
-! https://github.com/easylist/easylistdutch/commit/b04939fcc2b0a2564a46143939a15f95b3b30985
-||widgets.skyscanner.net^$domain=puuropreis.nl
 ! 2021-07-28
 ||gratis-neuken.com^$3p
 ! 2021-06-29
 ||2k19.nl^$3p
-||2k19.nl^$popup
 ||2k21.nl^$3p
 ||adconfigproxy.azurewebsites.net^$3p
 ||adquick.nl^$3p
@@ -92,7 +92,6 @@
 ||euroclix.nl^$3p,domain=~panelclix.com|~panelclix.nl
 ||extremecash.nl^$3p
 ||go2.go2cloud.org^$3p
-||go2.go2cloud.org^$popup
 ||hotlinkie.com^$3p
 ! ||kimhollandpartners.nl^$3p
 ||klikbonus.com^$3p
