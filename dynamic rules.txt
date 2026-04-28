@@ -116,11 +116,8 @@ www.consumentenbond.nl consumentenbond-res.cloudinary.com * noop
 * quantcast.mgr.consensu.org * noop
 * consentmanager.net * noop
 google.com content.googleapis.com * noop
-www.gls-info.nl consent.cookiebot.com * noop
-www.golf.nl consent.cookiebot.com * noop
-www.willem-ii.nl consent.cookiebot.com * noop
-www.golf.nl consentcdn.cookiebot.com * noop
-www.willem-ii.nl consentcdn.cookiebot.com * noop
+* consent.cookiebot.com * noop
+* consentcdn.cookiebot.com * noop
 * cdn.cookielaw.org * noop
 * code.createjs.com * noop
 artsandculture.google.com embed.culturalspot.org * noop
