@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: Dynamic rules for uBlock Origin's medium mode.
-! Last updated: 21-04-2026
+! Last updated: 28-04-2026
 !
 no-csp-reports: * true
 * * 3p-frame block
@@ -46,6 +46,7 @@ wigle.net js.arcgis.com * noop
 openlibrary.org archive.org * noop
 www.dropbox.com arkoselabs.com * noop
 signup.live.com arkoselabs.com * noop
+pyfunceble.github.io asciinema.org * noop
 www.hardnieuws.nl play.asmedia.nl * noop
 microsoft.com aspnetcdn.com * noop
 * ajax.aspnetcdn.com * noop
@@ -116,6 +117,10 @@ www.consumentenbond.nl consumentenbond-res.cloudinary.com * noop
 * consentmanager.net * noop
 google.com content.googleapis.com * noop
 www.gls-info.nl consent.cookiebot.com * noop
+www.golf.nl consent.cookiebot.com * noop
+www.willem-ii.nl consent.cookiebot.com * noop
+www.golf.nl consentcdn.cookiebot.com * noop
+www.willem-ii.nl consentcdn.cookiebot.com * noop
 * cdn.cookielaw.org * noop
 * code.createjs.com * noop
 artsandculture.google.com embed.culturalspot.org * noop
@@ -170,6 +175,7 @@ instagram.com https://www.fbsbx.com/captcha/recaptcha/ sub_frame noop
 live.com fdv2-t-msedge.net * noop
 microsoft.com fdv2-t-msedge.net * noop
 www.msn.com fdv2-t-msedge.net * noop
+www.investmentofficer.nl api.finfiles.nl * noop
 * kit.fontawesome.com * noop
 * use.fontawesome.com * noop
 * fonts.googleapis.com * noop
@@ -234,6 +240,7 @@ www.marktplaats.nl hzcdn.io * noop
 www.weerplaza.nl assets.infoplaza.io * noop
 www.ing.nl cdn.ing.com * noop
 * instagram.com * noop
+www.investmentofficer.nl cdn.investmentofficer.com * noop
 www.etf.edu e.issuu.com * noop
 login.anwb.nl janraincapture.com * noop
 * apps.bdimg.jomodns.com * noop
@@ -241,6 +248,7 @@ login.anwb.nl janraincapture.com * noop
 * jsdelivr.map.fastly.net * noop
 * cdn.jsdelivr.net * noop
 * https://ssl.p.jwpcdn.com/player/ script noop
+www.nu.nl content.jwplatform.com * noop
 * cdn.kaching.eu.com * noop
 * keycaptcha.com * noop
 * akamai-webcdn.kgstatic.net * noop
@@ -342,8 +350,10 @@ www.538.nl omny.fm * noop
 www.ad.nl omny.fm * noop
 microsoft.com onestore.ms * noop
 www.radioreflex.be ecdn.onlineradiobox.com * noop
+www.hartstichting.nl hartstichting-injector.onstuimig.nl * noop
 * cdn.optimizely.com * noop
 * dualstack.osff.map.fastly.net * noop
+www.viafora.nl static.ouders.nl * noop
 www.magicearth.com cdn.paddle.com * noop
 * pagecdn.io * noop
 * payments-amazon.com * noop
@@ -367,10 +377,13 @@ www.postnl.be postnl.nl * noop
 * gdpr.privacymanager.io * noop
 * gdpr-wrapper.privacymanager.io * noop
 www.bijbelsberaadmv.nl bijbelsberaadmv.procurios.cloud * noop
+www.internetbode.nl storage.pubble.cloud * noop
+www.internetbode.nl storage.pubble.nl * noop
 * cdn.pxr.nl * noop
 * lib.baomitu.com.qh-cdn.com * noop
 * iduwdjf.qiniudns.com * noop
 * mat1.gtimg.com.tegsea.tc.qq.com * noop
+www.kidsweek.nl varnish.qualifio.com * noop
 www.quora.com quoracdn.net * noop
 www.bruzz.be https://player.cdn01.rambla.be script noop
 www.bruzz.be https://player.cdn01.rambla.be sub_frame noop
@@ -390,6 +403,7 @@ www.youporn.com ypncdn.com.sds.rncdn7.com * noop
 * mathjax.rstudio.com * noop
 * embed.rtl.nl * noop
 * player.rtl.nl * noop
+www.blckbx.tv rumble.com * noop
 www.bol.com assets.s-bol.com * noop
 www.microsoft.com c.s-microsoft.com * noop
 office.com c.s-microsoft.com * noop
@@ -414,6 +428,7 @@ www.skyscanner.nl skyscannerplatform.net * noop
 www.skyscanner.nl skyscnr.com * noop
 soundcloud.com sndcdn.com * noop
 www.proquest.com cdn.socket.io * noop
+www.onderwegonline.nl webforms.spabonneeservice.nl * noop
 www.kpn.com speedtestcustom.com * noop
 open.spotify.com open.spotifycdn.com * noop
 www.amazon.com ssl-images-amazon.com * noop
@@ -425,6 +440,7 @@ outlook.office.com res.public.onecdn.static.microsoft * noop
 * cdn.staticfile.org * noop
 * storage.googleapis.com * noop
 * stream-server.nl * noop
+mannenzaken.nl streamable.com * noop
 * playerservices.live.streamtheworld.com * noop
 * t-msedge.net * noop
 www.tripadvisor.be static.tacdn.com * noop
