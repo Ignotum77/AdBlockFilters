@@ -245,7 +245,7 @@ login.anwb.nl janraincapture.com * noop
 * jsdelivr.map.fastly.net * noop
 * cdn.jsdelivr.net * noop
 * https://ssl.p.jwpcdn.com/player/ script noop
-www.nu.nl content.jwplatform.com * noop
+* content.jwplatform.com * noop
 * cdn.kaching.eu.com * noop
 * keycaptcha.com * noop
 * akamai-webcdn.kgstatic.net * noop
