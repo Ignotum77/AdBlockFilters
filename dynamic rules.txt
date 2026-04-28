@@ -380,7 +380,7 @@ www.internetbode.nl storage.pubble.nl * noop
 * lib.baomitu.com.qh-cdn.com * noop
 * iduwdjf.qiniudns.com * noop
 * mat1.gtimg.com.tegsea.tc.qq.com * noop
-www.kidsweek.nl varnish.qualifio.com * noop
+* varnish.qualifio.com * noop
 www.quora.com quoracdn.net * noop
 www.bruzz.be https://player.cdn01.rambla.be script noop
 www.bruzz.be https://player.cdn01.rambla.be sub_frame noop
