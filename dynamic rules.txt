@@ -476,10 +476,7 @@ github.dev vscode-cdn.net * noop
 github.dev vscode-unpkg.net * noop
 chatgpt.com web-sandbox.oaiusercontent.com * noop
 www.semschietsport.nl cdn.webshopapp.com * noop
-www.aluvia.io cdn.prod.website-files.com * noop
-www.frontlinedigitalservices.com cdn.prod.website-files.com * noop
-www.mozilla.ai cdn.prod.website-files.com * noop
-www.pijpermedia.nl cdn.prod.website-files.com * noop
+* cdn.prod.website-files.com * noop
 wetransfer.com prod-cdn.wetransfer.net * noop
 whatsapp.com whatsapp.net * noop
 azurewebsites.net vip.azurewebsites.windows.net * noop
@@ -491,7 +488,6 @@ login.microsoftonline.com account.activedirectory.windowsazure.com * noop
 * s2.wp.com * noop
 * www.googleapis.com * noop
 * x.com * noop
-www.xvideos.com xvideos-cdn.com * noop
 * yandex.st * noop
 * yastatic.net * noop
 * youtu.be * noop
