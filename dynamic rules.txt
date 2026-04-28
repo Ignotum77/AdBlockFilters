@@ -23,7 +23,6 @@ adguard.com adguardcdn.com * noop
 * assets.adobedtm.com * noop
 www.spel.nl agamecdn.com * noop
 www.telegraaf.nl player.agnoplay.com * noop
-xhamster.com ahacdn.me * noop
 * vo.aicdn.com * noop
 * ajax.googleapis.com * noop
 * akadns.net * noop
@@ -357,8 +356,6 @@ www.magicearth.com cdn.paddle.com * noop
 * c.paypal.com * noop
 * www.paypal.com * noop
 * paypalobjects.com * noop
-pornhub.com phncdn.com * noop
-www.youporn.com phncdn.com * noop
 www.kpn.com pingvp.com * noop
 pinterest.com s.pinimg.com * noop
 * assets.pinterest.com * noop
@@ -393,9 +390,6 @@ radiolelystad.nl players.rcast.net * noop
 www.reddit.com redditstatic.com * noop
 * tags.refinery89.com * noop
 * regiogroei.cloud * noop
-pornhub.com phncdn.com.sds.rncdn7.com * noop
-www.youporn.com phncdn.com.sds.rncdn7.com * noop
-www.youporn.com ypncdn.com.sds.rncdn7.com * noop
 * rsc.cdn77.org * noop
 * mathjax.rstudio.com * noop
 * embed.rtl.nl * noop
@@ -497,8 +491,6 @@ login.microsoftonline.com account.activedirectory.windowsazure.com * noop
 * s2.wp.com * noop
 * www.googleapis.com * noop
 * x.com * noop
-xhamster.com xhcdn.com * noop
-www.xnxx.com xnxx-cdn.com * noop
 www.xvideos.com xvideos-cdn.com * noop
 * yandex.st * noop
 * yastatic.net * noop
@@ -506,6 +498,5 @@ www.xvideos.com xvideos-cdn.com * noop
 * youtube-nocookie.com * noop
 * youtube.com * noop
 * youtube.googleapis.com * noop
-www.youporn.com ypncdn.com * noop
 * s.ytimg.com * noop
 * vjs.zencdn.net * noop
