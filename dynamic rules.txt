@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: Dynamic rules for uBlock Origin's medium mode.
-! Last updated: 28-04-2026
+! Last updated: 03-05-2026
 !
 no-csp-reports: * true
 * * 3p-frame block
@@ -8,6 +8,8 @@ no-csp-reports: * true
 file-scheme * 1p-script block
 file-scheme * inline-script block
 heelhollandkijkt.nl * 3p-frame noop
+nomennescio.pages.dev * 3p-frame noop
+nomennescio.pages.dev * 3p-script noop
 aws.amazon.com aws.a2z.com * noop
 account.live.com prd.aadg.trafficmanager.net * noop
 microsoft.com prd.aadg.trafficmanager.net * noop
@@ -23,6 +25,7 @@ adguard.com adguardcdn.com * noop
 * assets.adobedtm.com * noop
 www.spel.nl agamecdn.com * noop
 www.telegraaf.nl player.agnoplay.com * noop
+www.ah.be static.ah.nl * noop
 * vo.aicdn.com * noop
 * ajax.googleapis.com * noop
 * akadns.net * noop
@@ -45,6 +48,8 @@ wigle.net js.arcgis.com * noop
 openlibrary.org archive.org * noop
 www.dropbox.com arkoselabs.com * noop
 signup.live.com arkoselabs.com * noop
+x.com client-api.arkoselabs.com * noop
+x.com iframe.arkoselabs.com * noop
 pyfunceble.github.io asciinema.org * noop
 www.hardnieuws.nl play.asmedia.nl * noop
 microsoft.com aspnetcdn.com * noop
@@ -83,10 +88,12 @@ no-large-media: behind-the-scene true
 * behind-the-scene * block
 www.paypal.com betacdn.net * noop
 azuredatacentermap.azurewebsites.net www.bing.com * noop
+beforeitsnews.com bitchute.com * noop
 * embed.blivenyc.com * noop
 * library.blivenyc.com * noop
 * web-cdn.blivenyc.com * noop
 * blob.core.windows.net * noop
+www.jessedekoningautos.nl pub.blokweggroep.nl * noop
 * https://cdn.bluebillywig.com/apps/player/ script noop
 * cdn.bootcdn.net * noop
 * cdn.bootcss.com * noop
@@ -124,9 +131,11 @@ www.kpn.com customersaas.com * noop
 www.vkmag.com https://dailybuzz.nl/player/ script noop
 www.vkmag.com https://dailybuzz.nl/buzz/embed/ sub_frame noop
 bvdp-web.github.io dailyverses.net * noop
+qmusic.nl fallback.dario.app * noop
 * cdn.datatables.net * noop
 developers.google.com developers-dot-devsite-v2-prod.appspot.com * noop
 www.linkedin.com dfp-greenid-prod-multi.trafficmanager.net * noop
+community.cloudflare.com discourse-cdn.com * noop
 discourse.mozilla.org discourse-cdn.com * noop
 community.spiceworks.com discourse-cdn.com * noop
 www.bruzz.be https://disqus.com/embed/ sub_frame noop
@@ -158,6 +167,7 @@ research.ebsco.com researcher-shared-search-ui.live.ebsco-assets.com * noop
 englishlive.ef.com ef-cdn.com * noop
 www.eindexamens.nu eindexamens.net * noop
 * cdn.embed.ly * noop
+www.lighthousetv.nl cdn.embedly.com * noop
 www.eset.com esetstatic.com * noop
 * facebook.com * noop
 * connect.facebook.net * noop
@@ -223,6 +233,7 @@ google.com googleusercontent.com * noop
 * lh6.googleusercontent.com * noop
 www.youtube.com www-onepick-opensocial.googleusercontent.com * noop
 www.ad.nl widgets.sports.gracenote.com * noop
+nos.nl widgets.sports.gracenote.com * noop
 * gstatic.com * noop
 * https://www.gstatic.com/recaptcha/ script noop
 * mat1.gtimg.com * noop
@@ -239,6 +250,7 @@ www.ing.nl cdn.ing.com * noop
 www.investmentofficer.nl cdn.investmentofficer.com * noop
 www.etf.edu e.issuu.com * noop
 login.anwb.nl janraincapture.com * noop
+bloemenboerderijboer.jimdofree.com assets.jimstatic.com * noop
 * apps.bdimg.jomodns.com * noop
 * code.jquery.com * noop
 * jsdelivr.map.fastly.net * noop
@@ -246,6 +258,7 @@ login.anwb.nl janraincapture.com * noop
 * https://ssl.p.jwpcdn.com/player/ script noop
 * content.jwplatform.com * noop
 * cdn.kaching.eu.com * noop
+www.cbs.nl api.eu.kaltura.com * noop
 * keycaptcha.com * noop
 * akamai-webcdn.kgstatic.net * noop
 * embed.kijk.nl * noop
@@ -297,6 +310,7 @@ office365.com login.microsoftonline.com * noop
 account.activedirectory.windowsazure.com login.microsoftonline.com * noop
 * mixdrop.to * noop
 * mmcdn.nl * noop
+www.jessedekoningautos.nl taggleauto.movieplayer.nl * noop
 support.mozilla.org mozgcp.net * noop
 live.com msauth.net * noop
 microsoft.com msauth.net * noop
@@ -372,7 +386,9 @@ www.postnl.be postnl.nl * noop
 * gdpr-wrapper.privacymanager.io * noop
 www.bijbelsberaadmv.nl bijbelsberaadmv.procurios.cloud * noop
 www.internetbode.nl storage.pubble.cloud * noop
+www.nd.nl storage.pubble.cloud * noop
 www.internetbode.nl storage.pubble.nl * noop
+www.nd.nl storage.pubble.nl * noop
 * cdn.pxr.nl * noop
 * lib.baomitu.com.qh-cdn.com * noop
 * iduwdjf.qiniudns.com * noop
@@ -433,6 +449,8 @@ outlook.office.com res.public.onecdn.static.microsoft * noop
 * stream-server.nl * noop
 mannenzaken.nl streamable.com * noop
 * playerservices.live.streamtheworld.com * noop
+windscribe.com checkout.stripe.com * noop
+windscribe.com js.stripe.com * noop
 * t-msedge.net * noop
 www.tripadvisor.be static.tacdn.com * noop
 www.tripadvisor.nl static.tacdn.com * noop
@@ -456,6 +474,7 @@ chamilo.etf.edu turnitin.com * noop
 www.tvgids.nl tvgidsassets.nl * noop
 x.com abs.twimg.com * noop
 * player.twitch.tv * noop
+x.com twitter.com * noop
 * platform.twitter.com * noop
 * https://syndication.twitter.com/srv/timeline-profile/screen-name/ sub_frame noop
 * unpkg.com * noop
