@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: Dynamic rules for uBlock Origin's medium mode.
-! Last updated: 03-05-2026
+! Last updated: 16-05-2026
 !
 no-csp-reports: * true
 * * 3p-frame block
@@ -24,6 +24,7 @@ adguard.com adguardcdn.com * noop
 * sp.auth.adobe.com * noop
 * assets.adobedtm.com * noop
 www.spel.nl agamecdn.com * noop
+www.dumpert.nl player.agnoplay.com * noop
 www.telegraaf.nl player.agnoplay.com * noop
 www.ah.be static.ah.nl * noop
 * vo.aicdn.com * noop
@@ -59,6 +60,8 @@ radiopros.be mediacp.audiostreamen.nl * noop
 * cdn.auth0.com * noop
 * purch.auth0.com * noop
 * verify.authorize.net * noop
+www.autoscout24.be www.autoscout24.de * noop
+www.autoscout24.nl www.autoscout24.de * noop
 aws.amazon.com a0.awsstatic.com * noop
 www.shutterstock.com awswaf.com * noop
 whatsmyname.app captcha.awswaf.com * noop
@@ -137,6 +140,7 @@ developers.google.com developers-dot-devsite-v2-prod.appspot.com * noop
 www.linkedin.com dfp-greenid-prod-multi.trafficmanager.net * noop
 community.cloudflare.com discourse-cdn.com * noop
 discourse.mozilla.org discourse-cdn.com * noop
+forums.powershell.org discourse-cdn.com * noop
 community.spiceworks.com discourse-cdn.com * noop
 www.bruzz.be https://disqus.com/embed/ sub_frame noop
 technical.city https://disqus.com/embed/ sub_frame noop
@@ -148,6 +152,7 @@ www.bruzz.be disqus.map.fastlylb.net * noop
 technical.city disqus.map.fastlylb.net * noop
 www.bruzz.be c.disquscdn.com * noop
 * g.doubleclick.net * noop
+allestoringen.nl downdetector.com * noop
 * dpgmedia.cloud * noop
 * dpgmedia.net * noop
 * dpgmedia.nl * noop
@@ -201,6 +206,7 @@ microsoft.com gfx.ms * noop
 www.msn.com mem.gfx.ms * noop
 office.com mem.gfx.ms * noop
 * gitcdn.github.io * noop
+fredrikengseth.medium.com gist.github.com * noop
 github.com githubassets.com * noop
 www.bijbelsberaadmv.nl bible-link.globalrize.org * noop
 www.gls-info.nl spotlight.glsnxt.com * noop
@@ -255,8 +261,12 @@ bloemenboerderijboer.jimdofree.com assets.jimstatic.com * noop
 * code.jquery.com * noop
 * jsdelivr.map.fastly.net * noop
 * cdn.jsdelivr.net * noop
+nederland.fm partnerplayer.juke.nl * noop
+radio.nl partnerplayer.juke.nl * noop
 * https://ssl.p.jwpcdn.com/player/ script noop
 * content.jwplatform.com * noop
+nederland.fm cdn.jwplayer.com * noop
+radio.nl cdn.jwplayer.com * noop
 * cdn.kaching.eu.com * noop
 www.cbs.nl api.eu.kaltura.com * noop
 * keycaptcha.com * noop
@@ -297,6 +307,7 @@ www.imdb.com m.media-amazon.com * noop
 * shared.mediahuis.be * noop
 * login.mediahuis.com * noop
 * mediahuis.online * noop
+www.dumpert.nl agnoplayer.mediahuisgroup.com * noop
 * player.medialaancdn.be * noop
 www.mijndomein.nl check.metaregistrar.com * noop
 www.mijndomein.nl lb.metaregistrar.net * noop
@@ -326,13 +337,20 @@ office365.com shellprod.msocdn.com * noop
 account.activedirectory.windowsazure.com shellprod.msocdn.com * noop
 www.laserdecorations.nl app.multiscreenstore.com * noop
 * mychannels.video * noop
+www.decibel.nl mytuner-radio.com * noop
 * akamai-webcdn.kgstatic.net.edgesuite.net * noop
 azuredatacentermap.azurewebsites.net a-afdentry.net.trafficmanager.net * noop
 * nextday.media * noop
 www.nieuweoogst.nl cdn.nieuweoogst.nu * noop
 nos.nl cdn.noshosting.nl * noop
 * ccm.npo.nl * noop
+nederland.fm radioplayer.npo.nl * noop
+radio.nl radioplayer.npo.nl * noop
+nederland.fm apps.sena.cluster.chp5-prod.npocloud.nl * noop
+radio.nl apps.sena.cluster.chp5-prod.npocloud.nl * noop
 * cdn.npoplayer.nl * noop
+nederland.fm radioplayer.nporadio.nl * noop
+radio.nl radioplayer.nporadio.nl * noop
 npo.nl web-assets.luister.npox.nl * noop
 auth.openai.com oaistatic.com * noop
 * octocaptcha.com * noop
@@ -387,11 +405,17 @@ www.postnl.be postnl.nl * noop
 www.bijbelsberaadmv.nl bijbelsberaadmv.procurios.cloud * noop
 www.internetbode.nl storage.pubble.cloud * noop
 www.nd.nl storage.pubble.cloud * noop
+www.rodi.nl storage.pubble.cloud * noop
 www.internetbode.nl storage.pubble.nl * noop
 www.nd.nl storage.pubble.nl * noop
+www.rodi.nl storage.pubble.nl * noop
 * cdn.pxr.nl * noop
 * lib.baomitu.com.qh-cdn.com * noop
 * iduwdjf.qiniudns.com * noop
+nederland.fm player.qmusic.nl * noop
+radio.nl player.qmusic.nl * noop
+nederland.fm socket.qmusic.nl * noop
+radio.nl socket.qmusic.nl * noop
 * mat1.gtimg.com.tegsea.tc.qq.com * noop
 * varnish.qualifio.com * noop
 www.quora.com quoracdn.net * noop
@@ -438,6 +462,9 @@ www.proquest.com cdn.socket.io * noop
 www.onderwegonline.nl webforms.spabonneeservice.nl * noop
 www.kpn.com speedtestcustom.com * noop
 open.spotify.com open.spotifycdn.com * noop
+www.thestoryofeverything.film definitions.sqspcdn.com * noop
+www.thestoryofeverything.film assets.squarespace.com * noop
+www.thestoryofeverything.film static1.squarespace.com * noop
 www.amazon.com ssl-images-amazon.com * noop
 www.amazon.nl ssl-images-amazon.com * noop
 www.stager.live pic.stagerlive.com * noop
@@ -450,6 +477,7 @@ outlook.office.com res.public.onecdn.static.microsoft * noop
 mannenzaken.nl streamable.com * noop
 * playerservices.live.streamtheworld.com * noop
 windscribe.com checkout.stripe.com * noop
+my.nextdns.io js.stripe.com * noop
 windscribe.com js.stripe.com * noop
 * t-msedge.net * noop
 www.tripadvisor.be static.tacdn.com * noop
@@ -461,6 +489,7 @@ www.scholieren.com https://www.tiktok.com/embed.js script noop
 www.scholieren.com https://www.tiktok.com/embed/ sub_frame noop
 www.tiktok.com tiktokcdn-eu.com * noop
 www.eset.com tm-azurefd.net * noop
+www.gaslicht.com tm-azurefd.net * noop
 github.dev tm-azurefd.net * noop
 www.intel.com tm-azurefd.net * noop
 translate.google.com translate.goog * noop
@@ -494,6 +523,7 @@ sporza.be player.vrt.be * noop
 github.dev vscode-cdn.net * noop
 github.dev vscode-unpkg.net * noop
 chatgpt.com web-sandbox.oaiusercontent.com * noop
+www.grootnieuwsradio.nl dns-gnradio.automation.webmecanik.com * noop
 www.semschietsport.nl cdn.webshopapp.com * noop
 * cdn.prod.website-files.com * noop
 wetransfer.com prod-cdn.wetransfer.net * noop
