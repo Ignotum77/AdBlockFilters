@@ -3,7 +3,7 @@
 ! Description: Ignotum's Personal Filter list (My filters)
 ! Homepage: https://github.com/Ignotum77/AdBlockFilters/
 ! Expires: 7 days
-! Last updated: 03-05-2026
+! Last updated: 24-05-2026
 !
 !PRIVACY
 !--Anti Facebook
@@ -73,13 +73,15 @@
 ||l.facebook.com/l.php?u=$doc,urlskip=?u
 ||l.instagram.com/?u=$doc,urlskip=?u
 ||redditstatic.com/shreddit/*/xpromo-untagged-content-blocking-modal-$script
-||redditstatic.com/shreddit/en-US/xpromo-nsfw-bypassable-modal-desktop-$script
+||redditstatic.com/shreddit/*/xpromo-nsfw-bypassable-modal-desktop-$script
+||redditstatic.com/shreddit/*/xpromo-nsfw-blocking-modal-*.js
+||redditstatic.com/shreddit/*/icon-nsfw-outline-*.js
+||redditstatic.com/shreddit/*/nsfw-blocking-*.js
 ||wetransfer.net/*/adblocker$3p,domain=wetransfer.com
 buienradar.*##.onboard-background
 buienradar.*##html,body:style(overflow: auto !important;)
 buienradar.*#?#.onboard-popup-container:has-text(Mogen we je locatie gebruiken)
 buienradar.be##[class^="LocationPermissions_Container"]:upward([class^="Modal_Overlay"])
-buienradar.nl##+js(set, hideBannerBlockedMessage, true)
 calorielijst.nl##+js(aopw, clickIE)
 chamilo.etf.edu##+js(ra, target, [href^="/"])
 chamilo.etf.edu#?#.classic-courses > .panel:has(.course-items-title:has-text(/Logos|Mentoring|Pastoraat|Spirituality|Studentenraad/))
@@ -117,6 +119,13 @@ quora.com##.signup_wall_prevent_scroll #root:style(filter: none !important;)
 quora.com##.signup_wall_prevent_scroll:style(position: unset !important; padding-right: 0 !important;)
 quora.com##+js(set, ansFrontendGlobals.settings.signupWallType, undefined)
 quora.com##body > div[id]:has(.modal_signup_dialog)
+www.reddit.com##+js(trusted-set, HTMLElement.prototype.__blurred, { value: "false" })
+www.reddit.com##+js(trusted-suppress-native-method, Element.prototype.querySelector, '"div[slot="revealed"]"', prevent)
+www.reddit.com##.thumbnail-blur:style(filter: none !important;)
+www.reddit.com##.thumbnail-shadow
+www.reddit.com##img.object-cover:style(filter: none !important;)
+www.reddit.com##.prompt, .bg-scrim, .overlay, .viewInApp, #blocking-modal, #nsfw-qr-dialog, body > [style*="blur(4px)"]
+www.reddit.com##body:style(pointer-events: auto !important; overflow-y: auto !important;)
 news.google.com#?#h2:has-text(Fact check):upward(section)
 translate.goog##+js(aeld, /contextmenu|keyup|keydown/)
 www.youtube.com##yt-notification-action-renderer.ytd-popup-container > #toast:has-text(Last van onderbrekingen)
@@ -167,15 +176,16 @@ theorieexamen.nl##+js(aeld, contextmenu)
 !--Anti SocialMedia Plugins
 ###ss-floating-bar:not(html, body)
 ##.addthis:not(html, body)
-##.addtoany_content:not(html, body):not(:upward(div[class*="addtoany"]))
-##.addtoany_list:not(html, body):not(:upward(div[class*="addtoany"]))
-##.addtoany_share:not(html, body):not(:upward(div[class*="addtoany"]))
+##.addtoany_content:not(html, body)
+##.addtoany_list:not(html, body)
+##.addtoany_share:not(html, body)
 ##.article-share:not(html, body)
 ##.colored.social-icons:not(html, body)
 logos.com##.entry-share
 ##.elementor-widget-share-buttons
 ##.essb_share:not(html, body)
 ##.et_social_icons_container:not(html, body)
+maurice.nl##.floating-share
 ##.fusion-sharing-box:not(html, body)
 ##.gridlove-share-wrapper:not(html, body)
 ##.heateor_sss_sharing_container:not(html, body)
@@ -204,14 +214,14 @@ gebruikershandleiding.com#@#.share:not(html, body, .entry)
 ##.td-post-sharing:not(html, body)
 ##.widget_facebook_likebox > .fb-page
 ##[class^="share-article"]:not(html, body)
-##[class$="shareitemlist"]:not(html, body):not(:upward([class$="sharesticky"]))
+##[class$="shareitemlist"]:not(html, body)
 ##[class$="sharesticky"]:not(html, body)
 ##[class*="share-bottom"]:not(html, body)
 ##[class*="share-top"]:not(html, body)
-##[class*="social-share"]:not(html, body, article, [preload], :upward([class*="social-share"]))
+##[class*="social-share"]:not(html, body, article, [preload])
 ##div[class$=-sticky-share]:not(html, body)
-##div[class*="addtoany"]:not(:upward(div[class*="addtoany"]))
-##div[class*="sharebar"]:not(:upward(div[class*="sharebar"]))
+##div[class*="addtoany"]
+##div[class*="sharebar"]
 ##div[class*="social-sharing"]:not(html, body)
 *share_ico*$~css
 *social_ico*$~css
@@ -222,6 +232,7 @@ gebruikershandleiding.com#@#.share:not(html, body, .entry)
 /addtoany/*.js
 /advanced-social-widget.js
 /ashare.js
+/assets/bluesky
 /assets/facebook
 /assets/js/kt-social-min.js$script,1p
 /btn_share
