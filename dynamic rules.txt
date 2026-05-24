@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: Dynamic rules for uBlock Origin's medium mode.
-! Last updated: 16-05-2026
+! Last updated: 24-05-2026
 !
 no-csp-reports: * true
 * * 3p-frame block
@@ -89,6 +89,7 @@ www.bbc.com static-web-assets.gnl-common.bbcverticals.com * noop
 * apps.bdimg.com * noop
 no-large-media: behind-the-scene true
 * behind-the-scene * block
+www.radio.be www.belgie.fm * noop
 www.paypal.com betacdn.net * noop
 azuredatacentermap.azurewebsites.net www.bing.com * noop
 beforeitsnews.com bitchute.com * noop
@@ -187,6 +188,7 @@ live.com fdv2-t-msedge.net * noop
 microsoft.com fdv2-t-msedge.net * noop
 www.msn.com fdv2-t-msedge.net * noop
 www.investmentofficer.nl api.finfiles.nl * noop
+frontpage.fok.nl fokstatic.nl * noop
 * kit.fontawesome.com * noop
 * use.fontawesome.com * noop
 * fonts.googleapis.com * noop
@@ -308,6 +310,7 @@ www.imdb.com m.media-amazon.com * noop
 * login.mediahuis.com * noop
 * mediahuis.online * noop
 www.dumpert.nl agnoplayer.mediahuisgroup.com * noop
+www.telegraaf.nl agnoplayer.mediahuisgroup.com * noop
 * player.medialaancdn.be * noop
 www.mijndomein.nl check.metaregistrar.com * noop
 www.mijndomein.nl lb.metaregistrar.net * noop
@@ -376,6 +379,7 @@ windowsazure.com office365.com * noop
 login.microsoftonline.com wpc.omegacdn.net * noop
 www.538.nl omny.fm * noop
 www.ad.nl omny.fm * noop
+www.radionoordzee.nl omny.fm * noop
 microsoft.com onestore.ms * noop
 www.radioreflex.be ecdn.onlineradiobox.com * noop
 www.hartstichting.nl hartstichting-injector.onstuimig.nl * noop
@@ -446,6 +450,7 @@ www.scholieren.com media.scholieren.net * noop
 sci-net.ru sci-net.xyz * noop
 voetbalvandaag.be widgets.scoreaxis.com * noop
 www.scribd.com scribdassets.com * noop
+www.alphens.nl alphens-nl.sera-apps.nl * noop
 softonic.com assets.sftcdn.net * noop
 softonic.nl assets.sftcdn.net * noop
 * developer.n.shifen.com * noop
@@ -461,6 +466,8 @@ soundcloud.com sndcdn.com * noop
 www.proquest.com cdn.socket.io * noop
 www.onderwegonline.nl webforms.spabonneeservice.nl * noop
 www.kpn.com speedtestcustom.com * noop
+www.slam.nl open.spotify.com * noop
+www.slam.nl embed-cdn.spotifycdn.com * noop
 open.spotify.com open.spotifycdn.com * noop
 www.thestoryofeverything.film definitions.sqspcdn.com * noop
 www.thestoryofeverything.film assets.squarespace.com * noop
