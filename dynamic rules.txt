@@ -376,9 +376,7 @@ office.com office365.com * noop
 sharepoint.com office365.com * noop
 windowsazure.com office365.com * noop
 login.microsoftonline.com wpc.omegacdn.net * noop
-www.538.nl omny.fm * noop
-www.ad.nl omny.fm * noop
-www.radionoordzee.nl omny.fm * noop
+* omny.fm * noop
 microsoft.com onestore.ms * noop
 www.radioreflex.be ecdn.onlineradiobox.com * noop
 www.hartstichting.nl hartstichting-injector.onstuimig.nl * noop
