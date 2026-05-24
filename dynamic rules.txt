@@ -267,8 +267,7 @@ nederland.fm partnerplayer.juke.nl * noop
 radio.nl partnerplayer.juke.nl * noop
 * https://ssl.p.jwpcdn.com/player/ script noop
 * content.jwplatform.com * noop
-nederland.fm cdn.jwplayer.com * noop
-radio.nl cdn.jwplayer.com * noop
+* cdn.jwplayer.com * noop
 * cdn.kaching.eu.com * noop
 www.cbs.nl api.eu.kaltura.com * noop
 * keycaptcha.com * noop
