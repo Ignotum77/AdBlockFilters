@@ -490,12 +490,10 @@ outlook.office.com res.public.onecdn.static.microsoft * noop
 * stream-server.nl * noop
 mannenzaken.nl streamable.com * noop
 * playerservices.live.streamtheworld.com * noop
-windscribe.com checkout.stripe.com * noop
-dash.cloudflare.com js.stripe.com * noop
-my.nextdns.io js.stripe.com * noop
-windscribe.com js.stripe.com * noop
-dash.cloudflare.com stripe.network * noop
-dash.cloudflare.com stripecdn.com * noop
+* checkout.stripe.com * noop
+* js.stripe.com * noop
+* stripe.network * noop
+* stripecdn.com * noop
 * t-msedge.net * noop
 www.tripadvisor.be static.tacdn.com * noop
 www.tripadvisor.nl static.tacdn.com * noop
