@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: Dynamic rules for uBlock Origin's medium mode.
-! Last updated: 24-05-2026
+! Last updated: 31-05-2026
 !
 no-csp-reports: * true
 * * 3p-frame block
@@ -16,6 +16,7 @@ microsoft.com prd.aadg.trafficmanager.net * noop
 www.msn.com prd.aadg.trafficmanager.net * noop
 www.skype.com prd.aadg.trafficmanager.net * noop
 account.activedirectory.windowsazure.com prd.aadg.trafficmanager.net * noop
+www.academia.edu academia-assets.com * noop
 www.sdok.nl sdok.activehosted.com * noop
 * addthis.com * noop
 adguard-dns.io adguardcdn.com * noop
@@ -105,6 +106,7 @@ www.jessedekoningautos.nl pub.blokweggroep.nl * noop
 * maxcdn.bootstrapcdn.com * noop
 * netdna.bootstrapcdn.com * noop
 * stackpath.bootstrapcdn.com * noop
+dash.cloudflare.com js.braintreegateway.com * noop
 www.bbc.com admin.brightcove.com * noop
 www.buienradar.be cdn.buienradar.nl * noop
 * captcha-delivery.com * noop
@@ -121,6 +123,9 @@ focus-wtv.be player.clevercast.com * noop
 * ajax.cloudflare.com * noop
 * cdnjs.cloudflare.com * noop
 * challenges.cloudflare.com * noop
+dash.cloudflare.com cloudflare.dev * noop
+developers.cloudflare.com cloudflarestream.com * noop
+reformatorischeomroep.nl cloudflarestream.com * noop
 * cloudfront.net * noop
 www.consumentenbond.nl consumentenbond-res.cloudinary.com * noop
 * quantcast.mgr.consensu.org * noop
@@ -135,6 +140,7 @@ www.kpn.com customersaas.com * noop
 www.vkmag.com https://dailybuzz.nl/player/ script noop
 www.vkmag.com https://dailybuzz.nl/buzz/embed/ sub_frame noop
 bvdp-web.github.io dailyverses.net * noop
+bvdp.pages.dev dailyverses.net * noop
 qmusic.nl fallback.dario.app * noop
 * cdn.datatables.net * noop
 developers.google.com developers-dot-devsite-v2-prod.appspot.com * noop
@@ -174,6 +180,7 @@ englishlive.ef.com ef-cdn.com * noop
 www.eindexamens.nu eindexamens.net * noop
 * cdn.embed.ly * noop
 www.lighthousetv.nl cdn.embedly.com * noop
+www.rd.nl cdn.erdee.nl * noop
 www.eset.com esetstatic.com * noop
 * facebook.com * noop
 * connect.facebook.net * noop
@@ -296,11 +303,13 @@ www.logos.com logoscdn.com * noop
 * fonts.loli.net * noop
 * cdn.bootcss.com.maoyundns.com * noop
 * cdn.bootcdn.net.maoyundns.com * noop
+www.rd.nl cdn.mapcreator.io * noop
 * maps.googleapis.com * noop
 mapy.com api.mapy.cz * noop
 www.2dehands.be marktplaats.nl * noop
 * cdn.materialdesignicons.com * noop
 * cdn.mathjax.org * noop
+www.rd.nl dynamic.mc-cdn.io * noop
 www.amazon.com media-amazon.com * noop
 www.amazon.nl media-amazon.com * noop
 www.amazon.com.be media-amazon.com * noop
@@ -387,6 +396,7 @@ www.magicearth.com cdn.paddle.com * noop
 * pagecdn.io * noop
 * payments-amazon.com * noop
 * c.paypal.com * noop
+dash.cloudflare.com checkout.paypal.com * noop
 * www.paypal.com * noop
 * paypalobjects.com * noop
 www.kpn.com pingvp.com * noop
@@ -481,14 +491,19 @@ outlook.office.com res.public.onecdn.static.microsoft * noop
 mannenzaken.nl streamable.com * noop
 * playerservices.live.streamtheworld.com * noop
 windscribe.com checkout.stripe.com * noop
+dash.cloudflare.com js.stripe.com * noop
 my.nextdns.io js.stripe.com * noop
 windscribe.com js.stripe.com * noop
+dash.cloudflare.com stripe.network * noop
+dash.cloudflare.com stripecdn.com * noop
 * t-msedge.net * noop
 www.tripadvisor.be static.tacdn.com * noop
 www.tripadvisor.nl static.tacdn.com * noop
 asnlookup.com cdn.tailwindcss.com * noop
 library.etf.edu teamup.com * noop
 libkey.io libkey-app.thirdiron.com * noop
+* https://www.tiktok.com/embed.js script noop
+* https://www.tiktok.com/embed/ sub_frame noop
 www.scholieren.com https://www.tiktok.com/embed.js script noop
 www.scholieren.com https://www.tiktok.com/embed/ sub_frame noop
 www.tiktok.com tiktokcdn-eu.com * noop
@@ -500,6 +515,7 @@ translate.google.com translate.goog * noop
 * consent.trustarc.com * noop
 * consent-pref.trustarc.com * noop
 * consent.truste.com * noop
+* ttwstatic.com * noop
 www.scholieren.com ttwstatic.com * noop
 www.tiktok.com ttwstatic.com * noop
 radiopros.be https://tunein.com/embed/player/ sub_frame noop
