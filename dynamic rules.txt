@@ -396,7 +396,7 @@ www.magicearth.com cdn.paddle.com * noop
 * pagecdn.io * noop
 * payments-amazon.com * noop
 * c.paypal.com * noop
-dash.cloudflare.com checkout.paypal.com * noop
+* checkout.paypal.com * noop
 * www.paypal.com * noop
 * paypalobjects.com * noop
 www.kpn.com pingvp.com * noop
