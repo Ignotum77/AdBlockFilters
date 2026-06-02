@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: Dynamic rules for uBlock Origin's medium mode.
-! Last updated: 31-05-2026
+! Last updated: 02-06-2026
 !
 no-csp-reports: * true
 * * 3p-frame block
@@ -8,8 +8,6 @@ no-csp-reports: * true
 file-scheme * 1p-script block
 file-scheme * inline-script block
 heelhollandkijkt.nl * 3p-frame noop
-nomennescio.pages.dev * 3p-frame noop
-nomennescio.pages.dev * 3p-script noop
 aws.amazon.com aws.a2z.com * noop
 account.live.com prd.aadg.trafficmanager.net * noop
 microsoft.com prd.aadg.trafficmanager.net * noop
@@ -103,9 +101,6 @@ www.jessedekoningautos.nl pub.blokweggroep.nl * noop
 * cdn.bootcdn.net * noop
 * cdn.bootcss.com * noop
 * bootstrapcdn.com * noop
-* maxcdn.bootstrapcdn.com * noop
-* netdna.bootstrapcdn.com * noop
-* stackpath.bootstrapcdn.com * noop
 dash.cloudflare.com js.braintreegateway.com * noop
 www.bbc.com admin.brightcove.com * noop
 www.buienradar.be cdn.buienradar.nl * noop
@@ -139,7 +134,6 @@ artsandculture.google.com embed.culturalspot.org * noop
 www.kpn.com customersaas.com * noop
 www.vkmag.com https://dailybuzz.nl/player/ script noop
 www.vkmag.com https://dailybuzz.nl/buzz/embed/ sub_frame noop
-bvdp-web.github.io dailyverses.net * noop
 bvdp.pages.dev dailyverses.net * noop
 qmusic.nl fallback.dario.app * noop
 * cdn.datatables.net * noop
@@ -310,6 +304,7 @@ www.2dehands.be marktplaats.nl * noop
 * cdn.materialdesignicons.com * noop
 * cdn.mathjax.org * noop
 www.rd.nl dynamic.mc-cdn.io * noop
+developer.mozilla.org mdnplay.dev * noop
 www.amazon.com media-amazon.com * noop
 www.amazon.nl media-amazon.com * noop
 www.amazon.com.be media-amazon.com * noop
@@ -481,6 +476,7 @@ www.thestoryofeverything.film assets.squarespace.com * noop
 www.thestoryofeverything.film static1.squarespace.com * noop
 www.amazon.com ssl-images-amazon.com * noop
 www.amazon.nl ssl-images-amazon.com * noop
+stackoverflow.com stacksnippets.net * noop
 www.stager.live pic.stagerlive.com * noop
 m365.cloud.microsoft res.public.onecdn.static.microsoft * noop
 onedrive.live.com res.public.onecdn.static.microsoft * noop
