@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: Dynamic rules for uBlock Origin's medium mode.
-! Last updated: 02-06-2026
+! Last updated: 20-06-2026
 !
 no-csp-reports: * true
 * * 3p-frame block
@@ -55,6 +55,7 @@ www.hardnieuws.nl play.asmedia.nl * noop
 microsoft.com aspnetcdn.com * noop
 * ajax.aspnetcdn.com * noop
 * assetsadobe.com * noop
+www.rtvideaal.nl asurahosting.com * noop
 radiopros.be mediacp.audiostreamen.nl * noop
 * cdn.auth0.com * noop
 * purch.auth0.com * noop
@@ -119,6 +120,7 @@ focus-wtv.be player.clevercast.com * noop
 * cdnjs.cloudflare.com * noop
 * challenges.cloudflare.com * noop
 dash.cloudflare.com cloudflare.dev * noop
+dash.cloudflare.com cloudflarepreviews.com * noop
 developers.cloudflare.com cloudflarestream.com * noop
 reformatorischeomroep.nl cloudflarestream.com * noop
 * cloudfront.net * noop
@@ -170,9 +172,11 @@ research.ebsco.com researcher-shared-search-ui.live.ebsco-assets.com * noop
 * edgecastcdn.net * noop
 * edgekey.net * noop
 * edgesuite.net * noop
+www.twoprisms.com editmysite.com * noop
 englishlive.ef.com ef-cdn.com * noop
 www.eindexamens.nu eindexamens.net * noop
 * cdn.embed.ly * noop
+www.huisdevoorst.nl cdn.embedly.com * noop
 www.lighthousetv.nl cdn.embedly.com * noop
 www.rd.nl cdn.erdee.nl * noop
 www.eset.com esetstatic.com * noop
@@ -194,6 +198,7 @@ frontpage.fok.nl fokstatic.nl * noop
 * use.fontawesome.com * noop
 * fonts.googleapis.com * noop
 www.weerplaza.nl infoplaza.fotoloods.nl * noop
+jongerendag.eo.nl framerusercontent.com * noop
 * freshlive.tv * noop
 * api.funcaptcha.com * noop
 y8.com game.api.gamedistribution.com * noop
@@ -248,12 +253,15 @@ nos.nl widgets.sports.gracenote.com * noop
 * mat1.gtimg.com * noop
 y8.com www.h5games4u.com * noop
 * hcaptcha.com * noop
+www.sat24.com code.highcharts.com * noop
+www.weerslag.be code.highcharts.com * noop
+www.weerslag.nl code.highcharts.com * noop
+* html-load.com * noop
 * fb.html-load.com * noop
 * cds.s5x3j6q5.hwcdn.net * noop
 www.2dehands.be hzcdn.io * noop
 www.marktplaats.nl hzcdn.io * noop
 * imasdk.googleapis.com * noop
-www.weerplaza.nl assets.infoplaza.io * noop
 www.ing.nl cdn.ing.com * noop
 * instagram.com * noop
 www.investmentofficer.nl cdn.investmentofficer.com * noop
@@ -303,6 +311,7 @@ mapy.com api.mapy.cz * noop
 www.2dehands.be marktplaats.nl * noop
 * cdn.materialdesignicons.com * noop
 * cdn.mathjax.org * noop
+www.rtvideaal.nl media.maxx-xs.nl * noop
 www.rd.nl dynamic.mc-cdn.io * noop
 developer.mozilla.org mdnplay.dev * noop
 www.amazon.com media-amazon.com * noop
@@ -471,7 +480,11 @@ www.kpn.com speedtestcustom.com * noop
 www.slam.nl open.spotify.com * noop
 www.slam.nl embed-cdn.spotifycdn.com * noop
 open.spotify.com open.spotifycdn.com * noop
+www.changedmovement.com definitions.sqspcdn.com * noop
+www.huisdevoorst.nl definitions.sqspcdn.com * noop
 www.thestoryofeverything.film definitions.sqspcdn.com * noop
+www.changedmovement.com squarespace.com * noop
+www.huisdevoorst.nl squarespace.com * noop
 www.thestoryofeverything.film assets.squarespace.com * noop
 www.thestoryofeverything.film static1.squarespace.com * noop
 www.amazon.com ssl-images-amazon.com * noop
@@ -531,6 +544,7 @@ versus.com assets.versus.io * noop
 www.vesselfinder.com static.vesselfinder.net * noop
 * embed.viaplay.com * noop
 * embed.videodelivery.net * noop
+github.com viewscreen.githubusercontent.com * noop
 * player.vimeo.com * noop
 * vimeocdn.com * noop
 sporza.be player.vrt.be * noop
