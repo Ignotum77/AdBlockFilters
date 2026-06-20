@@ -176,8 +176,7 @@ www.twoprisms.com editmysite.com * noop
 englishlive.ef.com ef-cdn.com * noop
 www.eindexamens.nu eindexamens.net * noop
 * cdn.embed.ly * noop
-www.huisdevoorst.nl cdn.embedly.com * noop
-www.lighthousetv.nl cdn.embedly.com * noop
+* cdn.embedly.com * noop
 www.rd.nl cdn.erdee.nl * noop
 www.eset.com esetstatic.com * noop
 * facebook.com * noop
