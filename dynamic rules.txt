@@ -479,13 +479,8 @@ www.kpn.com speedtestcustom.com * noop
 www.slam.nl open.spotify.com * noop
 www.slam.nl embed-cdn.spotifycdn.com * noop
 open.spotify.com open.spotifycdn.com * noop
-www.changedmovement.com definitions.sqspcdn.com * noop
-www.huisdevoorst.nl definitions.sqspcdn.com * noop
-www.thestoryofeverything.film definitions.sqspcdn.com * noop
-www.changedmovement.com squarespace.com * noop
-www.huisdevoorst.nl squarespace.com * noop
-www.thestoryofeverything.film assets.squarespace.com * noop
-www.thestoryofeverything.film static1.squarespace.com * noop
+* definitions.sqspcdn.com * noop
+* squarespace.com * noop
 www.amazon.com ssl-images-amazon.com * noop
 www.amazon.nl ssl-images-amazon.com * noop
 stackoverflow.com stacksnippets.net * noop
