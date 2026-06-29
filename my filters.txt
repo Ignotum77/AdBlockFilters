@@ -3,7 +3,7 @@
 ! Description: Ignotum's Personal Filter list (My filters)
 ! Homepage: https://github.com/Ignotum77/AdBlockFilters/
 ! Expires: 7 days
-! Last updated: 24-05-2026
+! Last updated: 29-06-2026
 !
 !PRIVACY
 !--Anti Facebook
@@ -78,6 +78,7 @@
 ||redditstatic.com/shreddit/*/icon-nsfw-outline-*.js
 ||redditstatic.com/shreddit/*/nsfw-blocking-*.js
 ||wetransfer.net/*/adblocker$3p,domain=wetransfer.com
+||domain767.pages.dev/1.js
 buienradar.*##.onboard-background
 buienradar.*##html,body:style(overflow: auto !important;)
 buienradar.*#?#.onboard-popup-container:has-text(Mogen we je locatie gebruiken)
@@ -129,21 +130,12 @@ www.reddit.com##body:style(pointer-events: auto !important; overflow-y: auto !im
 news.google.com#?#h2:has-text(Fact check):upward(section)
 translate.goog##+js(aeld, /contextmenu|keyup|keydown/)
 www.youtube.com##yt-notification-action-renderer.ytd-popup-container > #toast:has-text(Last van onderbrekingen)
-www.youtube.com##ytd-guide-renderer .yt-simple-endpoint[title="Shorts"]:upward(ytd-guide-entry-renderer)
-www.youtube.com##ytd-mini-guide-renderer .ytd-mini-guide-entry-renderer[title="Shorts"]:upward(ytd-mini-guide-entry-renderer)
-www.youtube.com###content > .ytd-rich-section-renderer.style-scope:has(a[href^="/shorts/"])
-www.youtube.com##ytd-watch-next-secondary-results-renderer ytd-reel-shelf-renderer.ytd-watch-next-secondary-results-renderer
-www.youtube.com##ytd-watch-next-secondary-results-renderer a[href^="/shorts/"]:upward(yt-lockup-view-model)
-www.youtube.com##ytd-watch-next-secondary-results-renderer yt-thumbnail-badge-view-model:has-text(Shorts):upward(yt-lockup-view-model)
-www.youtube.com##ytd-watch-next-secondary-results-renderer ytd-feed-nudge-renderer
-www.youtube.com##ytd-search #video-title[href^="/shorts/"]:upward(ytd-video-renderer)
-www.youtube.com##ytd-search #contents > grid-shelf-view-model:has(a[href^="/shorts/"])
 www.youtube.com##.ytd-watch-flexy > .ytd-info-panel-container-renderer
 www.youtube.com##.ytd-watch-metadata .ytd-info-panel-content-renderer.content:upward(.ytd-watch-metadata)
 www.youtube.com##.ytd-watch-metadata #dismissible:has-text(/Music|Muziek/)
-www.youtube.com##.ytd-watch-metadata ytd-reel-shelf-renderer
 www.youtube.com##.ytd-watch-metadata #video-summary
 www.youtube.com###comment .translate-button:style(font-size:1rem !important; line-height: 1rem !important;)
+m.youtube.com##.shortsLockupViewModelHost:upward(ytm-rich-section-renderer)
 www.youtube.com,music.youtube.com##.ytp-overlays-container .ytp-cards-teaser
 www.youtube.com##ytm-embeds-info-panel-renderer
 music.youtube.com##tp-yt-paper-dialog.ytmusic-popup-container:has-text(Music Premium)
