@@ -135,7 +135,6 @@ www.youtube.com##.ytd-watch-metadata .ytd-info-panel-content-renderer.content:up
 www.youtube.com##.ytd-watch-metadata #dismissible:has-text(/Music|Muziek/)
 www.youtube.com##.ytd-watch-metadata #video-summary
 www.youtube.com###comment .translate-button:style(font-size:1rem !important; line-height: 1rem !important;)
-m.youtube.com##.shortsLockupViewModelHost:upward(ytm-rich-section-renderer)
 www.youtube.com,music.youtube.com##.ytp-overlays-container .ytp-cards-teaser
 www.youtube.com##ytm-embeds-info-panel-renderer
 music.youtube.com##tp-yt-paper-dialog.ytmusic-popup-container:has-text(Music Premium)
