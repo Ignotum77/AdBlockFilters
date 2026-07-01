@@ -23,10 +23,7 @@ adguard.com adguardcdn.com * noop
 * sp.auth.adobe.com * noop
 * assets.adobedtm.com * noop
 www.spel.nl agamecdn.com * noop
-www.autovisie.nl player.agnoplay.com * noop
-www.dumpert.nl player.agnoplay.com * noop
-www.sikkom.nl player.agnoplay.com * noop
-www.telegraaf.nl player.agnoplay.com * noop
+* player.agnoplay.com * noop
 www.ah.be static.ah.nl * noop
 * vo.aicdn.com * noop
 * ajax.googleapis.com * noop
@@ -326,10 +323,7 @@ www.imdb.com m.media-amazon.com * noop
 * ciamcdn.mediahuis.com * noop
 * login.mediahuis.com * noop
 * mediahuis.online * noop
-www.autovisie.nl agnoplayer.mediahuisgroup.com * noop
-www.dumpert.nl agnoplayer.mediahuisgroup.com * noop
-www.sikkom.nl agnoplayer.mediahuisgroup.com * noop
-www.telegraaf.nl agnoplayer.mediahuisgroup.com * noop
+* agnoplayer.mediahuisgroup.com * noop
 * player.medialaancdn.be * noop
 www.mijndomein.nl check.metaregistrar.com * noop
 www.mijndomein.nl lb.metaregistrar.net * noop
