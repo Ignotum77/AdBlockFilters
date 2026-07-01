@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: Dynamic rules for uBlock Origin's medium mode.
-! Last updated: 20-06-2026
+! Last updated: 01-07-2026
 !
 no-csp-reports: * true
 * * 3p-frame block
@@ -23,7 +23,9 @@ adguard.com adguardcdn.com * noop
 * sp.auth.adobe.com * noop
 * assets.adobedtm.com * noop
 www.spel.nl agamecdn.com * noop
+www.autovisie.nl player.agnoplay.com * noop
 www.dumpert.nl player.agnoplay.com * noop
+www.sikkom.nl player.agnoplay.com * noop
 www.telegraaf.nl player.agnoplay.com * noop
 www.ah.be static.ah.nl * noop
 * vo.aicdn.com * noop
@@ -206,6 +208,9 @@ y8.com html5.gamedistribution.com * noop
 y8.com ws.gamedistribution.com * noop
 y8.com cdn.gamemonkey.org * noop
 www.spelletjes.nl gamesgamescdn.com * noop
+www.robtv.be gcdn.co * noop
+www.tvl.be gcdn.co * noop
+www.tvoost.be gcdn.co * noop
 * sdn.inbond.gslb.geekzu.org * noop
 * sdn.geekzu.org * noop
 account.live.com gfx.ms * noop
@@ -318,9 +323,13 @@ www.amazon.nl media-amazon.com * noop
 www.amazon.com.be media-amazon.com * noop
 www.imdb.com m.media-amazon.com * noop
 * shared.mediahuis.be * noop
+www.telegraaf.nl mediahuis.com * noop
+www.sikkom.nl ciamcdn.mediahuis.com * noop
 * login.mediahuis.com * noop
 * mediahuis.online * noop
+www.autovisie.nl agnoplayer.mediahuisgroup.com * noop
 www.dumpert.nl agnoplayer.mediahuisgroup.com * noop
+www.sikkom.nl agnoplayer.mediahuisgroup.com * noop
 www.telegraaf.nl agnoplayer.mediahuisgroup.com * noop
 * player.medialaancdn.be * noop
 www.mijndomein.nl check.metaregistrar.com * noop
@@ -440,6 +449,8 @@ www.clevercast.com pool.cdn01.rambla.be * noop
 focus-wtv.be pool.cdn01.rambla.be * noop
 * cdn.ravenjs.com * noop
 radiolelystad.nl players.rcast.net * noop
+docs.embed.ly cdn.readme.io * noop
+docs.embed.ly ssl.readmessl.com * noop
 * recaptcha.net * noop
 www.reddit.com redditstatic.com * noop
 * tags.refinery89.com * noop
@@ -567,3 +578,6 @@ login.microsoftonline.com account.activedirectory.windowsazure.com * noop
 * youtube.googleapis.com * noop
 * s.ytimg.com * noop
 * vjs.zencdn.net * noop
+www.robtv.be player.zndznd.com * noop
+www.tvl.be player.zndznd.com * noop
+www.tvoost.be player.zndznd.com * noop
