@@ -323,8 +323,7 @@ www.amazon.nl media-amazon.com * noop
 www.amazon.com.be media-amazon.com * noop
 www.imdb.com m.media-amazon.com * noop
 * shared.mediahuis.be * noop
-www.telegraaf.nl mediahuis.com * noop
-www.sikkom.nl ciamcdn.mediahuis.com * noop
+* ciamcdn.mediahuis.com * noop
 * login.mediahuis.com * noop
 * mediahuis.online * noop
 www.autovisie.nl agnoplayer.mediahuisgroup.com * noop
