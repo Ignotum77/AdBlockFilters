@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: Dynamic rules for uBlock Origin's medium mode.
-! Last updated: 01-07-2026
+! Last updated: 03-07-2026
 !
 no-csp-reports: * true
 * * 3p-frame block
@@ -533,6 +533,7 @@ x.com twitter.com * noop
 * https://syndication.twitter.com/srv/timeline-profile/screen-name/ sub_frame noop
 * unpkg.com * noop
 * upcdn.b0.upaiyun.com * noop
+* upcloudlb.com * noop
 * gateway.cname.ustclug.org * noop
 * ajax.proxy.ustclug.org * noop
 install.appcenter.ms v0cdn.net * noop
