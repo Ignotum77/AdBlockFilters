@@ -1,7 +1,7 @@
 ! Title: EasyDutch
-! Last updated: Fri, 26 Jun 2026 14:56:02 +0000
+! Last updated: Fri, 03 Jul 2026 16:03:54 +0000
 ! Expires: 7 days (update frequency)
-! Diff-Path: patches/2026.6.26.896.patch#easydutch
+! Diff-Path: patches/2026.7.3.963.patch#easydutch
 ! Diff-Expires: 6 hours
 ! Description: |
     Dutch supplement for the Easylist filters to use with uBlock Origin
@@ -16,7 +16,7 @@
 /tekst_advertentie_
 /mediahuis-ads/*$~css
 /gaslicht/header300x20.png$image
-/gaslicht/gaslicht*$subdocument
+/gaslicht/gaslicht*$frame
 /css/branding.css$3p
 -reclameplaatjes/
 /adbron.
@@ -44,7 +44,6 @@
 /reclame2.
 /reclamebanners/*
 /scripts/edoris/edoris.dll?tem=ln_banner_view&
-/scripts/edoris/shared/*$object
 /small_reclames/*
 /topadvertentie.
 ://promotie.$3p
@@ -58,6 +57,8 @@ _advertentieleaderboardhome.
 ||a.scholieren.com^
 ||content2.nrc.nl^
 ! *** EasyDutch:EasyDutch/Block_third_party_Server.txt ***
+||cryptosplash.care^$3p
+||typegc.care^$3p
 ||sponsorlink.nl^$3p
 ||cdn.prdn.nl^$3p
 ||partner-nl-be.hema.com^$3p
@@ -70,7 +71,6 @@ _advertentieleaderboardhome.
 ||rkn3.net^3p
 ||bdt9.net^$3p
 ||bannersimages.s-bol.com^$3p
-||cryptosplash.care^$3p
 ||7mb.nl^$3p
 ||pornokartel.nl^$3p
 ||adverteren.rd.nl^$strict3p
@@ -94,7 +94,7 @@ _advertentieleaderboardhome.
 ||affilaxy.com^$3p
 ||asp.unitedconsumers.com^$3p
 ||awin.com^$3p
-||cashpartners.eu^$3p,domain=~extreemonlinecontact.nl|~instasex.nl
+||cashpartners.eu^$3p
 ||cleafs.nl^$3p
 ||conversive.nl^$3p
 ||daisycon.com^$3p
@@ -1100,11 +1100,8 @@ nljug.org###sidebar .widget:has(a[href^="https://devitjobs.nl/jobs/"])
 nljug.org##[id^="custom_html-"]:has-text(Kennispartners):has(a[href] > img)
 telegraaf.nl##.mh-ad-label[id^="ad_"]:upward([class^="teaser-grid-entry_teaserGridItem"])
 balkstercourant.nl,denoordoostpolder.nl,dvhn.nl,flevopost.nl,frieschdagblad.nl,hoogeveenschecourant.nl,lc.nl,meppelercourant.nl,nieuweooststellingwerver.nl,denoordoostpolder.nl,steenwijkercourant.nl,stellingwerf.nl##[id^="ad_native"][aria-label="Advertentie"]:upward(li)
-gooieneemlander.nl,haarlemsdagblad.nl,ijmuidercourant.nl,leidschdagblad.nl,limburger.nl,noordhollandsdagblad.nl,telegraaf.nl##.mh-ad-label[id^="ad_"]
+gooieneemlander.nl,haarlemsdagblad.nl,ijmuidercourant.nl,leidschdagblad.nl,limburger.nl,noordhollandsdagblad.nl,sikkom.nl,telegraaf.nl##.mh-ad-label[id^="ad_"]
 autovisie.nl,bedrock.nl,culy.nl,jmouders.nl,manners.nl,metronieuws.nl,nsmbl.nl,want.nl##.mha_container
-sikkom.nl##.ad-sticky-parent
-sikkom.nl##[id^="ad_"][aria-label="Advertentie"]
-sikkom.nl##[id^="ad_native"]:upward(.column)
 dumpert.nl##[class^="css-"] [id^="ad_leaderboardwallpaper-"]:upward(3)
 dumpert.nl##[class^="css-"] [id^="ad_billboardrectangle"]:upward(3)
 dumpert.nl##[class^="css-"] [id^="ad_interscroller"]:upward(2)
@@ -1463,6 +1460,7 @@ mechanisatiemarkt.nl#@#.advert-title
 mechanisatiemarkt.nl#@#.advertiser
 marktplaats.nl#@#.adSummary
 ! *** EasyDutch:EasyDutch/Anti-Adblock.txt ***
+||cdn.btmessage.com/script/$redirect=noop.js,domain=sikkom.nl
 @@||moppen.nl^$ghide
 dumpert.nl##+js(set-constant, fetch, true)
 alleveilingen.be,alleveilingen.nl##+js(acs, document.addEventListener, fakeAd)
