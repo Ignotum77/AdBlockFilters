@@ -3,7 +3,7 @@
 ! Description: Ignotum's Personal Filter list (My filters)
 ! Homepage: https://github.com/Ignotum77/AdBlockFilters/
 ! Expires: 7 days
-! Last updated: 29-06-2026
+! Last updated: 11-07-2026
 !
 !PRIVACY
 !--Anti Facebook
@@ -72,13 +72,7 @@
 ||copypoison.com^$3p
 ||l.facebook.com/l.php?u=$doc,urlskip=?u
 ||l.instagram.com/?u=$doc,urlskip=?u
-||redditstatic.com/shreddit/*/xpromo-untagged-content-blocking-modal-$script
-||redditstatic.com/shreddit/*/xpromo-nsfw-bypassable-modal-desktop-$script
-||redditstatic.com/shreddit/*/xpromo-nsfw-blocking-modal-*.js
-||redditstatic.com/shreddit/*/icon-nsfw-outline-*.js
-||redditstatic.com/shreddit/*/nsfw-blocking-*.js
 ||wetransfer.net/*/adblocker$3p,domain=wetransfer.com
-||domain767.pages.dev/1.js
 buienradar.*##.onboard-background
 buienradar.*##html,body:style(overflow: auto !important;)
 buienradar.*#?#.onboard-popup-container:has-text(Mogen we je locatie gebruiken)
@@ -120,14 +114,6 @@ quora.com##.signup_wall_prevent_scroll #root:style(filter: none !important;)
 quora.com##.signup_wall_prevent_scroll:style(position: unset !important; padding-right: 0 !important;)
 quora.com##+js(set, ansFrontendGlobals.settings.signupWallType, undefined)
 quora.com##body > div[id]:has(.modal_signup_dialog)
-www.reddit.com##+js(trusted-set, HTMLElement.prototype.__blurred, { value: "false" })
-www.reddit.com##+js(trusted-suppress-native-method, Element.prototype.querySelector, '"div[slot="revealed"]"', prevent)
-www.reddit.com##.thumbnail-blur:style(filter: none !important;)
-www.reddit.com##.thumbnail-shadow
-www.reddit.com##img.object-cover:style(filter: none !important;)
-www.reddit.com##.prompt, .bg-scrim, .overlay, .viewInApp, #blocking-modal, #nsfw-qr-dialog, body > [style*="blur(4px)"]
-www.reddit.com##body:style(pointer-events: auto !important; overflow-y: auto !important;)
-news.google.com#?#h2:has-text(Fact check):upward(section)
 translate.goog##+js(aeld, /contextmenu|keyup|keydown/)
 www.youtube.com##yt-notification-action-renderer.ytd-popup-container > #toast:has-text(Last van onderbrekingen)
 www.youtube.com##.ytd-watch-flexy > .ytd-info-panel-container-renderer
@@ -138,10 +124,10 @@ www.youtube.com###comment .translate-button:style(font-size:1rem !important; lin
 www.youtube.com,music.youtube.com##.ytp-overlays-container .ytp-cards-teaser
 www.youtube.com##ytm-embeds-info-panel-renderer
 music.youtube.com##tp-yt-paper-dialog.ytmusic-popup-container:has-text(Music Premium)
-y.com.sb,yewtu.be###player .vjs-icon-share.vjs-share-control
-y.com.sb,yewtu.be###player .vjs-remaining-time
-y.com.sb,yewtu.be###contents #playlist > .playlist-restricted:style(height: 560px !important;)
-y.com.sb,yewtu.be###playlist [href^="/watch"]:has-text([Deleted video]):remove()
+www.youtube.com##ytd-guide-entry-renderer:has-text(Shorts)
+www.youtube.com##ytd-mini-guide-entry-renderer:has-text(Shorts)
+www.youtube.com##ytd-search grid-shelf-view-model.ytd-item-section-renderer:has(a[href^="/shorts"])
+www.youtube.com###description ytd-reel-shelf-renderer
 mediawiki.org,wikibooks.org,wikidata.org,wikieducator.org,wikimedia.org,wikinews.org,wikipedia.org,wikiquote.org,wikisource.org,wikitravel.org,wikivoyage.org,wiktionary.org#?#.interlanguage-link:not(:has-text(/Afrikaans|Deutsch|English|Français|Nederlands/))
 !--Anti Google Chrome Download Message, Cookie Banner and Login
 ||ogs.google.*/widget/callout*&origin=*.google.*=callout
