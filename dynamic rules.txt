@@ -142,12 +142,7 @@ qmusic.nl fallback.dario.app * noop
 * cdn.datatables.net * noop
 developers.google.com developers-dot-devsite-v2-prod.appspot.com * noop
 linkedin.com dfp-greenid-prod-multi.trafficmanager.net * noop
-community.cloudflare.com discourse-cdn.com * noop
-discussion.fedoraproject.org discourse-cdn.com * noop
-community.frame.work discourse-cdn.com * noop
-discourse.mozilla.org discourse-cdn.com * noop
-forums.powershell.org discourse-cdn.com * noop
-community.spiceworks.com discourse-cdn.com * noop
+* discourse-cdn.com * noop
 www.bruzz.be https://disqus.com/embed/ sub_frame noop
 technical.city https://disqus.com/embed/ sub_frame noop
 www.bruzz.be https://brusselnieuws.disqus.com/count.js script noop
