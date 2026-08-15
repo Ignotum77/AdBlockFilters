@@ -1,7 +1,23 @@
 ! Title: Hide Specific
 ! Description: Filters for hiding elements on specific Dutch websites
-! Last updated: Thu, 06 Aug 2026 14:46:27 +0000
+! Last updated: Sat, 08 Aug 2026 11:35:14 +0000
 !
+! 2026-08-08
+boodschappen.nl##[id^="ad-"]:upward(2)
+boodschappen.nl##[aria-label="Uitgelichte producten"]
+motorrijder.be##.elementor-widget-container > a:not([href*="https://motorrijder.be"]) > img:upward(.elementor-widget-image)
+motorrijder.be##div[class*="-banner-"]
+marktplaats.nl,2dehands.be##.hz-Page-content:style(max-width: 1300px!important;)
+marktplaats.nl,2dehands.be###banner-top-dt
+marktplaats.nl,2dehands.be##.BrandTileBanner-module-container
+marktplaats.nl,2dehands.be##.hz-FeedBannerBlock
+marktplaats.nl,2dehands.be###adsense-container
+marktplaats.nl,2dehands.be##.bannerContainerLoading
+marktplaats.nl,2dehands.be##.hz-Banner
+marktplaats.nl,2dehands.be##div[class*="admarktTitle"]:upward(1)
+marktplaats.nl,2dehands.be##.BannerRight-root
+marktplaats.nl,2dehands.be##.right-banner-root-container
+marktplaats.nl,2dehands.be##.vip-banner-top-sticky-container
 ! 2026-08-06
 mediamarkt.nl##[data-test="mms-search-main"] aside[aria-label="Gesponsorde inhoud"]
 ! 2026-07-11
@@ -680,8 +696,8 @@ autosport.nl##.horizontal
 motorblog.nl##.sale
 ! NPO
 nporadio1.nl,nporadio2.nl,npo3fm.nl,npoklassiek.nl,nporadio5.nl,funx.nl##[id^="adid"]:upward(2)
-bnnvara.nl##div[id^="ster-ad-bnnvara-"]:upward(1)
-maxvandaag.nl##main > .container:has(.sterWrapper)
+bnnvara.nl###sterad:upward(1)
+maxvandaag.nl##div.sterWrapper
 ! End NPO
 biernet.nl###banTop
 biernet.nl###BJA_LEADER1
@@ -695,9 +711,8 @@ nljug.org###sidebar .widget:has(a[href^="https://devitjobs.nl/jobs/"])
 nljug.org##[id^="custom_html-"]:has-text(Kennispartners):has(a[href] > img)
 ! 2026-02-03
 ! Mediahuis.nl
-telegraaf.nl##.mh-ad-label[id^="ad_"]:upward([class^="teaser-grid-entry_teaserGridItem"])
-balkstercourant.nl,denoordoostpolder.nl,dvhn.nl,flevopost.nl,frieschdagblad.nl,hoogeveenschecourant.nl,lc.nl,meppelercourant.nl,nieuweooststellingwerver.nl,denoordoostpolder.nl,steenwijkercourant.nl,stellingwerf.nl##[id^="ad_native"][aria-label="Advertentie"]:upward(li)
-gooieneemlander.nl,haarlemsdagblad.nl,ijmuidercourant.nl,leidschdagblad.nl,limburger.nl,noordhollandsdagblad.nl,sikkom.nl,telegraaf.nl##.mh-ad-label[id^="ad_"]
+dvhn.nl,flevopost.nl,frieschdagblad.nl,gooieneemlander.nl,haarlemsdagblad.nl,hoogeveenschecourant.nl,ijmuidercourant.nl,lc.nl,leidschdagblad.nl,limburger.nl,meppelercourant.nl,nieuweooststellingwerver.nl,noordhollandsdagblad.nl,sikkom.nl,steenwijkercourant.nl,stellingwerf.nl,telegraaf.nl##.mh-ad-label[id^="ad_"]
+dvhn.nl,flevopost.nl,frieschdagblad.nl,gooieneemlander.nl,haarlemsdagblad.nl,hoogeveenschecourant.nl,ijmuidercourant.nl,lc.nl,leidschdagblad.nl,limburger.nl,meppelercourant.nl,nieuweooststellingwerver.nl,noordhollandsdagblad.nl,sikkom.nl,steenwijkercourant.nl,stellingwerf.nl,telegraaf.nl##.mh-ad-label[id^="ad_"]:upward([class^="teaser-grid-entry_teaserGridItem"])
 autovisie.nl,bedrock.nl,culy.nl,jmouders.nl,manners.nl,metronieuws.nl,nsmbl.nl,want.nl##.mha_container
 ! https://github.com/uBlockOrigin/uAssets/issues/21284
 ! https://github.com/EasyDutch-uBO/EasyDutch/issues/121
@@ -708,17 +723,6 @@ dumpert.nl##aside .ad:upward(2)
 dumpert.nl##article .ad:upward(2)
 ! End Mediahuis.nl
 funda.nl##.justify-center[role="complementary"]:has-text(Advert)
-marktplaats.nl,2dehands.be###adsense-container
-marktplaats.nl,2dehands.be###banner-top-dt
-marktplaats.nl,2dehands.be##.bannerContainerLoading
-marktplaats.nl,2dehands.be##.BannerBottom-root
-marktplaats.nl,2dehands.be##.BannerRight-root
-marktplaats.nl,2dehands.be##.Banners-bannerFeedItem
-marktplaats.nl,2dehands.be##.hz-Banner
-marktplaats.nl,2dehands.be##.hz-Page-content:style(max-width: 1300px!important;)
-marktplaats.nl,2dehands.be##.right-banner-root-container
-marktplaats.nl,2dehands.be##.vip-banner-top-sticky-container
-marktplaats.nl,2dehands.be##div[class*="admarktTitle"]:upward(1)
 ajaxreport.nl,feyenoordreport.nl,feyenoordrss.nl,formule1rss.nl,onlinecasinorss.nl,onlinekraslotenrss.nl,onlinepokerrss.nl,psvreport.nl,voetbalsnafu.nl,voetbalwedtipsrss.nl##.widget_links
 ajaxreport.nl##[id^="text"][class$="sidebar-widget"]:has-text(/casino/i):not(:has(div[class="widget-title"]))
 voetbalweddenrss.nl##[class$="sidebar-widget"]:has(p > a[href*="casino"]):not(:has(div[class="widget-title"]))
@@ -862,7 +866,6 @@ waarzo.nl##.smallbox:has-text(Advertentie)
 wegdamnieuws.nl##.ads-stack
 ! 2023-04-27
 apintie.sr###left-inside > div[style$="px;"]:not(:has(a[href]))
-motorrijder.be##.elementor-widget-container > a:not([href*="https://motorrijder.be"]) > img:upward(.elementor-widget-image)
 sliedrecht24.nl##[id$="random_ads"]
 spidersolitairespelen.nl##.b_i_bg
 ! 2023-04-24

@@ -1,7 +1,7 @@
 ! Title: EasyDutch
-! Last updated: Thu, 06 Aug 2026 14:46:27 +0000
+! Last updated: Sun, 09 Aug 2026 18:43:27 +0000
 ! Expires: 7 days (update frequency)
-! Diff-Path: patches/2026.8.6.886.patch#easydutch
+! Diff-Path: patches/2026.8.9.1123.patch#easydutch
 ! Diff-Expires: 6 hours
 ! Description: |
     Dutch supplement for the Easylist filters to use with uBlock Origin
@@ -115,7 +115,7 @@ _advertentieleaderboardhome.
 ||ndt5.net^$3p
 ||nonstoppartner.net^$3p
 ||online-banners.nl^$3p
-||partner.bol.com^$3p
+||partner.bol.com^$3p,domain=~webshop.harrietverkoelen.nl
 ||partnerclicks.nl^$3p
 ||partnerprogramma.bol.com^$3p
 ||pexi.nl^$3p
@@ -346,7 +346,6 @@ _advertentieleaderboardhome.
 ||viralize.tv/display/$domain=sgxl.nl
 ||service-api.nl/api/v2/ad?$domain=gp33.nl
 ||gp33.nl/assets/common/ads-helper.js$domain=gp33.nl
-||boodschappen.nl/wp-json/boodschappen/v1/banners/get_$xhr
 ||techgaming.nl/image_uploads/sponsored/
 ||cdn-radio.dpgmedia.net/*/*banner$image,domain=qmusic.be|qmusic.nl
 /builds/*/assets/taboola-page-view-id-*.js$domain=autobahn.eu|beaumonde.nl|dingenvoorvrouwen.nl|elegance.nl|golfersmagazine.nl|gezondnu.nl|grazia.nl|happyinshape.nl|marieclaire.nl|nautique.nl|noorderland.nl|nouveau.nl|panorama.nl|revu.nl|tipsenweetjes.nl|upcoming.nl|wielerrevue.nl|playboy.nl|zeilen.nl
@@ -356,7 +355,7 @@ _advertentieleaderboardhome.
 avrotros.nl,bnnvara.nl,npo.nl,npodoc.nl,npokennis.nl,vpro.nl##+js(json-prune-fetch-response, assets.preroll assets.prerollDebug, , propsToMatch, /stream-link)
 ||adconfig.ster.nl/adurl$xhr,3p,domain=nos.nl
 nos.nl##+js(json-prune-fetch-response, adUrl, , propsToMatch, .azurewebsites.net)
-||biernet.nl/site/plugins/bja_new/bja$script,1p
+||biernet.nl/site/plugins/bja_new/bja.bnr$script,1p
 ||biernet.nl/images/extra-bja_camp-bnr/$image
 ||gic.nl/assets/src/pages/index/index.page.ad*.js$script,1p
 ||cdn.gic.nl/app/uploads/*.gif$image,domain=gic.nl
@@ -508,6 +507,21 @@ nos.nl##+js(json-prune-fetch-response, adUrl, , propsToMatch, .azurewebsites.net
 ##.sixpack__advertisement-tile
 ##.adv-tekst
 ! *** EasyDutch:EasyDutch/Hide_Specific.txt ***
+boodschappen.nl##[id^="ad-"]:upward(2)
+boodschappen.nl##[aria-label="Uitgelichte producten"]
+motorrijder.be##.elementor-widget-container > a:not([href*="https://motorrijder.be"]) > img:upward(.elementor-widget-image)
+motorrijder.be##div[class*="-banner-"]
+marktplaats.nl,2dehands.be##.hz-Page-content:style(max-width: 1300px!important;)
+marktplaats.nl,2dehands.be###banner-top-dt
+marktplaats.nl,2dehands.be##.BrandTileBanner-module-container
+marktplaats.nl,2dehands.be##.hz-FeedBannerBlock
+marktplaats.nl,2dehands.be###adsense-container
+marktplaats.nl,2dehands.be##.bannerContainerLoading
+marktplaats.nl,2dehands.be##.hz-Banner
+marktplaats.nl,2dehands.be##div[class*="admarktTitle"]:upward(1)
+marktplaats.nl,2dehands.be##.BannerRight-root
+marktplaats.nl,2dehands.be##.right-banner-root-container
+marktplaats.nl,2dehands.be##.vip-banner-top-sticky-container
 mediamarkt.nl##[data-test="mms-search-main"] aside[aria-label="Gesponsorde inhoud"]
 www.iex.nl,beleggen.nl,belegger.nl,beurs.nl,beursduivel.be,beursgorilla.nl,beursonline.nl,debeurs.nl,eurobench.com,ieximpact.nl##.banner
 www.iex.nl,beleggen.nl,belegger.nl,beurs.nl,beursduivel.be,beursgorilla.nl,beursonline.nl,debeurs.nl,eurobench.com,tostrams.nl##.footernetwork > :has-text(Gesponsorde links)
@@ -1088,8 +1102,8 @@ autosport.nl##.bigbanner
 autosport.nl##.horizontal
 motorblog.nl##.sale
 nporadio1.nl,nporadio2.nl,npo3fm.nl,npoklassiek.nl,nporadio5.nl,funx.nl##[id^="adid"]:upward(2)
-bnnvara.nl##div[id^="ster-ad-bnnvara-"]:upward(1)
-maxvandaag.nl##main > .container:has(.sterWrapper)
+bnnvara.nl###sterad:upward(1)
+maxvandaag.nl##div.sterWrapper
 biernet.nl###banTop
 biernet.nl###BJA_LEADER1
 biernet.nl###BJA2
@@ -1100,9 +1114,8 @@ gic.nl##[aria-label="Banner"]:upward(1)
 bierdopje.nl##aside [id^="custom_html"]:has(a[href])
 nljug.org###sidebar .widget:has(a[href^="https://devitjobs.nl/jobs/"])
 nljug.org##[id^="custom_html-"]:has-text(Kennispartners):has(a[href] > img)
-telegraaf.nl##.mh-ad-label[id^="ad_"]:upward([class^="teaser-grid-entry_teaserGridItem"])
-balkstercourant.nl,denoordoostpolder.nl,dvhn.nl,flevopost.nl,frieschdagblad.nl,hoogeveenschecourant.nl,lc.nl,meppelercourant.nl,nieuweooststellingwerver.nl,denoordoostpolder.nl,steenwijkercourant.nl,stellingwerf.nl##[id^="ad_native"][aria-label="Advertentie"]:upward(li)
-gooieneemlander.nl,haarlemsdagblad.nl,ijmuidercourant.nl,leidschdagblad.nl,limburger.nl,noordhollandsdagblad.nl,sikkom.nl,telegraaf.nl##.mh-ad-label[id^="ad_"]
+dvhn.nl,flevopost.nl,frieschdagblad.nl,gooieneemlander.nl,haarlemsdagblad.nl,hoogeveenschecourant.nl,ijmuidercourant.nl,lc.nl,leidschdagblad.nl,limburger.nl,meppelercourant.nl,nieuweooststellingwerver.nl,noordhollandsdagblad.nl,sikkom.nl,steenwijkercourant.nl,stellingwerf.nl,telegraaf.nl##.mh-ad-label[id^="ad_"]
+dvhn.nl,flevopost.nl,frieschdagblad.nl,gooieneemlander.nl,haarlemsdagblad.nl,hoogeveenschecourant.nl,ijmuidercourant.nl,lc.nl,leidschdagblad.nl,limburger.nl,meppelercourant.nl,nieuweooststellingwerver.nl,noordhollandsdagblad.nl,sikkom.nl,steenwijkercourant.nl,stellingwerf.nl,telegraaf.nl##.mh-ad-label[id^="ad_"]:upward([class^="teaser-grid-entry_teaserGridItem"])
 autovisie.nl,bedrock.nl,culy.nl,jmouders.nl,manners.nl,metronieuws.nl,nsmbl.nl,want.nl##.mha_container
 dumpert.nl##[class^="css-"] [id^="ad_leaderboardwallpaper-"]:upward(3)
 dumpert.nl##[class^="css-"] [id^="ad_billboardrectangle"]:upward(3)
@@ -1110,17 +1123,6 @@ dumpert.nl##[class^="css-"] [id^="ad_interscroller"]:upward(2)
 dumpert.nl##aside .ad:upward(2)
 dumpert.nl##article .ad:upward(2)
 funda.nl##.justify-center[role="complementary"]:has-text(Advert)
-marktplaats.nl,2dehands.be###adsense-container
-marktplaats.nl,2dehands.be###banner-top-dt
-marktplaats.nl,2dehands.be##.bannerContainerLoading
-marktplaats.nl,2dehands.be##.BannerBottom-root
-marktplaats.nl,2dehands.be##.BannerRight-root
-marktplaats.nl,2dehands.be##.Banners-bannerFeedItem
-marktplaats.nl,2dehands.be##.hz-Banner
-marktplaats.nl,2dehands.be##.hz-Page-content:style(max-width: 1300px!important;)
-marktplaats.nl,2dehands.be##.right-banner-root-container
-marktplaats.nl,2dehands.be##.vip-banner-top-sticky-container
-marktplaats.nl,2dehands.be##div[class*="admarktTitle"]:upward(1)
 ajaxreport.nl,feyenoordreport.nl,feyenoordrss.nl,formule1rss.nl,onlinecasinorss.nl,onlinekraslotenrss.nl,onlinepokerrss.nl,psvreport.nl,voetbalsnafu.nl,voetbalwedtipsrss.nl##.widget_links
 ajaxreport.nl##[id^="text"][class$="sidebar-widget"]:has-text(/casino/i):not(:has(div[class="widget-title"]))
 voetbalweddenrss.nl##[class$="sidebar-widget"]:has(p > a[href*="casino"]):not(:has(div[class="widget-title"]))
@@ -1233,7 +1235,6 @@ waarzo.nl##.contentbox:has-text(Advertentie)
 waarzo.nl##.smallbox:has-text(Advertentie)
 wegdamnieuws.nl##.ads-stack
 apintie.sr###left-inside > div[style$="px;"]:not(:has(a[href]))
-motorrijder.be##.elementor-widget-container > a:not([href*="https://motorrijder.be"]) > img:upward(.elementor-widget-image)
 sliedrecht24.nl##[id$="random_ads"]
 spidersolitairespelen.nl##.b_i_bg
 gaslicht.com##.c-comparison-list__usp-label:has-text(Adv):upward(.c-comparison-list__item)
@@ -1431,6 +1432,7 @@ rotterdambasketbal.nl##img[title^="roba_sponosor_"]
 prewarcar.nl##img[width="160"][height="92"]
 radio182.nl##section.elementor-element:has(h3:has-text(MOGELIJK GEMAAKT DOOR))
 ! *** EasyDutch:EasyDutch/Hide_Whitelist.txt ***
+webshop.harrietverkoelen.nl#@#a[href^="https://partner.bol.com/click/"]
 kookboekennieuws.nl#@#a[href^="https://partner.bol.com/click/"]
 ciaotutti.nl#@#a[href^="https://partner.bol.com/click/"]
 ciaotutti.nl#@#a[href^="https://partnerprogramma.bol.com/click/"]
