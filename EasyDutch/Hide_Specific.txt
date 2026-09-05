@@ -1,7 +1,20 @@
 ! Title: Hide Specific
 ! Description: Filters for hiding elements on specific Dutch websites
-! Last updated: Wed, 19 Aug 2026 05:19:49 +0000
+! Last updated: Mon, 31 Aug 2026 09:55:12 +0000
 !
+! 2026-08-31
+terdege.nl###fallback-:upward(3)
+newsbit.nl##.highlight-strip
+newsbit.nl###h2-cta-alinea
+newsbit.nl##.wp-acf-block.link:upward(.wp-block-g2p-wrapper):has-text(Partnercontent)
+ajaxshowtime.com##.raw-html-component--ad
+pepper.com##div[id^="ad-sidebar"]
+pepper.com##div[id$="AdSlotPortal"]
+pepper.com###ad-belowDetails:upward([data-t="bannerAd"])
+nieuwrechts.nl##.sponsored.more
+crypto-insiders.nl##[id^="div-gpt-ad"]:upward(1):has-text(Advert)
+crypto-insiders.nl###buy
+crypto-insiders.nl##[class^="space-y"]:has(.article-outro)
 ! 2026-08-19
 dagaandag.com##.dad-ad-row
 ! 2026-08-08
@@ -619,16 +632,12 @@ cryptobenelux.com##[id^="div-gpt-ad"]:upward(.raw-html-component)
 bitcoinmagazine.nl##.sidebar-banner
 galaxyclub.nl##.bannercenter
 ! 2026-02-09
-terdege.nl###fallback-:upward(div.flex-col)
 sporza.be##[class^="_adBanner_"]
 viraal.nl,wielrennenuptodate.nl##div.raw-html-component
 dagelijksestandaard.nl##div.raw-html-component:not(:has(.font-bold))
 skoften.net##div[class^="r89-"]:upward([class*="cls-placeholder-"])
 nieuws365.be,showblad.nl,voetbal14.nl,whiskymonkeys.com##div[class^="r89-"]:upward(.raw-html-component)
 fem-fem.nl##.sh-player-container
-newsbit.nl##.highlight-strip
-newsbit.nl##.acf-block-cta-conversion-rating
-newsbit.nl###h2-cta-alinea
 nieuwdezeweek.nl##.mid-ad
 wordfeudhelp.nl##.hoog.text-center
 nd.nl##.component__pubble-banner
@@ -637,25 +646,16 @@ tijd.be##[class*="rowcontainer"]:has(div[class*="ad"]):has-text(/Gesponsorde inh
 tijd.be##[id^="sponsored"]:upward(div.c-articlelistitem)
 bnr.nl##.ad
 ! 2026-02-07
-ajaxshowtime.com##.sda
 indeleiderstrui.nl##[id^="idl_ros_"]:upward(.raw-html-component)
 gp33.nl##div[id^="grandprix33_"]
-pepper.com##div[id^="ad-sidebar"]
-pepper.com##div[id$="AdSlotPortal"]
 axed.nl##[class^="r89-desktop"]:upward(.raw-html-component)
 ! Mediahuis.be
 made-in.be##.b-block-partners
 made-in.be##.c-ad-space:upward(.col-item)
 gva.be,hbvl.be,nieuwsblad.be,standaard.be##div[id^="ad_"]
 gva.be,hbvl.be,nieuwsblad.be,standaard.be##div[id^="ad_"]:upward([class^="teaser"])
-gva.be,hbvl.be,nieuwsblad.be,standaard.be##section[data-theme-sponsored-content]
 ! End Mediahuis.be
-crypto-insiders.nl##.article-content > p > a.btn--highlighted.external-link
-crypto-insiders.nl##.affiliate-dropdown:not(#style_important)
-crypto-insiders.nl##.exp-banner-global
-crypto-insiders.nl##.exp-google-ad
 vkmag.com##.sda
-dailybuzz.nl##[id^="r89-ad"]:upward(.bg-gray-100)
 dailybuzz.nl##[id^="ad-container"]
 mediacourant.nl##.mc-adv
 centraalplus.nl##div[class^="col"] > div.center:has(> div.g > div.g-single > center > i:contains(Advertentie))
