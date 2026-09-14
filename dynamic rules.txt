@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: Dynamic rules for uBlock Origin's medium mode.
-! Last updated: 26-07-2026
+! Last updated: 14-09-2026
 !
 no-csp-reports: * true
 * * 3p-frame block
@@ -33,12 +33,14 @@ www.12gobiking.nl app.aiden.cx * noop
 * akamaiedge.net * noop
 * akamaihd.net * noop
 * akamaized.net * noop
+alibaba.com s.alicdn.com * noop
 login.microsoftonline.com alphacdn.net * noop
 login.live.com wpc.alphacdn.net * noop
 account.live.com sni1gl.wpc.alphacdn.net * noop
 www.kpn.com reload.alphacomm.network * noop
 * amazon-adsystem.com * noop
 * amazonaws.com * noop
+claude.ai assets-proxy.anthropic.com * noop
 anwb.nl anwb.cloud * noop
 apkpure.com apkpures.xyz * noop
 * js.appboycdn.com * noop
@@ -121,6 +123,7 @@ focus-wtv.be player.clevercast.com * noop
 * cdnjs.cloudflare.com * noop
 * challenges.cloudflare.com * noop
 dash.cloudflare.com cloudflare.dev * noop
+www.perplexity.ai perplexity-ai.cloudflareaccess.com * noop
 dash.cloudflare.com cloudflarepreviews.com * noop
 developers.cloudflare.com cloudflarestream.com * noop
 reformatorischeomroep.nl cloudflarestream.com * noop
@@ -135,6 +138,7 @@ google.com content.googleapis.com * noop
 * code.createjs.com * noop
 artsandculture.google.com embed.culturalspot.org * noop
 www.kpn.com customersaas.com * noop
+viraal.nl https://dailybuzz.nl/player/ script noop
 www.vkmag.com https://dailybuzz.nl/player/ script noop
 www.vkmag.com https://dailybuzz.nl/buzz/embed/ sub_frame noop
 bvdp.pages.dev dailyverses.net * noop
@@ -163,6 +167,7 @@ www.dropbox.com dropbox-dns.com * noop
 www.dropbox.com dropboxcaptcha.com * noop
 www.dropbox.com dropboxstatic.com * noop
 www.dropbox.com dropboxusercontent.com * noop
+openurl.ebsco.com ebsco-assets.com * noop
 research.ebsco.com discover-shared-viewer-ui.live.ebsco-assets.com * noop
 login.ebsco.com iam-shared-prompted-ui.live.ebsco-assets.com * noop
 research.ebsco.com researcher-shared-search-ui.live.ebsco-assets.com * noop
@@ -285,6 +290,7 @@ www.cbs.nl api.eu.kaltura.com * noop
 * static.kijk.nl * noop
 www.bijbelsberaadmv.nl bijbelsberaadmanvrouw.hosting.kinsta.cloud * noop
 y8.com kongregate.com * noop
+www.temu.com kwcdn.com * noop
 onedrive.live.com l-msedge.net * noop
 * lib.sinaapp.com * noop
 linkedin.com static.licdn.com * noop
@@ -356,6 +362,7 @@ www.laserdecorations.nl app.multiscreenstore.com * noop
 www.decibel.nl mytuner-radio.com * noop
 * akamai-webcdn.kgstatic.net.edgesuite.net * noop
 azuredatacentermap.azurewebsites.net a-afdentry.net.trafficmanager.net * noop
+www.blokker.nl static.nextchapter-ecommerce.com * noop
 * nextday.media * noop
 www.nieuweoogst.nl cdn.nieuweoogst.nu * noop
 nos.nl cdn.noshosting.nl * noop
@@ -447,6 +454,7 @@ docs.embed.ly cdn.readme.io * noop
 docs.embed.ly ssl.readmessl.com * noop
 * recaptcha.net * noop
 www.reddit.com redditstatic.com * noop
+docs.redhat.com www.redhatstatic.com * noop
 * tags.refinery89.com * noop
 * regiogroei.cloud * noop
 * rsc.cdn77.org * noop
@@ -470,6 +478,7 @@ www.alphens.nl alphens-nl.sera-apps.nl * noop
 softonic.com assets.sftcdn.net * noop
 softonic.nl assets.sftcdn.net * noop
 * developer.n.shifen.com * noop
+www.depaarsekeizerin.nl cdn.shopify.com * noop
 microsoft365.com sigmacdn.net * noop
 office.com wpc.sigmacdn.net * noop
 outlook.live.com sni1gl.wpc.sigmacdn.net * noop
@@ -507,8 +516,10 @@ mannenzaken.nl streamable.com * noop
 www.tripadvisor.be static.tacdn.com * noop
 www.tripadvisor.nl static.tacdn.com * noop
 asnlookup.com cdn.tailwindcss.com * noop
+loes.ai cdn.tailwindcss.com * noop
 library.etf.edu teamup.com * noop
 www.linuxtoday.com ivtp.technologyadvice.com * noop
+www.temu.com static.temucdn.com * noop
 libkey.io libkey-app.thirdiron.com * noop
 * https://www.tiktok.com/embed.js script noop
 * https://www.tiktok.com/embed/ sub_frame noop
@@ -566,6 +577,7 @@ login.microsoftonline.com account.activedirectory.windowsazure.com * noop
 * s0.wp.com * noop
 * s1.wp.com * noop
 * s2.wp.com * noop
+www.wps.com global-static.wpscdn.com * noop
 * www.googleapis.com * noop
 * x.com * noop
 * yandex.st * noop
