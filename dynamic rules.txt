@@ -520,8 +520,6 @@ www.temu.com static.temucdn.com * noop
 libkey.io libkey-app.thirdiron.com * noop
 * https://www.tiktok.com/embed.js script noop
 * https://www.tiktok.com/embed/ sub_frame noop
-www.scholieren.com https://www.tiktok.com/embed.js script noop
-www.scholieren.com https://www.tiktok.com/embed/ sub_frame noop
 www.tiktok.com tiktokcdn-eu.com * noop
 www.eset.com tm-azurefd.net * noop
 www.gaslicht.com tm-azurefd.net * noop
