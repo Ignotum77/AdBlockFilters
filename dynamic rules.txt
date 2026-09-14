@@ -167,10 +167,7 @@ www.dropbox.com dropbox-dns.com * noop
 www.dropbox.com dropboxcaptcha.com * noop
 www.dropbox.com dropboxstatic.com * noop
 www.dropbox.com dropboxusercontent.com * noop
-openurl.ebsco.com ebsco-assets.com * noop
-research.ebsco.com discover-shared-viewer-ui.live.ebsco-assets.com * noop
-login.ebsco.com iam-shared-prompted-ui.live.ebsco-assets.com * noop
-research.ebsco.com researcher-shared-search-ui.live.ebsco-assets.com * noop
+ebsco.com ebsco-assets.com * noop
 * ecdns.net * noop
 * edgecastcdn.net * noop
 * edgekey.net * noop
