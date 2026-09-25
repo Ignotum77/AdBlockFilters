@@ -3,7 +3,7 @@
 ! Description: Ignotum's Personal Filter list (My filters)
 ! Homepage: https://github.com/Ignotum77/AdBlockFilters/
 ! Expires: 7 days
-! Last updated: 11-07-2026
+! Last updated: 25-09-2026
 !
 !PRIVACY
 !--Anti Facebook
@@ -17,7 +17,6 @@
 ||fbsbx.com^$3p,important,domain=~instagram.com
 ||fburl.com^$3p,important
 ||tfbnw.net^$3p,important
-||www.facebook.com/plugins/video.php$frame,redirect=click2load.html
 ||spot.im/embed/scripts/launcher.js
 /cdn-cgi/pe/bag2?*connect.facebook.
 !--Anti TikTok
@@ -73,6 +72,9 @@
 ||l.facebook.com/l.php?u=$doc,urlskip=?u
 ||l.instagram.com/?u=$doc,urlskip=?u
 ||wetransfer.net/*/adblocker$3p,domain=wetransfer.com
+||domain767.pages.dev/1.js
+||nomennescio.pages.dev/*/access.js
+nomennescio.pages.dev##body:style(display:unset!important)
 buienradar.*##.onboard-background
 buienradar.*##html,body:style(overflow: auto !important;)
 buienradar.*#?#.onboard-popup-container:has-text(Mogen we je locatie gebruiken)
@@ -126,8 +128,12 @@ www.youtube.com##ytm-embeds-info-panel-renderer
 music.youtube.com##tp-yt-paper-dialog.ytmusic-popup-container:has-text(Music Premium)
 www.youtube.com##ytd-guide-entry-renderer:has-text(Shorts)
 www.youtube.com##ytd-mini-guide-entry-renderer:has-text(Shorts)
+www.youtube.com##ytd-search ytd-reel-shelf-renderer
 www.youtube.com##ytd-search grid-shelf-view-model.ytd-item-section-renderer:has(a[href^="/shorts"])
 www.youtube.com###description ytd-reel-shelf-renderer
+www.youtube.com##ytd-watch-next-secondary-results-renderer yt-lockup-view-model:has(a[href^="/shorts/"])
+www.youtube.com##ytd-watch-next-secondary-results-renderer ytd-reel-shelf-renderer
+music.youtube.com##ytmusic-section-list-renderer[page-type="MUSIC_PAGE_TYPE_TRACK_LYRICS"] yt-formatted-string.non-expandable.description:style(user-select: text !important;)
 mediawiki.org,wikibooks.org,wikidata.org,wikieducator.org,wikimedia.org,wikinews.org,wikipedia.org,wikiquote.org,wikisource.org,wikitravel.org,wikivoyage.org,wiktionary.org#?#.interlanguage-link:not(:has-text(/Afrikaans|Deutsch|English|Français|Nederlands/))
 !--Anti Google Chrome Download Message, Cookie Banner and Login
 ||ogs.google.*/widget/callout*&origin=*.google.*=callout
@@ -189,6 +195,7 @@ gebruikershandleiding.com#@#.share:not(html, body, .entry)
 ##.td-post-sharing-bottom:not(html, body)
 ##.td-post-sharing-top:not(html, body)
 ##.td-post-sharing:not(html, body)
+##.tdb_single_post_share:not(html, body)
 ##.widget_facebook_likebox > .fb-page
 ##[class^="share-article"]:not(html, body)
 ##[class$="shareitemlist"]:not(html, body)
@@ -246,7 +253,7 @@ gebruikershandleiding.com#@#.share:not(html, body, .entry)
 /share/*-icon.png$image
 /shareaholic.$script
 /shareaholic/*
-/sharebutton$~css
+/sharebutton$~css,domain=~perplexity.ai
 /sharecount
 /shared/btn_
 /shared/social/*
