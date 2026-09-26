@@ -3,7 +3,7 @@
 ! Description: Ignotum's Personal Filter list (My filters)
 ! Homepage: https://github.com/Ignotum77/AdBlockFilters/
 ! Expires: 7 days
-! Last updated: 25-09-2026
+! Last updated: 26-09-2026
 !
 !PRIVACY
 !--Anti Facebook
@@ -117,6 +117,9 @@ quora.com##.signup_wall_prevent_scroll:style(position: unset !important; padding
 quora.com##+js(set, ansFrontendGlobals.settings.signupWallType, undefined)
 quora.com##body > div[id]:has(.modal_signup_dialog)
 translate.goog##+js(aeld, /contextmenu|keyup|keydown/)
+voedingswaardetabel.nl##+js(set, document.oncontextmenu, null)
+voedingswaardetabel.nl##+js(set, document.onselectstart, null)
+voedingswaardetabel.nl##*:style(user-select:initial!important)
 www.youtube.com##yt-notification-action-renderer.ytd-popup-container > #toast:has-text(Last van onderbrekingen)
 www.youtube.com##.ytd-watch-flexy > .ytd-info-panel-container-renderer
 www.youtube.com##.ytd-watch-metadata .ytd-info-panel-content-renderer.content:upward(.ytd-watch-metadata)
