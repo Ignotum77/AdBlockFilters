@@ -11,6 +11,7 @@ no-large-media: www.ns.nl false
 no-large-media: www.nsinternational.nl false
 no-large-media: www.buienradar.nl false
 no-large-media: www.natuurmonumenten.nl false
+no-large-media: google.com false
 no-large-media: www.staatsbosbeheer.nl false
 no-large-media: youtube.com false
 * behind-the-scene * block
