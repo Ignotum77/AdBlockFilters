@@ -458,11 +458,8 @@ www.reddit.com redditstatic.com * noop
 docs.redhat.com www.redhatstatic.com * noop
 * tags.refinery89.com * noop
 * regiogroei.cloud * noop
-www.ewmagazine.nl embed.roularta.be * noop
-www.ewmagazine.nl myprivacy.roularta.net * noop
-www.flair.be myprivacy.roularta.net * noop
-www.gezondheid.be myprivacy.roularta.net * noop
-www.psychologie.nl myprivacy.roularta.net * noop
+* embed.roularta.be * noop
+* myprivacy.roularta.net * noop
 * rsc.cdn77.org * noop
 * mathjax.rstudio.com * noop
 * embed.rtl.nl * noop
