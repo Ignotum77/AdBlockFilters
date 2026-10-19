@@ -1,6 +1,6 @@
 [uBlock Origin]
 ! Title: Dynamic rules for uBlock Origin's medium mode.
-! Last updated: 14-09-2026
+! Last updated: 19-10-2026
 !
 no-csp-reports: * true
 * * 3p-frame block
@@ -116,6 +116,7 @@ www.laserdecorations.nl static.cdn-website.com * noop
 www.romundevof.nl site-assets.cdnmns.com * noop
 www.freepik.com static.cdnpk.net * noop
 www.speedtest.net b.cdnst.net * noop
+www.speedtest.net r.cdnst.net * noop
 www.crucial.com cdn.channelsight.com * noop
 www.bruzz.be player.clevercast.com * noop
 focus-wtv.be player.clevercast.com * noop
@@ -221,6 +222,7 @@ github.com githubassets.com * noop
 www.bijbelsberaadmv.nl bible-link.globalrize.org * noop
 www.gls-info.nl spotlight.glsnxt.com * noop
 livejapan.com rimage.gnst.jp * noop
+gocar.be assets.gocarcdn.com * noop
 * google-analytics.com * noop
 developers.google.com google-developers.appspot.com * noop
 www.google.com books.google.be * noop
@@ -267,6 +269,7 @@ www.marktplaats.nl hzcdn.io * noop
 www.ing.nl cdn.ing.com * noop
 * instagram.com * noop
 www.investmentofficer.nl cdn.investmentofficer.com * noop
+www.wibra.nl ipinfo.io * noop
 www.etf.edu e.issuu.com * noop
 login.anwb.nl janraincapture.com * noop
 bloemenboerderijboer.jimdofree.com assets.jimstatic.com * noop
@@ -398,6 +401,7 @@ login.microsoftonline.com wpc.omegacdn.net * noop
 microsoft.com onestore.ms * noop
 www.radioreflex.be ecdn.onlineradiobox.com * noop
 www.hartstichting.nl hartstichting-injector.onstuimig.nl * noop
+chatgpt.com cdn.platform.openai.com * noop
 * cdn.optimizely.com * noop
 * dualstack.osff.map.fastly.net * noop
 www.viafora.nl static.ouders.nl * noop
@@ -454,18 +458,26 @@ www.reddit.com redditstatic.com * noop
 docs.redhat.com www.redhatstatic.com * noop
 * tags.refinery89.com * noop
 * regiogroei.cloud * noop
+www.ewmagazine.nl embed.roularta.be * noop
+www.ewmagazine.nl myprivacy.roularta.net * noop
+www.flair.be myprivacy.roularta.net * noop
+www.gezondheid.be myprivacy.roularta.net * noop
+www.psychologie.nl myprivacy.roularta.net * noop
 * rsc.cdn77.org * noop
 * mathjax.rstudio.com * noop
 * embed.rtl.nl * noop
 * player.rtl.nl * noop
 www.blckbx.tv rumble.com * noop
 www.bol.com assets.s-bol.com * noop
+www.bol.com cui-assets.s-bol.com * noop
 www.microsoft.com c.s-microsoft.com * noop
 office.com c.s-microsoft.com * noop
 microsoft.com s-msft.com * noop
 www.ibm.com 1.www.s81c.com * noop
 www.farmaline.be cdn.sa-tech.de * noop
 nos.nl cdn.scaliainfra.nl * noop
+accounts.spotify.com accounts.scdn.co * noop
+www.spotify.com www-growth.scdn.co * noop
 forum.scholieren.com media.scholieren.net * noop
 www.scholieren.com media.scholieren.net * noop
 sci-net.ru sci-net.xyz * noop
@@ -486,11 +498,15 @@ www.skyscanner.nl skyscannerplatform.net * noop
 www.skyscanner.nl skyscnr.com * noop
 soundcloud.com sndcdn.com * noop
 www.proquest.com cdn.socket.io * noop
+qmusic.nl sound-value.pages.dev * noop
 www.onderwegonline.nl webforms.spabonneeservice.nl * noop
 www.kpn.com speedtestcustom.com * noop
 www.slam.nl open.spotify.com * noop
+challenge.spotify.com challenge.spotifycdn.com * noop
 www.slam.nl embed-cdn.spotifycdn.com * noop
 open.spotify.com open.spotifycdn.com * noop
+www.spotify.com wap.spotifycdn.com * noop
+www.wibra.nl assets.spotlersearch.com * noop
 * definitions.sqspcdn.com * noop
 * squarespace.com * noop
 www.amazon.com ssl-images-amazon.com * noop
@@ -559,10 +575,12 @@ sporza.be player.vrt.be * noop
 github.dev vscode-cdn.net * noop
 github.dev vscode-unpkg.net * noop
 israeltoday.nl wabcradio.com * noop
+hetheilighuwelijk.com static.web-repository.com * noop
 chatgpt.com web-sandbox.oaiusercontent.com * noop
 www.grootnieuwsradio.nl dns-gnradio.automation.webmecanik.com * noop
 www.semschietsport.nl cdn.webshopapp.com * noop
 * cdn.prod.website-files.com * noop
+wetransfer.com wetransfer.net * noop
 wetransfer.com prod-cdn.wetransfer.net * noop
 whatsapp.com whatsapp.net * noop
 azurewebsites.net vip.azurewebsites.windows.net * noop
@@ -583,6 +601,7 @@ www.wps.com global-static.wpscdn.com * noop
 * youtube.googleapis.com * noop
 * s.ytimg.com * noop
 * vjs.zencdn.net * noop
+www.speedtest.net cdn.ziffstatic.com * noop
 www.robtv.be player.zndznd.com * noop
 www.tvl.be player.zndznd.com * noop
 www.tvoost.be player.zndznd.com * noop
