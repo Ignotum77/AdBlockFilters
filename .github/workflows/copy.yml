@@ -39,6 +39,6 @@ jobs:
             git config user.name "GitHub Actions"
             git config user.email "<>"
             git add -u EasyDutch/ EasyDutch.txt EasyDutch.all.txt
-            git commit -m "Updated from @EasyDutch-uBO"
+            git commit -m "Updated from @EasyDutch-uBlockOrigin"
             git push origin main
           fi
