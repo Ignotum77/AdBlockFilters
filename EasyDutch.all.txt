@@ -1,7 +1,7 @@
 ! Title: EasyDutch
-! Last updated: Sun, 01 Nov 2026 12:08:29 +0000
+! Last updated: Wed, 04 Nov 2026 19:46:23 +0000
 ! Expires: 7 days (update frequency)
-! Diff-Path: patches/2026.11.1.728.patch#easydutch
+! Diff-Path: patches/2026.11.4.1186.patch#easydutch
 ! Diff-Expires: 6 hours
 ! Description: |
     Dutch supplement for the Easylist filters to use with uBlock Origin
@@ -27,7 +27,7 @@
 /adverteerders/*
 /advertentie-banner-
 /advertentie.$domain=~advertentie.rd.nl
-/advertentie/*
+/advertentie/*$domain=~araba.nl
 /advertentie1.
 /advertentie2/*
 /advertentie_head.
@@ -133,6 +133,12 @@ _advertentieleaderboardhome.
 ||vpscash.nl^$3p
 ||xpartners.nl^$3p
 ! *** EasyDutch:EasyDutch/Block_Resources.txt ***
+||omroepbovengroningen.nl/wp-content/uploads/2026/10/gerardvanderveen.jpg
+||omroepbovengroningen.nl/wp-content/uploads/2026/10/vfkerngezond-1.gif
+||omroepbovengroningen.nl/wp-content/uploads/2026/10/trox.jpg
+||omroepbovengroningen.nl/wp-content/uploads/2026/10/vakland.webp
+||omroepbovengroningen.nl/wp-content/uploads/2026/09/veldmanenvandijk.webp
+avrotros.nl,bnnvara.nl,eo.nl,npo.nl,npodoc.nl,npokennis.nl,vpro.nl##+js(json-prune-fetch-response, assets.preroll assets.prerollDebug, , propsToMatch, /stream-link)
 /st2/banners/$image,1p,domain=truck1.be|truck1.nl|truck1-nl.be
 /st2/_BANNERS_/$image,1p,domain=truck1.be|truck1.nl|truck1-nl.be
 /st2/*/img/native-banners/$image,1p,domain=truck1.be|truck1.nl|truck1-nl.be
@@ -218,10 +224,6 @@ _advertentieleaderboardhome.
 ||nederland.fm/i/banners/
 ||radio.be/i/banners/
 ||radio.nl/i/banners/
-||omroephethogeland.nl/wp-content/uploads/2019/03/Veldman-vandijk.png
-||omroephethogeland.nl/wp-content/uploads/2019/03/AH_Winsum_banner_125x300.jpg
-||omroepeemsdelta.nl/wp-content/uploads/2024/03/streekomroep-partner.png
-||omroepeemsdelta.nl/wp-content/uploads/2024/02/Jullens*.png
 ||floranews.com/img/banner/$image
 ||fruitteeltonline.nl/images/slideshows/*.gif$image
 ||voetbalindebollenstreek.nl/wp-content/uploads/*/banner$image
@@ -347,7 +349,6 @@ _advertentieleaderboardhome.
 ||motorrijder.be/wp-content/uploads/banners/
 ||motorrijder.be/wp-content/uploads/*/*1300x150$image
 ||glutenvrij.nl/l/library/download/urn:uuid*?scaleType=1$image
-avrotros.nl,bnnvara.nl,npo.nl,npodoc.nl,npokennis.nl,vpro.nl##+js(json-prune-fetch-response, assets.preroll assets.prerollDebug, , propsToMatch, /stream-link)
 ||adconfig.ster.nl/adurl$xhr,3p,domain=nos.nl
 nos.nl##+js(json-prune-fetch-response, adUrl, , propsToMatch, .azurewebsites.net)
 ||biernet.nl/site/plugins/bja_new/bja.bnr$script,1p
@@ -502,6 +503,10 @@ nos.nl##+js(json-prune-fetch-response, adUrl, , propsToMatch, .azurewebsites.net
 ##.sixpack__advertisement-tile
 ##.adv-tekst
 ! *** EasyDutch:EasyDutch/Hide_Specific.txt ***
+omroepbovengroningen.nl##[class*="random_banner_slider"]:upward(.e-parent):has-text(advert)
+omroepbovengroningen.nl##.widget_random_banner_widget
+omroepbovengroningen.nl##.sidebar .textwidget:has-text(advert)
+online-bijbel.nl##.advertentie
 thailandblog.nl##[id^="custom_html"]:has-text(/Ads|Sponsor/)
 rd.nl##.ad-container-print-hide
 rd.nl##.ad
@@ -717,7 +722,6 @@ beveiligingnieuws.nl##.sr-premium-partners
 nederland.fm,radio.be,radio.nl##body> div[id^="takeover"]
 radio.be,radio.nl###bannerbg
 radio.be,radio.nl###leaderboardbg
-omroephethogeland.nl##.featured-sidebar
 nieuwsfiets.nu##.wpb_raw_code:has(.a2t-link) + .w-separator
 aruba.nu,bonaire.nu,curacao.nu##div.component__pubble-banner
 fruitteeltonline.nl##[class^="slideshow"]:upward(1)
